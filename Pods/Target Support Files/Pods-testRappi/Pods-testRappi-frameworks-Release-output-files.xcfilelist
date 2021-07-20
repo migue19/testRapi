@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConnectionLayer.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NUTComponents.framework

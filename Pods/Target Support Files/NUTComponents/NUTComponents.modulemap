@@ -1,0 +1,6 @@
+framework module NUTComponents {
+  umbrella header "NUTComponents-umbrella.h"
+
+  export *
+  module * { export * }
+}
