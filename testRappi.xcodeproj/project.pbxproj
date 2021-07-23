@@ -10,13 +10,24 @@
 		149B183EB33BD795EC8546A3 /* Pods_testRappi_testRappiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0D9C8916F71B2F8E27D118 /* Pods_testRappi_testRappiUITests.framework */; };
 		181B9EE0AA56E80142B8FA30 /* Pods_testRappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C584CC8FBF29CDC244BE7F73 /* Pods_testRappi.framework */; };
 		441B272D3B0E0B8A828EDFE1 /* Pods_testRappiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC25410A94561166FF07DDD /* Pods_testRappiTests.framework */; };
+		F210E34A26A9E2BB00A74A1E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */; };
 		F252ECF926A72B390039413C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ECF826A72B390039413C /* AppDelegate.swift */; };
 		F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ECFA26A72B390039413C /* SceneDelegate.swift */; };
-		F252ECFD26A72B390039413C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ECFC26A72B390039413C /* ViewController.swift */; };
 		F252ED0226A72B390039413C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0126A72B390039413C /* Assets.xcassets */; };
 		F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0326A72B390039413C /* LaunchScreen.storyboard */; };
 		F252ED1026A72B3A0039413C /* testRappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED0F26A72B3A0039413C /* testRappiTests.swift */; };
 		F252ED1B26A72B3A0039413C /* testRappiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED1A26A72B3A0039413C /* testRappiUITests.swift */; };
+		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
+		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
+		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
+		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
+		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
+		F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */; };
+		F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */; };
+		F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8358726A72F94007E13C8 /* HomeVC.swift */; };
+		F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F8358826A72F94007E13C8 /* HomeVC.xib */; };
+		F2F8358D26A731C5007E13C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8358C26A731C5007E13C8 /* Constants.swift */; };
+		F2F8359026A78024007E13C8 /* AuthorizationEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8358F26A78024007E13C8 /* AuthorizationEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +56,10 @@
 		DFC25410A94561166FF07DDD /* Pods_testRappiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRappiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E749234FE620519C527F541C /* Pods-testRappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRappi.release.xcconfig"; path = "Target Support Files/Pods-testRappi/Pods-testRappi.release.xcconfig"; sourceTree = "<group>"; };
 		EE0D9C8916F71B2F8E27D118 /* Pods_testRappi_testRappiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRappi_testRappiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F210E34926A9E2BB00A74A1E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F252ECF526A72B390039413C /* testRappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F252ECF826A72B390039413C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F252ECFA26A72B390039413C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F252ECFC26A72B390039413C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F252ED0126A72B390039413C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F252ED0426A72B390039413C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F252ED0626A72B390039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +69,17 @@
 		F252ED1626A72B3A0039413C /* testRappiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testRappiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F252ED1A26A72B3A0039413C /* testRappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testRappiUITests.swift; sourceTree = "<group>"; };
 		F252ED1C26A72B3A0039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
+		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		F2F8358726A72F94007E13C8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F2F8358826A72F94007E13C8 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		F2F8358C26A731C5007E13C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F2F8358F26A78024007E13C8 /* AuthorizationEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationEntity.swift; sourceTree = "<group>"; };
 		FDCA720817C435F8ABE53968 /* Pods-testRappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRappi.debug.xcconfig"; path = "Target Support Files/Pods-testRappi/Pods-testRappi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,12 +159,15 @@
 		F252ECF726A72B390039413C /* testRappi */ = {
 			isa = PBXGroup;
 			children = (
+				F2A054D426A8E951005DF626 /* Persistence */,
+				F2F8358B26A731AD007E13C8 /* Constants */,
+				F2F8357926A72EF0007E13C8 /* Features */,
 				F252ECF826A72B390039413C /* AppDelegate.swift */,
 				F252ECFA26A72B390039413C /* SceneDelegate.swift */,
-				F252ECFC26A72B390039413C /* ViewController.swift */,
 				F252ED0126A72B390039413C /* Assets.xcassets */,
 				F252ED0326A72B390039413C /* LaunchScreen.storyboard */,
 				F252ED0626A72B390039413C /* Info.plist */,
+				F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */,
 			);
 			path = testRappi;
 			sourceTree = "<group>";
@@ -163,6 +188,62 @@
 				F252ED1C26A72B3A0039413C /* Info.plist */,
 			);
 			path = testRappiUITests;
+			sourceTree = "<group>";
+		};
+		F2A054A326A86760005DF626 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F2A054A426A86882005DF626 /* AuthVC.swift */,
+				F2A054A526A86882005DF626 /* AuthVC.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F2A054D426A8E951005DF626 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F2F8357926A72EF0007E13C8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F2A054A326A86760005DF626 /* Auth */,
+				F2F8357A26A72EFD007E13C8 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F2F8357A26A72EFD007E13C8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8358E26A77FE2007E13C8 /* Entity */,
+				F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */,
+				F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */,
+				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
+				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
+				F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */,
+				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2F8358B26A731AD007E13C8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8358C26A731C5007E13C8 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F2F8358E26A77FE2007E13C8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8358F26A78024007E13C8 /* AuthorizationEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
+				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
+				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
 				F252ED0226A72B390039413C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,9 +485,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F252ECFD26A72B390039413C /* ViewController.swift in Sources */,
+				F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */,
+				F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */,
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */,
+				F2A054A626A86882005DF626 /* AuthVC.swift in Sources */,
+				F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */,
+				F2F8359026A78024007E13C8 /* AuthorizationEntity.swift in Sources */,
+				F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */,
+				F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */,
+				F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */,
+				F210E34A26A9E2BB00A74A1E /* Model.xcdatamodeld in Sources */,
+				F2F8358D26A731C5007E13C8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,6 +827,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F210E34926A9E2BB00A74A1E /* Model.xcdatamodel */,
+			);
+			currentVersion = F210E34926A9E2BB00A74A1E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F252ECED26A72B390039413C /* Project object */;
 }

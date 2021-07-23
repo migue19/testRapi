@@ -1,20 +1,26 @@
 PODS:
   - ConnectionLayer (0.0.2)
   - NUTComponents (0.1.2)
+  - NutUtils (1.0.1):
+    - NutUtils/Optionals (= 1.0.1)
+  - NutUtils/Optionals (1.0.1)
 
 DEPENDENCIES:
   - ConnectionLayer
   - NUTComponents
+  - NutUtils
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ConnectionLayer
     - NUTComponents
+    - NutUtils
 
 SPEC CHECKSUMS:
   ConnectionLayer: 6e211e10e5e921a2797256b3ad1ba37cf43d1e52
   NUTComponents: 89eec7a960308321f6d96688659e76f989eeca34
+  NutUtils: 271b87e99a8ba50b996cc14afd2645c9695657f1
 
-PODFILE CHECKSUM: 1005104aa4b882f3a7c6732e828ca233a1ca53e2
+PODFILE CHECKSUM: 02f59701eba09e376bb36fabeff5485fe0a3c21a
 
 COCOAPODS: 1.10.1

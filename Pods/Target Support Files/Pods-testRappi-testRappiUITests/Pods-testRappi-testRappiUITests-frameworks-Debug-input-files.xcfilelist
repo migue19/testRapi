@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ConnectionLayer/ConnectionLayer.framework
 ${BUILT_PRODUCTS_DIR}/NUTComponents/NUTComponents.framework
+${BUILT_PRODUCTS_DIR}/NutUtils/NutUtils.framework

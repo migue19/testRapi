@@ -10,6 +10,7 @@ target 'testRappi' do
   # Pods for testRappi
   pod 'ConnectionLayer'
   pod 'NUTComponents'
+  pod 'NutUtils'
   target 'testRappiTests' do
     inherit! :search_paths
     # Pods for testing
