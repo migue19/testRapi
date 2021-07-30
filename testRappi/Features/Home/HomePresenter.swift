@@ -20,8 +20,11 @@ extension HomePresenter: HomePresenterProtocol {
     
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
+    func sendPopularMovies(data: MovieListResponse) {
+        view?.showPopularMovies(data: data)
+    }
     func sendRequestToken(token: String) {
-        let urlString = MovieDBURL.urlWeb.replacingOccurrences(of: "{request_token}", with: token)
+        let urlString = TMDb.urlWeb.replacingOccurrences(of: "{request_token}", with: token)
         guard let url: URL = URL(string: urlString) else {
             return
         }

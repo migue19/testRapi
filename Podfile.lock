@@ -1,9 +1,13 @@
 PODS:
   - ConnectionLayer (0.0.2)
   - NUTComponents (0.1.2)
-  - NutUtils (1.0.1):
-    - NutUtils/Optionals (= 1.0.1)
-  - NutUtils/Optionals (1.0.1)
+  - NutUtils (1.0.7):
+    - NutUtils/Optionals (= 1.0.7)
+    - NutUtils/UIImage (= 1.0.7)
+    - NutUtils/UIView (= 1.0.7)
+  - NutUtils/Optionals (1.0.7)
+  - NutUtils/UIImage (1.0.7)
+  - NutUtils/UIView (1.0.7)
 
 DEPENDENCIES:
   - ConnectionLayer
@@ -19,8 +23,8 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ConnectionLayer: 6e211e10e5e921a2797256b3ad1ba37cf43d1e52
   NUTComponents: 89eec7a960308321f6d96688659e76f989eeca34
-  NutUtils: 271b87e99a8ba50b996cc14afd2645c9695657f1
+  NutUtils: f5e6eebca4664be87fc4d4b29029687fef59a1bb
 
 PODFILE CHECKSUM: 02f59701eba09e376bb36fabeff5485fe0a3c21a
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2

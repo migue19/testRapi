@@ -11,6 +11,7 @@ import UIKit
 /// Protocolo que define los métodos y atributos para el view de Home
 protocol HomeViewProtocol {
     // PRESENTER -> VIEW
+    func showPopularMovies(data: MovieListResponse)
 }
 /// Protocolo que define los métodos y atributos para el routing de Home
 protocol HomeRouterProtocol {
@@ -31,5 +32,6 @@ protocol HomeInteractorInputProtocol {
 protocol HomeInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
     func sendRequestToken(token: String)
+    func sendPopularMovies(data: MovieListResponse)
 }
 

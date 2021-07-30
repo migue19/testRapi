@@ -15,66 +15,82 @@ class HomeInteractor {
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
         if let token = Persistence.getInfoUserDefaults(key: "accessToken") {
-            getMovieRated(token: token)
-            getAccountList(token: token)
+            //getList(type: .list, token: token)
+            //getList(type: .favoriteMovies, token: token)
+            //getList(type: .movieRecommendations, token: token)
+            //getList(type: .movieWatchlist, token: token)
+            //getList(type: .movieRated, token: token)
+            getMovieV3()
         } else {
             getRequestToken()
         }
     }
-    func getMovieRated(token: String) {
-        let headers = [
-            "Authorization": "Bearer \(token)",
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        ]
-        let accountId = Persistence.getInfoUserDefaults(key: "accountId")
-        let url = MovieDBURL.movieRated.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { (data, error) in
+    
+    func getList(type: AccountService, token: String) {
+        let url = type.url
+        getMovie(url: url, token: token)
+    }
+    func getMovieV3() {
+        let url = TMDb.ApiV3.moviePopular
+        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { (data, error) in
             guard let data = data else {
                 return
             }
-            let decoder = JSONDecoder()
-            do {
-                let accountListResponse = try decoder.decode(AccountListResponse.self, from: data)
-                print(accountListResponse)
-            } catch {
-                self.receiveError(message: error.localizedDescription)
+            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+                self.receivePopularMovies(data: entity)
             }
         }
     }
-    func getAccountList(token: String) {
+    func receivePopularMovies(data: MovieListResponse) {
+        DispatchQueue.main.async {
+            self.presenter?.sendPopularMovies(data: data)
+        }
+    }
+    func decode<T: Codable>(_ type: T.Type, from data: Data, serviceName: String) -> T? {
+        do {
+            return try JSONDecoder().decode(type, from: data)
+        } catch let DecodingError.dataCorrupted(context) {
+            print("DecodingError in \(serviceName) - Context:", context.codingPath)
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("DecodingError in \(serviceName) - Key '\(key)' not found:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("DecodingError in \(serviceName) - Value '\(value)' not found:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch let DecodingError.typeMismatch(type, context) {
+            print("DecodingError in \(serviceName) - Type '\(type)' mismatch:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch {
+            print("DecodingError in \(serviceName) - Error: ", error)
+        }
+        return nil
+    }
+    func getMovie(url: String, token: String) {
         let headers = [
             "Authorization": "Bearer \(token)",
             "Content-Type": "application/json",
             "Accept": "application/json"
         ]
         let accountId = Persistence.getInfoUserDefaults(key: "accountId")
-        let url = MovieDBURL.accountList.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
+        let url = url.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
         connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { (data, error) in
             guard let data = data else {
                 return
             }
-            let decoder = JSONDecoder()
-            do {
-                let accountListResponse = try decoder.decode(AccountListResponse.self, from: data)
+            if let accountListResponse = self.decode(AccountListResponse.self, from: data, serviceName: "AccountListService") {
                 print(accountListResponse)
-            } catch {
-                self.receiveError(message: error.localizedDescription)
             }
         }
     }
     func getRequestToken() {
-        let headers = ["Authorization": "Bearer \(MovieDBURL.readAccessToken)"]
-        connectionLayer.conneccionRequest(url: MovieDBURL.requestToken, method: .post, headers: headers, parameters: nil) { (data, error) in
+        let headers = ["Authorization": "Bearer \(TMDb.readAccessToken)"]
+        let url = TMDb.ApiV4.requestToken
+        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: nil) { (data, error) in
             guard let data = data else {
                 return
             }
-            let decoder = JSONDecoder()
-            do {
-                let requestToken = try decoder.decode(RequestTokenResponse.self, from: data)
+            if let requestToken = self.decode(RequestTokenResponse.self, from: data, serviceName: "kdkdkl") {
                 self.receiveData(entity: requestToken)
-            } catch {
-                self.receiveError(message: error.localizedDescription)
             }
         }
     }
@@ -90,21 +106,18 @@ extension HomeInteractor: HomeInteractorInputProtocol {
     }
     func requestAccessToken(token: String) {
         let headers = [
-            "Authorization": "Bearer \(MovieDBURL.readAccessToken)",
+            "Authorization": "Bearer \(TMDb.readAccessToken)",
             "Content-Type": "application/json",
             "Accept": "application/json"
         ]
         let body = ["request_token": token]
-        connectionLayer.conneccionRequest(url: MovieDBURL.accessToken, method: .post, headers: headers, parameters: body) { (data, error) in
+        let url = TMDb.ApiV4.accessToken
+        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: body) { (data, error) in
             guard let data = data else {
                 return
             }
-            let decoder = JSONDecoder()
-            do {
-                let accessTokenResponse = try decoder.decode(AccessTokenResponse.self, from: data)
+            if let accessTokenResponse = self.decode(AccessTokenResponse.self, from: data, serviceName: "AccessTokenService") {
                 self.saveAccessToken(accessTokenResponse: accessTokenResponse)
-            } catch {
-                self.receiveError(message: error.localizedDescription)
             }
         }
     }
