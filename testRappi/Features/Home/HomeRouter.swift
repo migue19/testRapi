@@ -32,7 +32,7 @@ extension HomeRouter: HomeRouterProtocol {
     }
 }
 extension HomeRouter: AuthApproveTokenDelegate {
-    func ApproveSuccess(token: String) {
+    func approveSuccess(token: String) {
         interactor.requestAccessToken(token: token)
     }
 }
