@@ -70,7 +70,7 @@ class BaseListResponse: Codable {
 class AccountListResponse: BaseListResponse {
     var results: [AccountListDetail]
     private enum CodingKeys: String, CodingKey {
-        case results = "results"
+        case results
     }
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -81,7 +81,7 @@ class AccountListResponse: BaseListResponse {
 class MovieListResponse: BaseListResponse {
     var results: [MovieListDetail]
     private enum CodingKeys: String, CodingKey {
-        case results = "results"
+        case results
     }
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -115,7 +115,7 @@ struct AccountListDetail: Codable {
 //    }
 }
 struct MovieListDetail: Codable {
-    var id: Int
+    var identifier: Int
     var overview: String
     var posterPath: String
     var adult: Bool
@@ -130,7 +130,7 @@ struct MovieListDetail: Codable {
     var video: Bool
     var voteAverage: Float
     private enum CodingKeys: String, CodingKey {
-        case id = "id"
+        case identifier = "id"
         case overview = "overview"
         case posterPath = "poster_path"
         case adult = "adult"
@@ -147,7 +147,7 @@ struct MovieListDetail: Codable {
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.id = try container.decode(Int.self, forKey: .id)
+        self.identifier = try container.decode(Int.self, forKey: .identifier)
         self.overview = try container.decode(String.self, forKey: .overview)
         self.posterPath = try container.decode(String.self, forKey: .posterPath)
         self.adult = try container.decode(Bool.self, forKey: .adult)
@@ -169,7 +169,6 @@ enum AccountService {
     case movieRecommendations
     case movieWatchlist
     case movieRated
-    
     var url: String {
         switch self {
         case .list:

@@ -26,7 +26,7 @@ class HomeVC: UIViewController {
         getData()
     }
 }
-///Protocolo para recibir datos de presenter.
+/// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {
     func showPopularMovies(data: MovieListResponse) {
         self.dataSource = data.results

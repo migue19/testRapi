@@ -1,0 +1,11 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+# implicitly
+line_length: 300
+#function_body_length:
+ # - 300 # warning
+ #- 400 # error
+disabled_rules:
+ # - weak_delegate
+ # - class_delegate_protocol

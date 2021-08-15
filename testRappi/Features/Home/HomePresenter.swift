@@ -17,7 +17,6 @@ extension HomePresenter: HomePresenterProtocol {
     func getInformation() {
         interactor?.getMovies()
     }
-    
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
     func sendPopularMovies(data: MovieListResponse) {

@@ -15,17 +15,17 @@ class HomeInteractor {
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
         if let token = Persistence.getInfoUserDefaults(key: "accessToken") {
-            //getList(type: .list, token: token)
-            //getList(type: .favoriteMovies, token: token)
-            //getList(type: .movieRecommendations, token: token)
-            //getList(type: .movieWatchlist, token: token)
-            //getList(type: .movieRated, token: token)
+            // getList(type: .list, token: token)
+            // getList(type: .favoriteMovies, token: token)
+            // getList(type: .movieRecommendations, token: token)
+            // getList(type: .movieWatchlist, token: token)
+            // getList(type: .movieRated, token: token)
+            print(token)
             getMovieV3()
         } else {
             getRequestToken()
         }
     }
-    
     func getList(type: AccountService, token: String) {
         let url = type.url
         getMovie(url: url, token: token)
@@ -33,6 +33,9 @@ extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovieV3() {
         let url = TMDb.ApiV3.moviePopular
         connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { (data, error) in
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
@@ -74,6 +77,9 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         let accountId = Persistence.getInfoUserDefaults(key: "accountId")
         let url = url.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
         connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { (data, error) in
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
@@ -86,6 +92,9 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         let headers = ["Authorization": "Bearer \(TMDb.readAccessToken)"]
         let url = TMDb.ApiV4.requestToken
         connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: nil) { (data, error) in
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
@@ -113,6 +122,9 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         let body = ["request_token": token]
         let url = TMDb.ApiV4.accessToken
         connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: body) { (data, error) in
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
