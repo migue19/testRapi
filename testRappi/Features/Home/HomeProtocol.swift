@@ -34,4 +34,3 @@ protocol HomeInteractorOutputProtocol {
     func sendRequestToken(token: String)
     func sendPopularMovies(data: MovieListResponse)
 }
-

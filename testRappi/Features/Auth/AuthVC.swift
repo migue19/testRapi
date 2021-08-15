@@ -8,15 +8,11 @@
 import UIKit
 import WebKit
 import NutUtils
-protocol AuthApproveTokenDelegate {
-    func approveSuccess(token: String)
-}
 class AuthVC: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     var url: URL!
     var token: String!
-    var delegate: AuthApproveTokenDelegate?
-    
+    weak var delegate: AuthApproveTokenDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self

@@ -28,6 +28,7 @@
 		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
 		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
+		F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */; };
 		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
 		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
 		F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */; };
@@ -88,6 +89,7 @@
 		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		F2A054A326A86760005DF626 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F2E9EF6B26C979C700E9A9AB /* Protocols */,
 				F2A054A426A86882005DF626 /* AuthVC.swift */,
 				F2A054A526A86882005DF626 /* AuthVC.xib */,
 			);
@@ -243,6 +246,14 @@
 				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F2E9EF6B26C979C700E9A9AB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F2F8357926A72EF0007E13C8 /* Features */ = {
@@ -548,6 +559,7 @@
 				F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */,
 				F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */,
 				F24CA7F326B4C6F200325B24 /* SearchInteractor.swift in Sources */,
+				F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */,
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */,
 				F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */,

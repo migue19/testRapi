@@ -15,7 +15,6 @@ class Persistence {
         let defaults = UserDefaults.standard
         return defaults.string(forKey: key)
     }
-    
     static func deleteInfoUserDefaults(key: String) {
         let defaults = UserDefaults.standard
         defaults.removeObject(forKey: key)

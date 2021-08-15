@@ -10,7 +10,6 @@ import Foundation
 
 class SearchInteractor {
     var presenter: SearchInteractorOutputProtocol?
-    
 }
 extension SearchInteractor: SearchInteractorInputProtocol {
 }
