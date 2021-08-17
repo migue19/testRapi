@@ -15,24 +15,30 @@ class HomeInteractor {
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
         if let token = Persistence.getInfoUserDefaults(key: "accessToken") {
-            //getList(type: .list, token: token)
-            //getList(type: .favoriteMovies, token: token)
-            //getList(type: .movieRecommendations, token: token)
-            //getList(type: .movieWatchlist, token: token)
-            //getList(type: .movieRated, token: token)
+            // getList(type: .list, token: token)
+            // getList(type: .favoriteMovies, token: token)
+            // getList(type: .movieRecommendations, token: token)
+            // getList(type: .movieWatchlist, token: token)
+            // getList(type: .movieRated, token: token)
+            print(token)
             getMovieV3()
         } else {
             getRequestToken()
         }
     }
-    
     func getList(type: AccountService, token: String) {
         let url = type.url
         getMovie(url: url, token: token)
     }
     func getMovieV3() {
         let url = TMDb.ApiV3.moviePopular
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { (data, error) in
+        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+            guard let self = self else {
+                return
+            }
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
@@ -42,8 +48,8 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         }
     }
     func receivePopularMovies(data: MovieListResponse) {
-        DispatchQueue.main.async {
-            self.presenter?.sendPopularMovies(data: data)
+        DispatchQueue.main.async { [weak self] in
+            self?.presenter?.sendPopularMovies(data: data)
         }
     }
     func decode<T: Codable>(_ type: T.Type, from data: Data, serviceName: String) -> T? {
@@ -73,7 +79,13 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         ]
         let accountId = Persistence.getInfoUserDefaults(key: "accountId")
         let url = url.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { (data, error) in
+        connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { [weak self] (data, error) in
+            guard let self = self else {
+                return
+            }
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
@@ -85,23 +97,29 @@ extension HomeInteractor: HomeInteractorInputProtocol {
     func getRequestToken() {
         let headers = ["Authorization": "Bearer \(TMDb.readAccessToken)"]
         let url = TMDb.ApiV4.requestToken
-        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: nil) { (data, error) in
+        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: nil) { [weak self] (data, error) in
+            guard let self = self else {
+                return
+            }
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }
-            if let requestToken = self.decode(RequestTokenResponse.self, from: data, serviceName: "kdkdkl") {
+            if let requestToken = self.decode(RequestTokenResponse.self, from: data, serviceName: "Request Token") {
                 self.receiveData(entity: requestToken)
             }
         }
     }
     func receiveData(entity: RequestTokenResponse) {
-        DispatchQueue.main.async {
-            self.presenter?.sendRequestToken(token: entity.token)
+        DispatchQueue.main.async { [weak self] in
+            self?.presenter?.sendRequestToken(token: entity.token)
         }
     }
     func receiveError(message: String) {
-        DispatchQueue.main.async {
-            print(message)
+        DispatchQueue.main.async { [weak self] in
+            self?.presenter?.sendErrorMessage(message: message)
         }
     }
     func requestAccessToken(token: String) {
@@ -112,7 +130,13 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         ]
         let body = ["request_token": token]
         let url = TMDb.ApiV4.accessToken
-        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: body) { (data, error) in
+        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: body) { [weak self] (data, error) in
+            guard let self = self else {
+                return
+            }
+            if let error = error {
+                print(error)
+            }
             guard let data = data else {
                 return
             }

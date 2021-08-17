@@ -9,11 +9,9 @@
 import Foundation
 
 class SearchPresenter {
-    
     var view: SearchViewProtocol?
     var interactor: SearchInteractorInputProtocol?
     var router: SearchRouterProtocol?
-    
 }
 extension SearchPresenter: SearchPresenterProtocol {
 }

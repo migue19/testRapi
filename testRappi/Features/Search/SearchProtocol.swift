@@ -28,4 +28,3 @@ protocol SearchInteractorInputProtocol {
 protocol SearchInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
 }
-

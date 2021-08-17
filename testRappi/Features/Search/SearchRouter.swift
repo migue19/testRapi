@@ -32,4 +32,3 @@ class SearchRouter {
 }
 extension SearchRouter: SearchRouterProtocol {
 }
-
