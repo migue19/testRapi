@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 /// Protocolo que define los métodos y atributos para el view de Home
-protocol HomeViewProtocol {
+protocol HomeViewProtocol: GeneralView {
     // PRESENTER -> VIEW
     func showPopularMovies(data: MovieListResponse)
 }
@@ -33,4 +33,5 @@ protocol HomeInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
     func sendRequestToken(token: String)
     func sendPopularMovies(data: MovieListResponse)
+    func sendErrorMessage(message: String)
 }
