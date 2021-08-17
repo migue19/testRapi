@@ -25,6 +25,7 @@
 		F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0326A72B390039413C /* LaunchScreen.storyboard */; };
 		F252ED1026A72B3A0039413C /* testRappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED0F26A72B3A0039413C /* testRappiTests.swift */; };
 		F252ED1B26A72B3A0039413C /* testRappiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED1A26A72B3A0039413C /* testRappiUITests.swift */; };
+		F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992526CC28440043B35C /* BaseProtocol.swift */; };
 		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
 		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
@@ -86,6 +87,7 @@
 		F252ED1626A72B3A0039413C /* testRappiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testRappiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F252ED1A26A72B3A0039413C /* testRappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testRappiUITests.swift; sourceTree = "<group>"; };
 		F252ED1C26A72B3A0039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F28C992526CC28440043B35C /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		F252ECF726A72B390039413C /* testRappi */ = {
 			isa = PBXGroup;
 			children = (
+				F2E9EF6E26C98B7000E9A9AB /* Commons */,
 				F2A054D426A8E951005DF626 /* Persistence */,
 				F2F8358B26A731AD007E13C8 /* Constants */,
 				F2F8357926A72EF0007E13C8 /* Features */,
@@ -254,6 +257,14 @@
 				F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F2E9EF6E26C98B7000E9A9AB /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F28C992526CC28440043B35C /* BaseProtocol.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		F2F8357926A72EF0007E13C8 /* Features */ = {
@@ -574,6 +585,7 @@
 				F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */,
 				F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */,
 				F210E34A26A9E2BB00A74A1E /* Model.xcdatamodeld in Sources */,
+				F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */,
 				F2F8358D26A731C5007E13C8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

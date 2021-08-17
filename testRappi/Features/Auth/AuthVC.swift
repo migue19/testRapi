@@ -36,8 +36,11 @@ extension AuthVC: WKNavigationDelegate {
         let url = navigationAction.request.url
         if url?.absoluteString == "https://www.themoviedb.org/auth/access/approve" {
             self.dismiss(animated: true) { [weak self] in
-                let token = self?.token
-                self?.delegate?.approveSuccess(token: token.valueOrEmpty)
+                guard let self = self else {
+                    return
+                }
+                let token = self.token
+                self.delegate?.approveSuccess(token: token.valueOrEmpty)
             }
         }
         decisionHandler(.allow)

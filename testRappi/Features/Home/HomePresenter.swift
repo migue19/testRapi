@@ -19,6 +19,9 @@ extension HomePresenter: HomePresenterProtocol {
     }
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
+    func sendErrorMessage(message: String) {
+        view?.showMessage(message: message)
+    }
     func sendPopularMovies(data: MovieListResponse) {
         view?.showPopularMovies(data: data)
     }
