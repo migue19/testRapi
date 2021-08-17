@@ -8,15 +8,11 @@
 import UIKit
 import WebKit
 import NutUtils
-protocol AuthApproveTokenDelegate {
-    func ApproveSuccess(token: String)
-}
 class AuthVC: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     var url: URL!
     var token: String!
-    var delegate: AuthApproveTokenDelegate?
-    
+    weak var delegate: AuthApproveTokenDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self
@@ -40,8 +36,11 @@ extension AuthVC: WKNavigationDelegate {
         let url = navigationAction.request.url
         if url?.absoluteString == "https://www.themoviedb.org/auth/access/approve" {
             self.dismiss(animated: true) { [weak self] in
-                let token = self?.token
-                self?.delegate?.ApproveSuccess(token: token.valueOrEmpty)
+                guard let self = self else {
+                    return
+                }
+                let token = self.token
+                self.delegate?.approveSuccess(token: token.valueOrEmpty)
             }
         }
         decisionHandler(.allow)

@@ -17,6 +17,6 @@ class SearchVC: UIViewController {
         super.viewDidLoad()
     }
 }
-///Protocolo para recibir datos de presenter.
+/// Protocolo para recibir datos de presenter.
 extension SearchVC: SearchViewProtocol {
 }

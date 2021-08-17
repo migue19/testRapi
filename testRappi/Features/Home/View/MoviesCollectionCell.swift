@@ -7,10 +7,9 @@
 
 import UIKit
 import NutUtils
-class MoviesCollectionCell: UICollectionViewCell {
+final class MoviesCollectionCell: UICollectionViewCell {
     @IBOutlet weak var imageView: ImageLoader!
     @IBOutlet weak var titleLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
