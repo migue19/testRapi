@@ -161,8 +161,9 @@
 		F22063BC26B47415004F2A80 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */,
-				F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */,
+				F28C993126CC63C40043B35C /* Cell */,
+				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
+				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +255,47 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F28C993126CC63C40043B35C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */,
+				F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F28C993226CC63E60043B35C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F28C993326CC63F90043B35C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F28C993426CC64070043B35C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F28C993526CC641A0043B35C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		F2A054A326A86760005DF626 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,14 +344,12 @@
 		F2F8357A26A72EFD007E13C8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F22063BC26B47415004F2A80 /* View */,
+				F28C993526CC641A0043B35C /* Protocol */,
+				F28C993426CC64070043B35C /* Router */,
 				F2F8358E26A77FE2007E13C8 /* Entity */,
-				F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */,
-				F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */,
-				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
-				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
-				F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */,
-				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
+				F28C993326CC63F90043B35C /* Presenter */,
+				F28C993226CC63E60043B35C /* Interactor */,
+				F22063BC26B47415004F2A80 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
