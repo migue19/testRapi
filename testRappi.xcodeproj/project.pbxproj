@@ -26,6 +26,8 @@
 		F252ED1026A72B3A0039413C /* testRappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED0F26A72B3A0039413C /* testRappiTests.swift */; };
 		F252ED1B26A72B3A0039413C /* testRappiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED1A26A72B3A0039413C /* testRappiUITests.swift */; };
 		F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992526CC28440043B35C /* BaseProtocol.swift */; };
+		F28C992E26CC30990043B35C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992C26CC30990043B35C /* TabBarVC.swift */; };
+		F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28C992D26CC30990043B35C /* TabBarVC.xib */; };
 		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
 		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
@@ -88,6 +90,8 @@
 		F252ED1A26A72B3A0039413C /* testRappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testRappiUITests.swift; sourceTree = "<group>"; };
 		F252ED1C26A72B3A0039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28C992526CC28440043B35C /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		F28C992C26CC30990043B35C /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		F28C992D26CC30990043B35C /* TabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarVC.xib; sourceTree = "<group>"; };
 		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -157,8 +161,9 @@
 		F22063BC26B47415004F2A80 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */,
-				F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */,
+				F28C993126CC63C40043B35C /* Cell */,
+				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
+				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,6 +238,64 @@
 			path = testRappiUITests;
 			sourceTree = "<group>";
 		};
+		F28C992726CC2F4F0043B35C /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F28C993026CC62CC0043B35C /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F28C993026CC62CC0043B35C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F28C992D26CC30990043B35C /* TabBarVC.xib */,
+				F28C992C26CC30990043B35C /* TabBarVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F28C993126CC63C40043B35C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */,
+				F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F28C993226CC63E60043B35C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F28C993326CC63F90043B35C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F28C993426CC64070043B35C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F28C993526CC641A0043B35C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		F2A054A326A86760005DF626 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +333,7 @@
 		F2F8357926A72EF0007E13C8 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F28C992726CC2F4F0043B35C /* TabBar */,
 				F24CA7E926B4BC9B00325B24 /* Search */,
 				F2A054A326A86760005DF626 /* Auth */,
 				F2F8357A26A72EFD007E13C8 /* Home */,
@@ -280,14 +344,12 @@
 		F2F8357A26A72EFD007E13C8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F22063BC26B47415004F2A80 /* View */,
+				F28C993526CC641A0043B35C /* Protocol */,
+				F28C993426CC64070043B35C /* Router */,
 				F2F8358E26A77FE2007E13C8 /* Entity */,
-				F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */,
-				F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */,
-				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
-				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
-				F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */,
-				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
+				F28C993326CC63F90043B35C /* Presenter */,
+				F28C993226CC63E60043B35C /* Interactor */,
+				F22063BC26B47415004F2A80 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -418,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22063C026B47469004F2A80 /* MoviesCollectionCell.xib in Resources */,
+				F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */,
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
 				F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
@@ -574,6 +637,7 @@
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */,
 				F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */,
+				F28C992E26CC30990043B35C /* TabBarVC.swift in Sources */,
 				F24CA7F426B4C6F200325B24 /* SearchProtocol.swift in Sources */,
 				F2A054A626A86882005DF626 /* AuthVC.swift in Sources */,
 				F24CA7F226B4C6F200325B24 /* SearchRouter.swift in Sources */,

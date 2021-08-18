@@ -10,11 +10,10 @@ import Foundation
 import UIKit
 
 class SearchRouter {
-    private var view: SearchVC
+    var view: SearchVC
     private var presenter: SearchPresenter
     private var interactor: SearchInteractor
-    private var window: UIWindow?
-    init(in window: UIWindow?) {
+    init() {
         self.view = SearchVC()
         self.presenter = SearchPresenter()
         self.interactor = SearchInteractor()
@@ -23,11 +22,6 @@ class SearchRouter {
         presenter.interactor = self.interactor
         presenter.router = self
         interactor.presenter = self.presenter
-        self.window = window
-    }
-    func showView() {
-        window?.rootViewController = UINavigationController(rootViewController: view)
-        window?.makeKeyAndVisible()
     }
 }
 extension SearchRouter: SearchRouterProtocol {
