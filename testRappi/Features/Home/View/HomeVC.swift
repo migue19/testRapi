@@ -22,6 +22,7 @@ class HomeVC: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "MoviesCollectionCell", bundle: nil), forCellWithReuseIdentifier: "MoviesCollectionCell")
+        collectionView.register(UINib(nibName: "HeaderCollectionView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionView")
         getData()
     }
 }
@@ -43,6 +44,17 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     }
 }
 extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
+    }
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionView", for: indexPath) as? HeaderCollectionView else {
+            return UICollectionReusableView()
+        }
+        let title = indexPath.section == 0 ? "Amigos" : "Profesiones"
+        header.setupCell(title: title)
+        return header
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }

@@ -33,6 +33,8 @@
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
 		F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D0D59E26CF2114003C7EB2 /* Localizable.strings */; };
 		F2D0D5A326CF22F7003C7EB2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A226CF22F7003C7EB2 /* String.swift */; };
+		F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */; };
+		F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */; };
 		F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */; };
 		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
 		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
@@ -99,6 +101,8 @@
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F2D0D59E26CF2114003C7EB2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F2D0D5A226CF22F7003C7EB2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionView.swift; sourceTree = "<group>"; };
+		F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionView.xib; sourceTree = "<group>"; };
 		F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		F22063BC26B47415004F2A80 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F29179AF26CFEEE500C07E35 /* Header */,
 				F28C993126CC63C40043B35C /* Cell */,
 				F2F8358726A72F94007E13C8 /* HomeVC.swift */,
 				F2F8358826A72F94007E13C8 /* HomeVC.xib */,
@@ -300,6 +305,15 @@
 				F2F8357F26A72F1B007E13C8 /* HomeProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F29179AF26CFEEE500C07E35 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */,
+				F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		F2A054A326A86760005DF626 /* Auth */ = {
@@ -497,6 +511,7 @@
 				F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */,
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
 				F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */,
+				F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
 				F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */,
 				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
@@ -648,6 +663,7 @@
 				F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */,
 				F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */,
 				F24CA7F326B4C6F200325B24 /* SearchInteractor.swift in Sources */,
+				F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */,
 				F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */,
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */,
