@@ -9,28 +9,28 @@
 import Foundation
 import UIKit
 /// Protocolo que define los métodos y atributos para el view de Home
+/// PRESENTER -> VIEW
 protocol HomeViewProtocol: GeneralView {
-    // PRESENTER -> VIEW
     func showPopularMovies(data: MovieListResponse)
 }
 /// Protocolo que define los métodos y atributos para el routing de Home
+/// PRESENTER -> ROUTING
 protocol HomeRouterProtocol {
-    // PRESENTER -> ROUTING
     func showApproveToken(url: URL, token: String)
 }
 /// Protocolo que define los métodos y atributos para el Presenter de Home
+/// VIEW -> PRESENTER
 protocol HomePresenterProtocol {
-    // VIEW -> PRESENTER
     func getInformation()
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
+/// PRESENTER -> INTERACTOR
 protocol HomeInteractorInputProtocol {
-    // PRESENTER -> INTERACTOR
     func getMovies()
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
+/// INTERACTOR -> PRESENTER
 protocol HomeInteractorOutputProtocol {
-    // INTERACTOR -> PRESENTER
     func sendRequestToken(token: String)
     func sendPopularMovies(data: MovieListResponse)
     func sendErrorMessage(message: String)

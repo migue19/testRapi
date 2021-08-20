@@ -15,10 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let home = HomeRouter()
-        let navigationController = UINavigationController(rootViewController: home.view)
-        navigationController.modalPresentationStyle = .fullScreen
-        window?.rootViewController = navigationController
+        let tabBar = TabBarVC()
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
     }
 
