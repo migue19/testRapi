@@ -31,6 +31,8 @@
 		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
 		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
+		F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2D0D59E26CF2114003C7EB2 /* Localizable.strings */; };
+		F2D0D5A326CF22F7003C7EB2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A226CF22F7003C7EB2 /* String.swift */; };
 		F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */; };
 		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
 		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
@@ -95,6 +97,8 @@
 		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F2D0D59E26CF2114003C7EB2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F2D0D5A226CF22F7003C7EB2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		F252ECF726A72B390039413C /* testRappi */ = {
 			isa = PBXGroup;
 			children = (
+				F2D0D5A126CF22DF003C7EB2 /* Extensions */,
 				F2E9EF6E26C98B7000E9A9AB /* Commons */,
 				F2A054D426A8E951005DF626 /* Persistence */,
 				F2F8358B26A731AD007E13C8 /* Constants */,
@@ -216,6 +221,7 @@
 				F252ED0326A72B390039413C /* LaunchScreen.storyboard */,
 				F252ED0626A72B390039413C /* Info.plist */,
 				F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */,
+				F2D0D59E26CF2114003C7EB2 /* Localizable.strings */,
 			);
 			path = testRappi;
 			sourceTree = "<group>";
@@ -312,6 +318,14 @@
 				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F2D0D5A126CF22DF003C7EB2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2D0D5A226CF22F7003C7EB2 /* String.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F2E9EF6B26C979C700E9A9AB /* Protocols */ = {
@@ -484,6 +498,7 @@
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
 				F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
+				F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */,
 				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
 				F252ED0226A72B390039413C /* Assets.xcassets in Resources */,
 			);
@@ -642,6 +657,7 @@
 				F2A054A626A86882005DF626 /* AuthVC.swift in Sources */,
 				F24CA7F226B4C6F200325B24 /* SearchRouter.swift in Sources */,
 				F24CA7F126B4C6F200325B24 /* SearchPresenter.swift in Sources */,
+				F2D0D5A326CF22F7003C7EB2 /* String.swift in Sources */,
 				F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */,
 				F2F8359026A78024007E13C8 /* AuthorizationEntity.swift in Sources */,
 				F24CA7F526B4C6F200325B24 /* SearchVC.swift in Sources */,
