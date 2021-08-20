@@ -13,7 +13,6 @@ class HomeVC: UIViewController {
     var dataSource: [MovieListDetail] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "The MovieDB"
         setupCollectionView()
     }
     private func getData() {

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  testRappi
+
+  Created by Miguel Mexicano Herrera on 19/08/21.
+  
+*/
+"my_test" = "Esta es una cadena de prueba";
+"movies" = "Peliculas";
+"search" = "Buscar";

@@ -15,8 +15,8 @@ class TabBarVC: UITabBarController {
     private func setupTabBar() {
         let home = HomeRouter()
         let search = SearchRouter()
-        home.view.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 0)
-        search.view.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        home.view.tabBarItem = UITabBarItem(title: "movies".localized, image: UIImage(named: "movie"), tag: 0)
+        search.view.tabBarItem = UITabBarItem(title: "search".localized, image: UIImage(named: "search"), tag: 0)
         self.viewControllers = [home.view, search.view]
     }
 }
