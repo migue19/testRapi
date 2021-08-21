@@ -13,6 +13,8 @@
 		F210E34A26A9E2BB00A74A1E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */; };
 		F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */; };
 		F22063C026B47469004F2A80 /* MoviesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */; };
+		F22CCE6126D150600013986C /* GroupCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22CCE5F26D150600013986C /* GroupCollectionCell.swift */; };
+		F22CCE6226D150600013986C /* GroupCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22CCE6026D150600013986C /* GroupCollectionCell.xib */; };
 		F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24CA7EA26B4C6F200325B24 /* SearchVC.xib */; };
 		F24CA7F126B4C6F200325B24 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CA7EB26B4C6F200325B24 /* SearchPresenter.swift */; };
 		F24CA7F226B4C6F200325B24 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CA7EC26B4C6F200325B24 /* SearchRouter.swift */; };
@@ -75,6 +77,8 @@
 		F210E34926A9E2BB00A74A1E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionCell.swift; sourceTree = "<group>"; };
 		F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesCollectionCell.xib; sourceTree = "<group>"; };
+		F22CCE5F26D150600013986C /* GroupCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionCell.swift; sourceTree = "<group>"; };
+		F22CCE6026D150600013986C /* GroupCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupCollectionCell.xib; sourceTree = "<group>"; };
 		F24CA7EA26B4C6F200325B24 /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		F24CA7EB26B4C6F200325B24 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		F24CA7EC26B4C6F200325B24 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 			children = (
 				F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */,
 				F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */,
+				F22CCE5F26D150600013986C /* GroupCollectionCell.swift */,
+				F22CCE6026D150600013986C /* GroupCollectionCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -510,6 +516,7 @@
 				F22063C026B47469004F2A80 /* MoviesCollectionCell.xib in Resources */,
 				F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */,
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
+				F22CCE6226D150600013986C /* GroupCollectionCell.xib in Resources */,
 				F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */,
 				F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
@@ -673,6 +680,7 @@
 				F2A054A626A86882005DF626 /* AuthVC.swift in Sources */,
 				F24CA7F226B4C6F200325B24 /* SearchRouter.swift in Sources */,
 				F24CA7F126B4C6F200325B24 /* SearchPresenter.swift in Sources */,
+				F22CCE6126D150600013986C /* GroupCollectionCell.swift in Sources */,
 				F2D0D5A326CF22F7003C7EB2 /* String.swift in Sources */,
 				F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */,
 				F2F8359026A78024007E13C8 /* AuthorizationEntity.swift in Sources */,
