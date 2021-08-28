@@ -11,6 +11,7 @@
 		181B9EE0AA56E80142B8FA30 /* Pods_testRappi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C584CC8FBF29CDC244BE7F73 /* Pods_testRappi.framework */; };
 		441B272D3B0E0B8A828EDFE1 /* Pods_testRappiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC25410A94561166FF07DDD /* Pods_testRappiTests.framework */; };
 		F20E418E26DA836C00E29FF4 /* MoviesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20E418D26DA836C00E29FF4 /* MoviesEntity.swift */; };
+		F20E419126DABD1D00E29FF4 /* popular_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = F20E419026DABD1D00E29FF4 /* popular_mock.json */; };
 		F210E34A26A9E2BB00A74A1E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F210E34826A9E2BB00A74A1E /* Model.xcdatamodeld */; };
 		F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */; };
 		F22063C026B47469004F2A80 /* MoviesCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */; };
@@ -76,6 +77,7 @@
 		E749234FE620519C527F541C /* Pods-testRappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testRappi.release.xcconfig"; path = "Target Support Files/Pods-testRappi/Pods-testRappi.release.xcconfig"; sourceTree = "<group>"; };
 		EE0D9C8916F71B2F8E27D118 /* Pods_testRappi_testRappiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testRappi_testRappiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20E418D26DA836C00E29FF4 /* MoviesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesEntity.swift; sourceTree = "<group>"; };
+		F20E419026DABD1D00E29FF4 /* popular_mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = popular_mock.json; sourceTree = "<group>"; };
 		F210E34926A9E2BB00A74A1E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		F22063BD26B47469004F2A80 /* MoviesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionCell.swift; sourceTree = "<group>"; };
 		F22063BE26B47469004F2A80 /* MoviesCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoviesCollectionCell.xib; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F20E418F26DABB8700E29FF4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F20E419026DABD1D00E29FF4 /* popular_mock.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		F22063BC26B47415004F2A80 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +231,7 @@
 		F252ECF726A72B390039413C /* testRappi */ = {
 			isa = PBXGroup;
 			children = (
+				F20E418F26DABB8700E29FF4 /* Mock */,
 				F2D0D5A126CF22DF003C7EB2 /* Extensions */,
 				F2E9EF6E26C98B7000E9A9AB /* Commons */,
 				F2A054D426A8E951005DF626 /* Persistence */,
@@ -518,6 +529,7 @@
 			files = (
 				F22063C026B47469004F2A80 /* MoviesCollectionCell.xib in Resources */,
 				F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */,
+				F20E419126DABD1D00E29FF4 /* popular_mock.json in Resources */,
 				F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */,
 				F22CCE6226D150600013986C /* GroupCollectionCell.xib in Resources */,
 				F24CA7F026B4C6F200325B24 /* SearchVC.xib in Resources */,
