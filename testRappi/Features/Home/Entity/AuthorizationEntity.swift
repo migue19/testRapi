@@ -78,17 +78,6 @@ class AccountListResponse: BaseListResponse {
         try super.init(from: decoder)
     }
 }
-class MovieListResponse: BaseListResponse {
-    var results: [MovieListDetail]
-    private enum CodingKeys: String, CodingKey {
-        case results
-    }
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.results = try container.decode([MovieListDetail].self, forKey: .results)
-        try super.init(from: decoder)
-    }
-}
 struct ErrorResponse {
     var message: String
 }

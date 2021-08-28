@@ -11,6 +11,8 @@ import ConnectionLayer
 class HomeInteractor {
     var presenter: HomeInteractorOutputProtocol?
     var connectionLayer = ConnectionLayer()
+    let dispatchGroup = DispatchGroup()
+    var movies: [MoviesResponseEntity] = []
 }
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
@@ -21,35 +23,79 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             // getList(type: .movieWatchlist, token: token)
             // getList(type: .movieRated, token: token)
             print(token)
-            getMovieV3()
+            getAllMovies()
         } else {
             getRequestToken()
+        }
+    }
+    func getAllMovies() {
+        DispatchQueue.global(qos: .userInitiated).async(group: dispatchGroup) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.getPopularMovie()
+            self.getTopRatedMovie()
+        }
+        dispatchGroup.notify(queue: .main) { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.movies.forEach { response in
+                let error = response.error
+                let movies = response.movies
+                let section = response.section
+                print(section, error.valueOrEmpty, movies ?? "")
+            }
+            self.receiveMovies(data: self.movies)
         }
     }
     func getList(type: AccountService, token: String) {
         let url = type.url
         getMovie(url: url, token: token)
     }
-    func getMovieV3() {
-        let url = TMDb.ApiV3.moviePopular
+    func getPopularMovie() {
+        let url = MoviesService.popular.url
+        dispatchGroup.enter()
         connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
             guard let self = self else {
                 return
             }
             if let error = error {
-                print(error)
+                self.movies.append(MoviesResponseEntity(section: .popular, movies: nil, error: error))
+                return
             }
             guard let data = data else {
                 return
             }
             if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
-                self.receivePopularMovies(data: entity)
+                self.movies.append(MoviesResponseEntity(section: .popular, movies: entity, error: nil))
             }
+            self.dispatchGroup.leave()
         }
     }
-    func receivePopularMovies(data: MovieListResponse) {
+    func getTopRatedMovie() {
+        let url = MoviesService.topRated.url
+        self.dispatchGroup.enter()
+        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+            guard let self = self else {
+                return
+            }
+            if let error = error {
+                self.movies.append(MoviesResponseEntity(section: .topRated, movies: nil, error: error))
+                return
+            }
+            guard let data = data else {
+                return
+            }
+            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+                self.movies.append(MoviesResponseEntity(section: .topRated, movies: entity, error: nil))
+            }
+            self.dispatchGroup.leave()
+        }
+    }
+    func receiveMovies(data: [MoviesResponseEntity]) {
         DispatchQueue.main.async { [weak self] in
-            self?.presenter?.sendPopularMovies(data: data)
+            self?.presenter?.sendMovies(data: data)
         }
     }
     func decode<T: Codable>(_ type: T.Type, from data: Data, serviceName: String) -> T? {

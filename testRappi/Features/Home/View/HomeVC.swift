@@ -10,8 +10,8 @@ import WebKit
 class HomeVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var presenter: HomePresenterProtocol?
-    let seccion: [String] = ["Upcoming", "Popular", "Top Rated"]
-    var movies: [MovieListDetail] = []
+    var movies: [MoviesResponseEntity] = []
+    var sections: [MoviesService] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -29,8 +29,9 @@ class HomeVC: UIViewController {
 }
 /// Protocolo para recibir datos de presenter.
 extension HomeVC: HomeViewProtocol {
-    func showPopularMovies(data: MovieListResponse) {
-        self.movies = data.results
+    func showMovies(data: [MoviesResponseEntity]) {
+        self.movies = data
+        self.sections = data.compactMap({ $0.section })
         self.collectionView.reloadData()
     }
 }
@@ -46,13 +47,13 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
 }
 extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return seccion.count
+        return sections.count
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionView.identifier, for: indexPath) as? HeaderCollectionView else {
             return UICollectionReusableView()
         }
-        let title = seccion[indexPath.section]
+        let title = sections[indexPath.section].title
         header.setupCell(title: title)
         return header
     }
@@ -61,7 +62,18 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GroupCollectionCell.identifier, for: indexPath) as? GroupCollectionCell else { return UICollectionViewCell() }
+        let currentSection = sections[indexPath.section]
+        let movies = getMoviesFor(section: currentSection)
         cell.setupCell(data: movies)
         return cell
+    }
+}
+extension HomeVC {
+    func getMoviesFor(section: MoviesService) -> [MovieListDetail] {
+        if let data = movies.filter({ $0.section == section }).first, let movies = data.movies {
+            return movies.results
+        } else {
+            return [MovieListDetail]()
+        }
     }
 }
