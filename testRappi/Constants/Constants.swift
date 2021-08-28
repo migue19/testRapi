@@ -39,6 +39,12 @@ struct TMDb {
         static var topRated: String {
             return movie + "/top_rated?api_key=" + key
         }
+        static var upcoming: String {
+            return movie + "/upcoming?api_key=" + key
+        }
+        static var nowPlaying: String {
+            return movie + "/now_playing?api_key=" + key
+        }
     }
     struct ApiV4 {
         static var url: String {

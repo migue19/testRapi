@@ -5,6 +5,11 @@
   Created by Miguel Mexicano Herrera on 19/08/21.
   
 */
-"my_test" = "Esta es una cadena de prueba";
+// MARK: - Title for TabBar
 "movies" = "Peliculas";
 "search" = "Buscar";
+// MARK: - Title for Section
+"section_popular" = "Popular";
+"section_top_rated" = "Top Rated";
+"section_upcoming" = "Upcoming";
+"section_now_playing" = "Now Playing";

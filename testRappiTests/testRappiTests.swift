@@ -23,7 +23,7 @@ class TestRappiTests: XCTestCase {
         let aux = self.movies
         print(aux)
     }
-    func testGetMoviesFor(section: MoviesService) -> [MovieListDetail] {
+    func testGetMoviesFor(section: TypeMovieV3) -> [MovieListDetail] {
         if let data = movies.filter({ $0.section == section }).first, let movies = data.movies {
             return movies.results
         } else {

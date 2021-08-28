@@ -16,13 +16,7 @@ class HomeInteractor {
 }
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
-        if let token = Persistence.getInfoUserDefaults(key: "accessToken") {
-            // getList(type: .list, token: token)
-            // getList(type: .favoriteMovies, token: token)
-            // getList(type: .movieRecommendations, token: token)
-            // getList(type: .movieWatchlist, token: token)
-            // getList(type: .movieRated, token: token)
-            print(token)
+        if Persistence.getInfoUserDefaults(key: "accessToken") != nil {
             getAllMovies()
         } else {
             getRequestToken()
@@ -33,8 +27,10 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             guard let self = self else {
                 return
             }
-            self.getPopularMovie()
-            self.getTopRatedMovie()
+            self.getMovieFor(type: .popular)
+            self.getMovieFor(type: .topRated)
+            self.getMovieFor(type: .upcoming)
+            self.getMovieFor(type: .nowPlaying)
         }
         dispatchGroup.notify(queue: .main) { [weak self] in
             guard let self = self else {
@@ -53,46 +49,66 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         let url = type.url
         getMovie(url: url, token: token)
     }
-    func getPopularMovie() {
-        let url = MoviesService.popular.url
+    func getMovieFor(type: TypeMovieV3) {
+        let url = type.url
         dispatchGroup.enter()
         connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
             guard let self = self else {
                 return
             }
             if let error = error {
-                self.movies.append(MoviesResponseEntity(section: .popular, movies: nil, error: error))
+                self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
                 return
             }
             guard let data = data else {
                 return
             }
             if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
-                self.movies.append(MoviesResponseEntity(section: .popular, movies: entity, error: nil))
+                self.movies.append(MoviesResponseEntity(section: type, movies: entity, error: nil))
             }
             self.dispatchGroup.leave()
         }
     }
-    func getTopRatedMovie() {
-        let url = MoviesService.topRated.url
-        self.dispatchGroup.enter()
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
-            guard let self = self else {
-                return
-            }
-            if let error = error {
-                self.movies.append(MoviesResponseEntity(section: .topRated, movies: nil, error: error))
-                return
-            }
-            guard let data = data else {
-                return
-            }
-            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
-                self.movies.append(MoviesResponseEntity(section: .topRated, movies: entity, error: nil))
-            }
-            self.dispatchGroup.leave()
-        }
-    }
+//    func getPopularMovie() {
+//        let url = TypeMovieV3.popular.url
+//        dispatchGroup.enter()
+//        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+//            guard let self = self else {
+//                return
+//            }
+//            if let error = error {
+//                self.movies.append(MoviesResponseEntity(section: .popular, movies: nil, error: error))
+//                return
+//            }
+//            guard let data = data else {
+//                return
+//            }
+//            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+//                self.movies.append(MoviesResponseEntity(section: .popular, movies: entity, error: nil))
+//            }
+//            self.dispatchGroup.leave()
+//        }
+//    }
+//    func getTopRatedMovie() {
+//        let url = TypeMovieV3.topRated.url
+//        self.dispatchGroup.enter()
+//        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+//            guard let self = self else {
+//                return
+//            }
+//            if let error = error {
+//                self.movies.append(MoviesResponseEntity(section: .topRated, movies: nil, error: error))
+//                return
+//            }
+//            guard let data = data else {
+//                return
+//            }
+//            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+//                self.movies.append(MoviesResponseEntity(section: .topRated, movies: entity, error: nil))
+//            }
+//            self.dispatchGroup.leave()
+//        }
+//    }
     func receiveMovies(data: [MoviesResponseEntity]) {
         DispatchQueue.main.async { [weak self] in
             self?.presenter?.sendMovies(data: data)

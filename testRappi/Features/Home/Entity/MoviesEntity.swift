@@ -4,29 +4,39 @@
 //
 //  Created by Miguel Mexicano Herrera on 28/08/21.
 //
-enum MoviesService {
+enum TypeMovieV3 {
     case popular
     case topRated
+    case upcoming
+    case nowPlaying
     var url: String {
         switch self {
         case .popular:
             return TMDb.ApiV3.popular
         case .topRated:
             return TMDb.ApiV3.topRated
+        case .upcoming:
+            return TMDb.ApiV3.upcoming
+        case .nowPlaying:
+            return TMDb.ApiV3.nowPlaying
         }
     }
     var title: String {
         switch self {
         case .popular:
-            return "Popular"
+            return "section_popular".localized
         case .topRated:
-            return "Top Rated"
+            return "section_top_rated".localized
+        case .upcoming:
+            return "section_upcoming".localized
+        case .nowPlaying:
+            return "section_now_playing".localized
         }
     }
 }
 /// Estructura que contiene las respuestas de los servicios de películas
 struct MoviesResponseEntity {
-    var section: MoviesService
+    var section: TypeMovieV3
     var movies: MovieListResponse?
     var error: String?
 }

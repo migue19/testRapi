@@ -11,7 +11,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var presenter: HomePresenterProtocol?
     var movies: [MoviesResponseEntity] = []
-    var sections: [MoviesService] = []
+    var sections: [TypeMovieV3] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -69,7 +69,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
     }
 }
 extension HomeVC {
-    func getMoviesFor(section: MoviesService) -> [MovieListDetail] {
+    func getMoviesFor(section: TypeMovieV3) -> [MovieListDetail] {
         if let data = movies.filter({ $0.section == section }).first, let movies = data.movies {
             return movies.results
         } else {
