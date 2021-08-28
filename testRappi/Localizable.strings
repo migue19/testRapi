@@ -13,3 +13,6 @@
 "section_top_rated" = "Top Rated";
 "section_upcoming" = "Upcoming";
 "section_now_playing" = "Now Playing";
+// MARK: - Errors
+"self_not_found" = "self-reference not found";
+"data_not_found" = "data not found";

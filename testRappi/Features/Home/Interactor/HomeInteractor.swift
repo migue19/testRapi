@@ -27,22 +27,20 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             guard let self = self else {
                 return
             }
-            self.getMovieFor(type: .popular)
-            self.getMovieFor(type: .topRated)
-            self.getMovieFor(type: .upcoming)
-            self.getMovieFor(type: .nowPlaying)
+            TypeMovieV3.allCases.forEach { [weak self] type in
+                self?.getMovieFor(type: type)
+            }
         }
         dispatchGroup.notify(queue: .main) { [weak self] in
             guard let self = self else {
                 return
             }
-            self.movies.forEach { response in
-                let error = response.error
-                let movies = response.movies
-                let section = response.section
-                print(section, error.valueOrEmpty, movies ?? "")
-            }
             self.receiveMovies(data: self.movies)
+        }
+    }
+    func receiveMovies(data: [MoviesResponseEntity]) {
+        DispatchQueue.main.async { [weak self] in
+            self?.presenter?.sendMovies(data: data)
         }
     }
     func getList(type: AccountService, token: String) {
@@ -54,84 +52,28 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         dispatchGroup.enter()
         connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
             guard let self = self else {
+                debugPrint("self_not_found".localized)
                 return
             }
             if let error = error {
                 self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
+                self.dispatchGroup.leave()
                 return
             }
             guard let data = data else {
+                let error = "data_not_found".localized
+                self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
+                self.dispatchGroup.leave()
                 return
             }
-            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+            if let entity = Utils.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
                 self.movies.append(MoviesResponseEntity(section: type, movies: entity, error: nil))
+            } else {
+                let error = "decode_error".localized
+                self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
             }
             self.dispatchGroup.leave()
         }
-    }
-//    func getPopularMovie() {
-//        let url = TypeMovieV3.popular.url
-//        dispatchGroup.enter()
-//        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
-//            guard let self = self else {
-//                return
-//            }
-//            if let error = error {
-//                self.movies.append(MoviesResponseEntity(section: .popular, movies: nil, error: error))
-//                return
-//            }
-//            guard let data = data else {
-//                return
-//            }
-//            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
-//                self.movies.append(MoviesResponseEntity(section: .popular, movies: entity, error: nil))
-//            }
-//            self.dispatchGroup.leave()
-//        }
-//    }
-//    func getTopRatedMovie() {
-//        let url = TypeMovieV3.topRated.url
-//        self.dispatchGroup.enter()
-//        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
-//            guard let self = self else {
-//                return
-//            }
-//            if let error = error {
-//                self.movies.append(MoviesResponseEntity(section: .topRated, movies: nil, error: error))
-//                return
-//            }
-//            guard let data = data else {
-//                return
-//            }
-//            if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
-//                self.movies.append(MoviesResponseEntity(section: .topRated, movies: entity, error: nil))
-//            }
-//            self.dispatchGroup.leave()
-//        }
-//    }
-    func receiveMovies(data: [MoviesResponseEntity]) {
-        DispatchQueue.main.async { [weak self] in
-            self?.presenter?.sendMovies(data: data)
-        }
-    }
-    func decode<T: Codable>(_ type: T.Type, from data: Data, serviceName: String) -> T? {
-        do {
-            return try JSONDecoder().decode(type, from: data)
-        } catch let DecodingError.dataCorrupted(context) {
-            print("DecodingError in \(serviceName) - Context:", context.codingPath)
-        } catch let DecodingError.keyNotFound(key, context) {
-            print("DecodingError in \(serviceName) - Key '\(key)' not found:", context.debugDescription)
-            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
-        } catch let DecodingError.valueNotFound(value, context) {
-            print("DecodingError in \(serviceName) - Value '\(value)' not found:", context.debugDescription)
-            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
-        } catch let DecodingError.typeMismatch(type, context) {
-            print("DecodingError in \(serviceName) - Type '\(type)' mismatch:", context.debugDescription)
-            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
-        } catch {
-            print("DecodingError in \(serviceName) - Error: ", error)
-        }
-        return nil
     }
     func getMovie(url: String, token: String) {
         let headers = [
@@ -146,12 +88,12 @@ extension HomeInteractor: HomeInteractorInputProtocol {
                 return
             }
             if let error = error {
-                print(error)
+                self.receiveError(message: error)
             }
             guard let data = data else {
                 return
             }
-            if let accountListResponse = self.decode(AccountListResponse.self, from: data, serviceName: "AccountListService") {
+            if let accountListResponse = Utils.decode(AccountListResponse.self, from: data, serviceName: "AccountListService") {
                 print(accountListResponse)
             }
         }
@@ -169,7 +111,7 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             guard let data = data else {
                 return
             }
-            if let requestToken = self.decode(RequestTokenResponse.self, from: data, serviceName: "Request Token") {
+            if let requestToken = Utils.decode(RequestTokenResponse.self, from: data, serviceName: "Request Token") {
                 self.receiveData(entity: requestToken)
             }
         }
@@ -202,7 +144,7 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             guard let data = data else {
                 return
             }
-            if let accessTokenResponse = self.decode(AccessTokenResponse.self, from: data, serviceName: "AccessTokenService") {
+            if let accessTokenResponse = Utils.decode(AccessTokenResponse.self, from: data, serviceName: "AccessTokenService") {
                 self.saveAccessToken(accessTokenResponse: accessTokenResponse)
             }
         }

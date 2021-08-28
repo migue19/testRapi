@@ -4,7 +4,7 @@
 //
 //  Created by Miguel Mexicano Herrera on 28/08/21.
 //
-enum TypeMovieV3 {
+enum TypeMovieV3: CaseIterable {
     case popular
     case topRated
     case upcoming
