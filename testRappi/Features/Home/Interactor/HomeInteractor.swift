@@ -40,8 +40,16 @@ extension HomeInteractor: HomeInteractorInputProtocol {
     }
     func receiveMovies(data: [MoviesResponseEntity]) {
         DispatchQueue.main.async { [weak self] in
-            self?.presenter?.sendMovies(data: data)
+            guard let self = self else {
+                return
+            }
+            let movies = self.sortedMovies(data: data)
+            self.presenter?.sendMovies(data: movies)
         }
+    }
+    private func sortedMovies(data: [MoviesResponseEntity]) -> [MoviesResponseEntity] {
+        let movies = data.sorted(by: { $0.section.title < $1.section.title })
+        return movies
     }
     func getList(type: AccountService, token: String) {
         let url = type.url

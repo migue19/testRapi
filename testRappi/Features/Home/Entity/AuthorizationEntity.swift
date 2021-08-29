@@ -106,14 +106,14 @@ struct AccountListDetail: Codable {
 struct MovieListDetail: Codable {
     var identifier: Int
     var overview: String
-    var posterPath: String
+    var posterPath: String?
     var adult: Bool
     var releaseDate: String
     var genreIds: [Int]
     var originalTitle: String
     var originalLanguage: String
     var title: String
-    var backdropPath: String
+    var backdropPath: String?
     var popularity: Float
     var voteCount: Int
     var video: Bool
@@ -138,14 +138,14 @@ struct MovieListDetail: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.identifier = try container.decode(Int.self, forKey: .identifier)
         self.overview = try container.decode(String.self, forKey: .overview)
-        self.posterPath = try container.decode(String.self, forKey: .posterPath)
+        self.posterPath = try container.decodeIfPresent(String.self, forKey: .posterPath)
         self.adult = try container.decode(Bool.self, forKey: .adult)
         self.releaseDate = try container.decode(String.self, forKey: .releaseDate)
         self.genreIds = try container.decode([Int].self, forKey: .genreIds)
         self.originalTitle = try container.decode(String.self, forKey: .originalTitle)
         self.originalLanguage = try container.decode(String.self, forKey: .originalLanguage)
         self.title = try container.decode(String.self, forKey: .title)
-        self.backdropPath = try container.decode(String.self, forKey: .backdropPath)
+        self.backdropPath = try container.decodeIfPresent(String.self, forKey: .backdropPath)
         self.popularity = try container.decode(Float.self, forKey: .popularity)
         self.voteCount = try container.decode(Int.self, forKey: .voteCount)
         self.video = try container.decode(Bool.self, forKey: .video)

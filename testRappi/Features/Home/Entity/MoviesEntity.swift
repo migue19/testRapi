@@ -34,6 +34,15 @@ enum TypeMovieV3: CaseIterable {
         }
     }
 }
+enum SearchType {
+    case search
+    var url: String {
+        switch self {
+        case .search:
+            return TMDb.ApiV3.search
+        }
+    }
+}
 /// Estructura que contiene las respuestas de los servicios de películas
 struct MoviesResponseEntity {
     var section: TypeMovieV3

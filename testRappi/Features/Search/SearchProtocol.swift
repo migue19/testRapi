@@ -11,6 +11,7 @@ import UIKit
 /// Protocolo que define los métodos y atributos para el view de Search
 protocol SearchViewProtocol {
     // PRESENTER -> VIEW
+    func showMovies(data: [MovieListDetail])
 }
 /// Protocolo que define los métodos y atributos para el routing de Search
 protocol SearchRouterProtocol {
@@ -19,12 +20,15 @@ protocol SearchRouterProtocol {
 /// Protocolo que define los métodos y atributos para el Presenter de Search
 protocol SearchPresenterProtocol {
     // VIEW -> PRESENTER
+    func getMoviesBy(query: String)
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Search
 protocol SearchInteractorInputProtocol {
     // PRESENTER -> INTERACTOR
+    func fetchMoviesBy(query: String)
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Search
 protocol SearchInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
+    func sendMovies(data: MovieListResponse)
 }

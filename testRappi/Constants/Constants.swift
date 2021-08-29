@@ -45,6 +45,9 @@ struct TMDb {
         static var nowPlaying: String {
             return movie + "/now_playing?api_key=" + key
         }
+        static var search: String {
+            return url + "/search/movie?api_key=" + key + "&query="
+        }
     }
     struct ApiV4 {
         static var url: String {
