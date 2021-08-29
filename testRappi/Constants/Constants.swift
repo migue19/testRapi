@@ -31,22 +31,25 @@ struct TMDb {
             return url + "/movie"
         }
         private static var key: String {
-            return apiKey + "&language=en-US&page=1"
+            return "?api_key=" + apiKey + "&language=en-US&page=1"
         }
         static var popular: String {
-            return movie + "/popular?api_key=" + key
+            return movie + "/popular" + key
         }
         static var topRated: String {
-            return movie + "/top_rated?api_key=" + key
+            return movie + "/top_rated" + key
         }
         static var upcoming: String {
-            return movie + "/upcoming?api_key=" + key
+            return movie + "/upcoming" + key
         }
         static var nowPlaying: String {
-            return movie + "/now_playing?api_key=" + key
+            return movie + "/now_playing" + key
         }
         static var search: String {
-            return url + "/search/movie?api_key=" + key + "&query="
+            return url + "/search/movie" + key + "&query="
+        }
+        static var videos: String {
+            return movie + "/{movie_id}/videos" + key
         }
     }
     struct ApiV4 {

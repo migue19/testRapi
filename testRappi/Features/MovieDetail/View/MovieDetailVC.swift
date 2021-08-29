@@ -12,9 +12,14 @@ class MovieDetailVC: UIViewController {
     @IBOutlet weak var textView: UITextView!
     var data: MovieListDetail?
     var presenter: MovieDetailPresenterProtocol?
+    var videos: [VideoListDetail] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        getData()
+    }
+    private func getData() {
+        presenter?.getVideos()
     }
     private func setupView() {
         setupNavigationBar()
@@ -37,4 +42,7 @@ class MovieDetailVC: UIViewController {
 }
 /// Protocolo para recibir datos de presenter.
 extension MovieDetailVC: MovieDetailViewProtocol {
+    func showVideos(data: [VideoListDetail]) {
+        print(data)
+    }
 }
