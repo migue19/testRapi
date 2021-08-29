@@ -6,11 +6,33 @@
 //
 
 import UIKit
-
+import NutUtils
 class MovieDetailVC: UIViewController {
+    @IBOutlet weak var imageView: ImageLoader!
+    @IBOutlet weak var textView: UITextView!
+    var data: MovieListDetail?
     var presenter: MovieDetailPresenterProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+    private func setupView() {
+        setupNavigationBar()
+        guard let data = data else {
+            return
+        }
+        if let posterPath = data.posterPath {
+            let image = TMDb.imageUrlBase + posterPath
+            imageView.downloadImageFrom(urlString: image, imageMode: .scaleAspectFill)
+        }
+        self.title = data.title
+        textView.text = data.overview
+    }
+    private func setupNavigationBar() {
+        setCloseNavigationItem()
+        self.navigationController?.navigationBar.standardAppearance.largeTitleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20)]
+        self.navigationController?.navigationBar.standardAppearance.titleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 20)]
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 /// Protocolo para recibir datos de presenter.

@@ -23,6 +23,10 @@ class MovieDetailRouter {
         presenter.router = self
         interactor.presenter = self.presenter
     }
+    convenience init(data: MovieListDetail) {
+        self.init()
+        self.view.data = data
+    }
 }
 extension MovieDetailRouter: MovieDetailRouterProtocol {
 }

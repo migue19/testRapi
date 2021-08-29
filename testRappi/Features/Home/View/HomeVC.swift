@@ -64,7 +64,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GroupCollectionCell.identifier, for: indexPath) as? GroupCollectionCell else { return UICollectionViewCell() }
         let currentSection = sections[indexPath.section]
         let movies = getMoviesFor(section: currentSection)
-        cell.setupCell(data: movies)
+        cell.setupCell(data: movies, delegate: self)
         return cell
     }
 }
@@ -75,5 +75,10 @@ extension HomeVC {
         } else {
             return [MovieListDetail]()
         }
+    }
+}
+extension HomeVC: GroupMovieDelegate {
+    func selectedMovie(movie: MovieListDetail) {
+        presenter?.pressDetail(movie: movie)
     }
 }

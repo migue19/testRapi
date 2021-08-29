@@ -17,11 +17,13 @@ protocol HomeViewProtocol: GeneralView {
 /// PRESENTER -> ROUTING
 protocol HomeRouterProtocol {
     func showApproveToken(url: URL, token: String)
+    func showDetail(movie: MovieListDetail)
 }
 /// Protocolo que define los métodos y atributos para el Presenter de Home
 /// VIEW -> PRESENTER
 protocol HomePresenterProtocol {
     func getInformation()
+    func pressDetail(movie: MovieListDetail)
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Home
 /// PRESENTER -> INTERACTOR
@@ -34,4 +36,7 @@ protocol HomeInteractorOutputProtocol {
     func sendRequestToken(token: String)
     func sendMovies(data: [MoviesResponseEntity])
     func sendErrorMessage(message: String)
+}
+protocol GroupMovieDelegate: AnyObject {
+    func selectedMovie(movie: MovieListDetail)
 }

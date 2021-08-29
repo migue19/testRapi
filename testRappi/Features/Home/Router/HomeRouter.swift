@@ -25,6 +25,11 @@ class HomeRouter {
     }
 }
 extension HomeRouter: HomeRouterProtocol {
+    func showDetail(movie: MovieListDetail) {
+        let detail = MovieDetailRouter(data: movie)
+        let navigationController = UINavigationController(rootViewController: detail.view)
+        view.present(navigationController, animated: true, completion: nil)
+    }
     func showApproveToken(url: URL, token: String) {
         let auth = AuthVC(url: url, token: token)
         auth.delegate = self

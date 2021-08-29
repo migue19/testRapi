@@ -6,10 +6,10 @@
 //
 
 import UIKit
-
 class GroupCollectionCell: UICollectionViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource: [MovieListDetail] = []
+    weak var delegate: GroupMovieDelegate?
     static let identifier = String(describing: GroupCollectionCell.self)
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,9 +17,10 @@ class GroupCollectionCell: UICollectionViewCell {
         collectionView.delegate = self
         collectionView.register(UINib(nibName: MoviesCollectionCell.identifier, bundle: nil), forCellWithReuseIdentifier: MoviesCollectionCell.identifier)
     }
-    func setupCell(data: [MovieListDetail]) {
-        dataSource = data
-        collectionView.reloadData()
+    func setupCell(data: [MovieListDetail], delegate: GroupMovieDelegate) {
+        self.delegate = delegate
+        self.dataSource = data
+        self.collectionView.reloadData()
     }
 }
 extension GroupCollectionCell: UICollectionViewDelegateFlowLayout {
@@ -40,5 +41,8 @@ extension GroupCollectionCell: UICollectionViewDelegate, UICollectionViewDataSou
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MoviesCollectionCell.identifier, for: indexPath) as? MoviesCollectionCell else { return UICollectionViewCell() }
         cell.setupCell(data: dataSource[indexPath.row])
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.selectedMovie(movie: dataSource[indexPath.row])
     }
 }
