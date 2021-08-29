@@ -24,11 +24,29 @@ struct TMDb {
         return "https://api.themoviedb.org"
     }
     struct ApiV3 {
-        static var url: String {
+        private static var url: String {
             return baseUrl + "/3"
         }
-        static var moviePopular: String {
-            return url + "/movie/popular?api_key=" + apiKey + "&language=en-US&page=1"
+        private static var movie: String {
+            return url + "/movie"
+        }
+        private static var key: String {
+            return apiKey + "&language=en-US&page=1"
+        }
+        static var popular: String {
+            return movie + "/popular?api_key=" + key
+        }
+        static var topRated: String {
+            return movie + "/top_rated?api_key=" + key
+        }
+        static var upcoming: String {
+            return movie + "/upcoming?api_key=" + key
+        }
+        static var nowPlaying: String {
+            return movie + "/now_playing?api_key=" + key
+        }
+        static var search: String {
+            return url + "/search/movie?api_key=" + key + "&query="
         }
     }
     struct ApiV4 {

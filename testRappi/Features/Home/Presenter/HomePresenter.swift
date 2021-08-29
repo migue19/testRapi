@@ -22,8 +22,8 @@ extension HomePresenter: HomeInteractorOutputProtocol {
     func sendErrorMessage(message: String) {
         view?.showMessage(message: message)
     }
-    func sendPopularMovies(data: MovieListResponse) {
-        view?.showPopularMovies(data: data)
+    func sendMovies(data: [MoviesResponseEntity]) {
+        view?.showMovies(data: data)
     }
     func sendRequestToken(token: String) {
         let urlString = TMDb.urlWeb.replacingOccurrences(of: "{request_token}", with: token)

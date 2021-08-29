@@ -9,25 +9,58 @@ import XCTest
 @testable import testRappi
 
 class TestRappiTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var movies: [MoviesResponseEntity] = []
+    override func setUp() {
+        let popular = mockPopular()
+        self.movies = [
+            MoviesResponseEntity(section: .popular, movies: popular, error: nil)
+        ]
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        self.movies = []
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetMovies() {
+        let aux = self.movies
+        print(aux)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testGetMoviesFor(section: TypeMovieV3) -> [MovieListDetail] {
+        if let data = movies.filter({ $0.section == section }).first, let movies = data.movies {
+            return movies.results
+        } else {
+            return [MovieListDetail]()
         }
     }
-
+    func mockPopular() -> MovieListResponse? {
+        if let path = Bundle.main.path(forResource: "popular_mock", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                if let entity = self.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+                    return entity
+                }
+            } catch {
+                print(error)
+                return nil
+            }
+        }
+        return nil
+    }
+    func decode<T: Codable>(_ type: T.Type, from data: Data, serviceName: String) -> T? {
+        do {
+            return try JSONDecoder().decode(type, from: data)
+        } catch let DecodingError.dataCorrupted(context) {
+            print("DecodingError in \(serviceName) - Context:", context.codingPath)
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("DecodingError in \(serviceName) - Key '\(key)' not found:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("DecodingError in \(serviceName) - Value '\(value)' not found:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch let DecodingError.typeMismatch(type, context) {
+            print("DecodingError in \(serviceName) - Type '\(type)' mismatch:", context.debugDescription)
+            print("DecodingError in \(serviceName) - CodingPath:", context.codingPath)
+        } catch {
+            print("DecodingError in \(serviceName) - Error: ", error)
+        }
+        return nil
+    }
 }
