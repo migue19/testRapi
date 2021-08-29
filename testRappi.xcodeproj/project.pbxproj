@@ -215,11 +215,11 @@
 		F24CA7E926B4BC9B00325B24 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				F2CA383926DC09A5003A77D0 /* Protocol */,
+				F2CA383826DC0982003A77D0 /* Router */,
+				F2CA383726DC096B003A77D0 /* Presenter */,
+				F2CA383626DC0959003A77D0 /* Interactor */,
 				F216F28926DAFE7500F74A2E /* View */,
-				F24CA7EB26B4C6F200325B24 /* SearchPresenter.swift */,
-				F24CA7EC26B4C6F200325B24 /* SearchRouter.swift */,
-				F24CA7ED26B4C6F200325B24 /* SearchInteractor.swift */,
-				F24CA7EE26B4C6F200325B24 /* SearchProtocol.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -357,9 +357,8 @@
 		F2A054A326A86760005DF626 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F2CA383A26DC09BD003A77D0 /* View */,
 				F2E9EF6B26C979C700E9A9AB /* Protocols */,
-				F2A054A426A86882005DF626 /* AuthVC.swift */,
-				F2A054A526A86882005DF626 /* AuthVC.xib */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -370,6 +369,47 @@
 				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		F2CA383626DC0959003A77D0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F24CA7ED26B4C6F200325B24 /* SearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F2CA383726DC096B003A77D0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F24CA7EB26B4C6F200325B24 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F2CA383826DC0982003A77D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F24CA7EC26B4C6F200325B24 /* SearchRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		F2CA383926DC09A5003A77D0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F24CA7EE26B4C6F200325B24 /* SearchProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F2CA383A26DC09BD003A77D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2A054A526A86882005DF626 /* AuthVC.xib */,
+				F2A054A426A86882005DF626 /* AuthVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F2D0D5A126CF22DF003C7EB2 /* Extensions */ = {
