@@ -11,6 +11,8 @@ protocol GeneralView {
     /// Función para mostrar un mensaje en una alerta.
     /// - Parameter message: Cadena con el mensaje a mostrarse en la alerta.
     func showMessage(message: String)
+    func showHUD()
+    func hideHUD()
 }
 extension GeneralView {
     func showMessage(message: String) {
