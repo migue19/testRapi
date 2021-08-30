@@ -15,11 +15,13 @@ class MovieDetailPresenter {
 }
 extension MovieDetailPresenter: MovieDetailPresenterProtocol {
     func getVideos() {
+        view?.showHUD()
         interactor?.fetchVideos()
     }
 }
 extension MovieDetailPresenter: MovieDetailInteractorOutputProtocol {
     func sendVideos(data: VideoList) {
+        view?.hideHUD()
         view?.showVideos(data: data.results)
     }
 }

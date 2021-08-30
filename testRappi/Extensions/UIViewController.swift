@@ -8,6 +8,14 @@
 import UIKit
 
 extension UIViewController {
+    /// Propiedad para detectar si se cuenta con modo obscuro.
+    var isDarkMode: Bool {
+        if #available(iOS 13.0, *) {
+            return self.traitCollection.userInterfaceStyle == .dark
+        } else {
+            return false
+        }
+    }
     /// Función utilizada para pintar la imagen adecuada cuando para realizar la acción de volver.
     func setCloseNavigationItem() {
         var btnBack: UIBarButtonItem?

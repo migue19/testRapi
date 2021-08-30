@@ -7,7 +7,7 @@
 
 import UIKit
 import WebKit
-class HomeVC: UIViewController {
+class HomeVC: BaseController {
     @IBOutlet weak var collectionView: UICollectionView!
     var presenter: HomePresenterProtocol?
     var movies: [MoviesResponseEntity] = []

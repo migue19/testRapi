@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 /// Protocolo que define los métodos y atributos para el view de MovieDetail
-protocol MovieDetailViewProtocol {
+protocol MovieDetailViewProtocol: GeneralView {
     // PRESENTER -> VIEW
     func showVideos(data: [VideoListDetail])
 }
