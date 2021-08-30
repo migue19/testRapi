@@ -14,6 +14,9 @@ class SearchPresenter {
     var router: SearchRouterProtocol?
 }
 extension SearchPresenter: SearchPresenterProtocol {
+    func pressDetail(movie: MovieListDetail) {
+        router?.showDetail(movie: movie)
+    }
     func getMoviesBy(query: String) {
         interactor?.fetchMoviesBy(query: query)
     }
