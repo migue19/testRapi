@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 /// Protocolo que define los métodos y atributos para el view de Search
-protocol SearchViewProtocol {
+protocol SearchViewProtocol: GeneralView {
     // PRESENTER -> VIEW
     func showMovies(data: [MovieListDetail])
 }
@@ -33,4 +33,5 @@ protocol SearchInteractorInputProtocol {
 protocol SearchInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
     func sendMovies(data: MovieListResponse)
+    func sendErrorMessage(message: String)
 }
