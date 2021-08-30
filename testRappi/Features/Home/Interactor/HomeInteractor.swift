@@ -16,11 +16,7 @@ class HomeInteractor {
 }
 extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovies() {
-        if Persistence.getInfoUserDefaults(key: "accessToken") != nil {
-            getAllMovies()
-        } else {
-            getRequestToken()
-        }
+        getAllMovies()
     }
     func getAllMovies() {
         DispatchQueue.global(qos: .userInitiated).async(group: dispatchGroup) { [weak self] in
