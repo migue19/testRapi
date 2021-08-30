@@ -3,46 +3,46 @@
 Las capas de la aplicación (por ejemplo capa de persistencia, vistas, red, negocio, etc) y qué clases pertenecen a cual.
 
 - View: 
-    -HomeVC
-    -SearchVC
-    -TabbarVC
-    -MovieDetailVC
+    - HomeVC
+    - SearchVC
+    - TabbarVC
+    - MovieDetailVC
 
 
 - Interactor: 
-    -HomeInteractor
-    -SearchInteractor
-    -MovieDetailInteractor
+    - HomeInteractor
+    - SearchInteractor
+    - MovieDetailInteractor
     
     
 - Presenter: 
-    -HomePresenter
-    -MovieDetailPresenter
-    -SearchPresenter
+    - HomePresenter
+    - MovieDetailPresenter
+    - SearchPresenter
 
 
 - Entity: 
-    -AutorizationEntity
-    -MoviesEntity
-    -MovieDetailEntity
+    - AutorizationEntity
+    - MoviesEntity
+    - MovieDetailEntity
     
     
-- Routing
-    -HomeRouter
-    -MovieDetailRouter
-    -SearchRouter    
+- Routing:
+    - HomeRouter
+    - MovieDetailRouter
+    - SearchRouter    
 
 
 - Red: 
-    -ConnectionLayer Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/ConnectionLayer
+    - ConnectionLayer Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/ConnectionLayer
   
   
 - Utils: 
-    -NutUtils Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/NutUtils
+    - NutUtils Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/NutUtils
     
     
 - Componentes Visuales: 
-    -NUTComponents Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/NUTComponents
+    - NUTComponents Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/NUTComponents
     
 
 
