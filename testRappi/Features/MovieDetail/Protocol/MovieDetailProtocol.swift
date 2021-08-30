@@ -31,4 +31,5 @@ protocol MovieDetailInteractorInputProtocol {
 protocol MovieDetailInteractorOutputProtocol {
     // INTERACTOR -> PRESENTER
     func sendVideos(data: VideoList)
+    func sendErrorMessage(message: String)
 }

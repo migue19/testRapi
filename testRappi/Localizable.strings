@@ -19,3 +19,4 @@
 "decode_error" = "Error al decodificar los datos";
 // MARK: - Service Name
 "movie_service" = "Movie Service";
+"video_service" = "Video Movie Service";
