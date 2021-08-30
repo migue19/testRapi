@@ -2,4 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-testRappi/Pods-testRappi-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/ConnectionLayer/ConnectionLayer.framework
 ${BUILT_PRODUCTS_DIR}/NUTComponents/NUTComponents.framework
 ${BUILT_PRODUCTS_DIR}/NutUtils/NutUtils.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
 ${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework

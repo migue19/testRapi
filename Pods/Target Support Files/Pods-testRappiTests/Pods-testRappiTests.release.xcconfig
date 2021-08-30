@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ConnectionLayer" "${PODS_CONFIGURATION_BUILD_DIR}/NUTComponents" "${PODS_CONFIGURATION_BUILD_DIR}/NutUtils" "${PODS_CONFIGURATION_BUILD_DIR}/youtube-ios-player-helper"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ConnectionLayer" "${PODS_CONFIGURATION_BUILD_DIR}/NUTComponents" "${PODS_CONFIGURATION_BUILD_DIR}/NutUtils" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios" "${PODS_CONFIGURATION_BUILD_DIR}/youtube-ios-player-helper"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ConnectionLayer/ConnectionLayer.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NUTComponents/NUTComponents.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NutUtils/NutUtils.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "ConnectionLayer" -framework "NUTComponents" -framework "NutUtils" -framework "UIKit" -framework "youtube_ios_player_helper"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ConnectionLayer/ConnectionLayer.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NUTComponents/NUTComponents.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NutUtils/NutUtils.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "ConnectionLayer" -framework "CoreGraphics" -framework "Lottie" -framework "NUTComponents" -framework "NutUtils" -framework "QuartzCore" -framework "UIKit" -framework "youtube_ios_player_helper"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
