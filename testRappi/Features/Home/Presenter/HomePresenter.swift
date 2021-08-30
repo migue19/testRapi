@@ -18,14 +18,17 @@ extension HomePresenter: HomePresenterProtocol {
         router?.showDetail(movie: movie)
     }
     func getInformation() {
+        view?.showHUD()
         interactor?.getMovies()
     }
 }
 extension HomePresenter: HomeInteractorOutputProtocol {
     func sendErrorMessage(message: String) {
+        view?.hideHUD()
         view?.showMessage(message: message)
     }
     func sendMovies(data: [MoviesResponseEntity]) {
+        view?.hideHUD()
         view?.showMovies(data: data)
     }
     func sendRequestToken(token: String) {

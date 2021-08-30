@@ -7,7 +7,7 @@
 
 import UIKit
 import NutUtils
-class MovieDetailVC: UIViewController {
+class MovieDetailVC: BaseController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var imageView: ImageLoader!
     @IBOutlet weak var textView: UITextView!
