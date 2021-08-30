@@ -14,6 +14,12 @@ class MovieDetailPresenter {
     var router: MovieDetailRouterProtocol?
 }
 extension MovieDetailPresenter: MovieDetailPresenterProtocol {
+    func getVideos() {
+        interactor?.fetchVideos()
+    }
 }
 extension MovieDetailPresenter: MovieDetailInteractorOutputProtocol {
+    func sendVideos(data: VideoList) {
+        view?.showVideos(data: data.results)
+    }
 }

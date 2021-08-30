@@ -28,6 +28,7 @@ extension HomeRouter: HomeRouterProtocol {
     func showDetail(movie: MovieListDetail) {
         let detail = MovieDetailRouter(data: movie)
         let navigationController = UINavigationController(rootViewController: detail.view)
+        navigationController.modalPresentationStyle = .fullScreen
         view.present(navigationController, animated: true, completion: nil)
     }
     func showApproveToken(url: URL, token: String) {

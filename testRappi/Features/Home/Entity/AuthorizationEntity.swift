@@ -87,21 +87,6 @@ struct AccountListDetail: Codable {
     var featured: Int?
     var name: String?
     var overview: String
-//    private enum CodingKeys: String, CodingKey {
-//        case token = "access_token"
-//        case statusCode = "status_code"
-//        case statusMessage = "status_message"
-//        case success = "success"
-//        case accountId = "account_id"
-//    }
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        self.token = try container.decode(String.self, forKey: .token)
-//        self.statusCode = try container.decode(Int.self, forKey: .statusCode)
-//        self.statusMessage = try container.decode(String.self, forKey: .statusMessage)
-//        self.success = try container.decode(Bool.self, forKey: .success)
-//        self.accountId = try container.decode(String.self, forKey: .accountId)
-//    }
 }
 struct MovieListDetail: Codable {
     var identifier: Int
