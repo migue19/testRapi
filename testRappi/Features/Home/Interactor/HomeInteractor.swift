@@ -60,20 +60,23 @@ extension HomeInteractor: HomeInteractorInputProtocol {
                 return
             }
             if let error = error {
+                self.receiveError(message: error)
                 self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
                 self.dispatchGroup.leave()
                 return
             }
             guard let data = data else {
                 let error = "data_not_found".localized
+                self.receiveError(message: error)
                 self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
                 self.dispatchGroup.leave()
                 return
             }
-            if let entity = Utils.decode(MovieListResponse.self, from: data, serviceName: "Popular Movie Service") {
+            if let entity = Utils.decode(MovieListResponse.self, from: data, serviceName: "\(type.title) \("movie_service".localized)") {
                 self.movies.append(MoviesResponseEntity(section: type, movies: entity, error: nil))
             } else {
                 let error = "decode_error".localized
+                self.receiveError(message: error)
                 self.movies.append(MoviesResponseEntity(section: type, movies: nil, error: error))
             }
             self.dispatchGroup.leave()

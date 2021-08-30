@@ -22,6 +22,9 @@ extension SearchPresenter: SearchPresenterProtocol {
     }
 }
 extension SearchPresenter: SearchInteractorOutputProtocol {
+    func sendErrorMessage(message: String) {
+        view?.showMessage(message: message, type: .error)
+    }
     func sendMovies(data: MovieListResponse) {
         view?.showMovies(data: data.results)
     }

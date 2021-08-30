@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SwiftMessages
 /// Protocolo general para las vistas.
 protocol GeneralView {
     /// Función para mostrar un mensaje en una alerta.
     /// - Parameter message: Cadena con el mensaje a mostrarse en la alerta.
-    func showMessage(message: String)
+    func showMessage(message: String, type: Theme)
     func showHUD()
     func hideHUD()
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController {
+class SearchVC: BaseController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     var dataSource: [MovieListDetail] = []
