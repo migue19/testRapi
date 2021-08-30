@@ -25,7 +25,6 @@
 		F24CA7F326B4C6F200325B24 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CA7ED26B4C6F200325B24 /* SearchInteractor.swift */; };
 		F24CA7F426B4C6F200325B24 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24CA7EE26B4C6F200325B24 /* SearchProtocol.swift */; };
 		F252ECF926A72B390039413C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ECF826A72B390039413C /* AppDelegate.swift */; };
-		F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ECFA26A72B390039413C /* SceneDelegate.swift */; };
 		F252ED0226A72B390039413C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0126A72B390039413C /* Assets.xcassets */; };
 		F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0326A72B390039413C /* LaunchScreen.storyboard */; };
 		F252ED1026A72B3A0039413C /* testRappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED0F26A72B3A0039413C /* testRappiTests.swift */; };
@@ -51,6 +50,9 @@
 		F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */; };
 		F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */; };
 		F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */; };
+		F2EAE17726DD431B0058E332 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F2EAE17626DD431B0058E332 /* loader.json */; };
+		F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */; };
+		F2EAE17B26DD7B000058E332 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17A26DD7B000058E332 /* BaseController.swift */; };
 		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
 		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
 		F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */; };
@@ -103,7 +105,6 @@
 		F24CA7EE26B4C6F200325B24 /* SearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		F252ECF526A72B390039413C /* testRappi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testRappi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F252ECF826A72B390039413C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F252ECFA26A72B390039413C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F252ED0126A72B390039413C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F252ED0426A72B390039413C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F252ED0626A72B390039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -134,6 +135,9 @@
 		F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionView.swift; sourceTree = "<group>"; };
 		F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionView.xib; sourceTree = "<group>"; };
 		F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
+		F2EAE17626DD431B0058E332 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewCustom.swift; sourceTree = "<group>"; };
+		F2EAE17A26DD7B000058E332 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 		F252ECF726A72B390039413C /* testRappi */ = {
 			isa = PBXGroup;
 			children = (
+				F2EAE17526DD42950058E332 /* Animations */,
 				F20E419226DADD5200E29FF4 /* Utils */,
 				F20E418F26DABB8700E29FF4 /* Mock */,
 				F2D0D5A126CF22DF003C7EB2 /* Extensions */,
@@ -277,7 +282,6 @@
 				F2F8358B26A731AD007E13C8 /* Constants */,
 				F2F8357926A72EF0007E13C8 /* Features */,
 				F252ECF826A72B390039413C /* AppDelegate.swift */,
-				F252ECFA26A72B390039413C /* SceneDelegate.swift */,
 				F252ED0126A72B390039413C /* Assets.xcassets */,
 				F252ED0326A72B390039413C /* LaunchScreen.storyboard */,
 				F252ED0626A72B390039413C /* Info.plist */,
@@ -525,8 +529,18 @@
 			isa = PBXGroup;
 			children = (
 				F28C992526CC28440043B35C /* BaseProtocol.swift */,
+				F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */,
+				F2EAE17A26DD7B000058E332 /* BaseController.swift */,
 			);
 			path = Commons;
+			sourceTree = "<group>";
+		};
+		F2EAE17526DD42950058E332 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F2EAE17626DD431B0058E332 /* loader.json */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		F2F8357926A72EF0007E13C8 /* Features */ = {
@@ -690,6 +704,7 @@
 				F2CA384B26DC0B24003A77D0 /* MovieDetailVC.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
 				F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */,
+				F2EAE17726DD431B0058E332 /* loader.json in Resources */,
 				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
 				F216F28D26DAFE9500F74A2E /* SearchVC.xib in Resources */,
 				F252ED0226A72B390039413C /* Assets.xcassets in Resources */,
@@ -839,7 +854,9 @@
 			files = (
 				F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */,
 				F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */,
+				F2EAE17B26DD7B000058E332 /* BaseController.swift in Sources */,
 				F2CA384526DC0ADC003A77D0 /* MovieDetailInteractor.swift in Sources */,
+				F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */,
 				F24CA7F326B4C6F200325B24 /* SearchInteractor.swift in Sources */,
 				F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */,
 				F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */,
@@ -847,7 +864,6 @@
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */,
 				F2CA385B26DC4E55003A77D0 /* VideoCollectionCell.swift in Sources */,
-				F252ECFB26A72B390039413C /* SceneDelegate.swift in Sources */,
 				F28C992E26CC30990043B35C /* TabBarVC.swift in Sources */,
 				F2CA384426DC0ADC003A77D0 /* MovieDetailRouter.swift in Sources */,
 				F216F28C26DAFE9500F74A2E /* SearchVC.swift in Sources */,
