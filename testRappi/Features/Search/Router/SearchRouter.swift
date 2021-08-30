@@ -25,4 +25,10 @@ class SearchRouter {
     }
 }
 extension SearchRouter: SearchRouterProtocol {
+    func showDetail(movie: MovieListDetail) {
+        let detail = MovieDetailRouter(data: movie)
+        let navigationController = UINavigationController(rootViewController: detail.view)
+        navigationController.modalPresentationStyle = .fullScreen
+        view.present(navigationController, animated: true, completion: nil)
+    }
 }
