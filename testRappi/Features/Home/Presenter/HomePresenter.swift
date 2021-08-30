@@ -25,7 +25,7 @@ extension HomePresenter: HomePresenterProtocol {
 extension HomePresenter: HomeInteractorOutputProtocol {
     func sendErrorMessage(message: String) {
         view?.hideHUD()
-        view?.showMessage(message: message)
+        view?.showMessage(message: message, type: .error)
     }
     func sendMovies(data: [MoviesResponseEntity]) {
         view?.hideHUD()

@@ -20,6 +20,10 @@ extension MovieDetailPresenter: MovieDetailPresenterProtocol {
     }
 }
 extension MovieDetailPresenter: MovieDetailInteractorOutputProtocol {
+    func sendErrorMessage(message: String) {
+        view?.hideHUD()
+        view?.showMessage(message: message, type: .error)
+    }
     func sendVideos(data: VideoList) {
         view?.hideHUD()
         view?.showVideos(data: data.results)
