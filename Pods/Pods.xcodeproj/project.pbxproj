@@ -20,176 +20,199 @@
 
 /* Begin PBXBuildFile section */
 		008B09F666EAC3FEFAC04E4627A52D5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		09A1A8AA165F7C56B52F046CCE7DBCE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		13FC4E99CC9B3D3149873E776A2D007E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795FC53FC1CF510E69BC5816A4C39A8F /* UIView.swift */; };
-		16864BCC91A23C31FCB2D1DFD102A0B6 /* ConnectionLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA43ED645057EEA4349DB46898A729A /* ConnectionLayer-dummy.m */; };
-		1B893B222DE28D50CB4D75178122D583 /* Pods-testRappi-testRappiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E05950A1ADE6F6308A2A7D5CB18E4EE /* Pods-testRappi-testRappiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05DBC5A4A0411FC0868B1355180CD35D /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA537F366B6DE34AB0828DB947A1876 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D1C4E366F26FEF929B9FC8A8E38AAEF /* Pods-testRappi-testRappiUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E05950A1ADE6F6308A2A7D5CB18E4EE /* Pods-testRappi-testRappiUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13FC4E99CC9B3D3149873E776A2D007E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651DC0194DF4A25164B8A9E6A9EC5215 /* UIView.swift */; };
+		16864BCC91A23C31FCB2D1DFD102A0B6 /* ConnectionLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCB5D96CFCC57687D1D80126F9FB6577 /* ConnectionLayer-dummy.m */; };
 		2F184E373BF43271C9E7A735E1FB9D87 /* Pods-testRappiTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6546A153A0257CBB7CFAD7D450E8C3 /* Pods-testRappiTests-dummy.m */; };
 		31ECB1D9179004359D76A06BFA1C6125 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		50DA19CA0AE4F9D70A26D672E94544AC /* Pods-testRappi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB735DFF171F52DF5601A40E2179E8F1 /* Pods-testRappi-dummy.m */; };
-		61CD6CBF3E49454ECA4E7870380261DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4932F16F718604234918EF0C6F36BB62 /* Pods-testRappi-testRappiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3800BCDECC5A686E6FC828FC6DDE40 /* Pods-testRappi-testRappiUITests-dummy.m */; };
+		67499A433AC5CE83FD3C7AA7D2B8C9D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		67DEB039391DF0B5BEC31AB9A73CB424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		714D279F82E104DD99F70C71B8F29CC1 /* NUTComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E81CB5E900E286B285FF479CF01C9 /* NUTComponents-dummy.m */; };
-		7A185DDA21E9B39AF25DF8010B5305CB /* NutUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4072EF9E03BF9D5E605B6D315269FBD /* NutUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81B58C53E11E1DE0AE390E4AC61790B5 /* NUTComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 674EAAB7C9B061B5E37598E6981F1792 /* NUTComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		714D279F82E104DD99F70C71B8F29CC1 /* NUTComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38954AA50BE38A4ED8F620D1E87695F3 /* NUTComponents-dummy.m */; };
+		77F680D807787AE6DF800E8EB85DEBC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7A185DDA21E9B39AF25DF8010B5305CB /* NutUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F1A1E00EFB8AD1C5EA82CC21DE400F3 /* NutUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8C05366F87C046219EDCB835447400 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EFD5CA1ED5880079E4AB1468F9C019 /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81B58C53E11E1DE0AE390E4AC61790B5 /* NUTComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B104B37BEDC56A0BF3C29F92B7BEC5 /* NUTComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		842A8A936CE990B4BA6F59C10D312E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		882423212F6E402BA6D475FC832929E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		8E653F30F25FF52CA777EEA3CBCA285D /* Pods-testRappi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BB9745F9E67F1C7578407FBA14AF2F /* Pods-testRappi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90DD7B9D0EB67CCF9AA83613605DA180 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F3C71FA4925F73ADDAA8467703C0A /* UIImageView.swift */; };
-		92B0C025039750B8C3808B448929F899 /* Pods-testRappi-testRappiUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3800BCDECC5A686E6FC828FC6DDE40 /* Pods-testRappi-testRappiUITests-dummy.m */; };
-		97060E6DEC9DE30B9056F6E28C4963EB /* NUTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4F53AC66A695E10146E51C28BF31C /* NUTButton.swift */; };
-		A80DA309AE13FB704E5C7D6681A03CE0 /* NUTKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E93B55F064BD001559D0E2E45F0EAE0 /* NUTKeyboard.swift */; };
+		90DD7B9D0EB67CCF9AA83613605DA180 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9805428CC11CFB8DF2249EA9D20F81 /* UIImageView.swift */; };
+		95360566E941F235D6B8CE1C4C3035D1 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0AE1B88A3106033E9EF57C5C87F05C /* youtube-ios-player-helper-dummy.m */; };
+		97060E6DEC9DE30B9056F6E28C4963EB /* NUTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0158E0D486F6FDB4CAB9AE455008A31B /* NUTButton.swift */; };
+		A80DA309AE13FB704E5C7D6681A03CE0 /* NUTKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DDABA6488F8371DF60298342F73873 /* NUTKeyboard.swift */; };
+		A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BB603AF3911AD9E17977D84AF17F332C /* Assets.bundle */; };
+		AB778531F376DD9AA7A8BC49295D3C53 /* Pods-testRappi-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BB9745F9E67F1C7578407FBA14AF2F /* Pods-testRappi-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B755118BD9EA17F967CF0F1AD3632F59 /* Pods-testRappi-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB735DFF171F52DF5601A40E2179E8F1 /* Pods-testRappi-dummy.m */; };
 		C7AA3F568B93694CECA16DF26E325F0E /* Pods-testRappiTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAAF266AD30A9719E5E778F4CDFB3DA2 /* Pods-testRappiTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8578E25320B407EF26CA52C532CA6C6 /* Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D60ABB6116C7B609498FC0A7CCEB783 /* Optionals.swift */; };
-		DF096F28FF72F043C96191494601E26B /* ConnectionLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E14CF495D2F3FA4D6B31F238864EE4 /* ConnectionLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1CFE252714FB1F77B1D92D10E1528C3 /* NutUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C81F21432BFEF882B6CBF4AA0E13877 /* NutUtils-dummy.m */; };
-		F007B8C774F44510952101093F76EBB7 /* ConnectionLayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585AA551C68588D8044AA5D0CA70EB78 /* ConnectionLayerEntity.swift */; };
-		F5B9A9BFD7FA3EAB33226AB04922322F /* ConnectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2A449A7B940219157FE77950A8FF /* ConnectionLayer.swift */; };
+		C8578E25320B407EF26CA52C532CA6C6 /* Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F3C2CB1EB2C569682F7A9958FBF6AB /* Optionals.swift */; };
+		CF54FBC044CC3EFEC4309420EE774826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		D03B6BD25AEC918C55C1A092C4ED472B /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D3A57314EEDFCF6FD079F7D84A9EA5 /* YTPlayerView.m */; };
+		DF096F28FF72F043C96191494601E26B /* ConnectionLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E009F39BBBAC5B92FCC6FFACCC71A33 /* ConnectionLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1CFE252714FB1F77B1D92D10E1528C3 /* NutUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 545311AD8D64F3EB1862237EA68FFE27 /* NutUtils-dummy.m */; };
+		F007B8C774F44510952101093F76EBB7 /* ConnectionLayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349C3F4DD4A018E8199C916F1DF70CF /* ConnectionLayerEntity.swift */; };
+		F5B9A9BFD7FA3EAB33226AB04922322F /* ConnectionLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1D044C0BFEE1BFE9AAB58E77BE637C /* ConnectionLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0C629AA88FCF91CA2911677DE92E75E7 /* PBXContainerItemProxy */ = {
+		12C10CCBE441F47FA788B8FB68241207 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+		2EB6160587875AA997638C745F93A4A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2C8AD708CFC2A6672EA8905FC2FB020A;
 			remoteInfo = NutUtils;
 		};
-		144E23CD5908388589B8FA5013AB82E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F1CFB24251C6CA9CDAC518698DE5C34;
-			remoteInfo = NUTComponents;
-		};
-		31307F9D3DF280493FC033A4D63DD9B8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C8AD708CFC2A6672EA8905FC2FB020A;
-			remoteInfo = NutUtils;
-		};
-		318ED303A2615FD397029E20E2020307 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F1CFB24251C6CA9CDAC518698DE5C34;
-			remoteInfo = NUTComponents;
-		};
-		4C1D948C813F895F58EE66F6F970471C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		507DB32CAA768CF0AE5E62F75703E000 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		61B69B5A8377FA03D5EC2C6FB712020A /* PBXContainerItemProxy */ = {
+		3BF1728A5208A0E421A90620EB5E528B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AFF18469A632EF67970A880CEA22A456;
 			remoteInfo = ConnectionLayer;
 		};
-		7C929B62D9B85AABFC84107F198A4B42 /* PBXContainerItemProxy */ = {
+		7D2EC3FC8EA7E64C0EA0ACD06AA49CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		9AB89774D7F20E2BA31D6720D6AFA47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		A3752967CA3278706C4133C2D98824F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFF18469A632EF67970A880CEA22A456;
+			remoteInfo = ConnectionLayer;
+		};
+		AA10F11EFA957DEC11996A676EE6FE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C8AD708CFC2A6672EA8905FC2FB020A;
+			remoteInfo = NutUtils;
+		};
+		AC97D12647DFA10089701DBC9EACA95A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1A7AF186BE136DE56FD5699070589B8;
+			remoteInfo = "youtube-ios-player-helper";
+		};
+		B391BC5663147ED0F662BA597BBB4412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1CFB24251C6CA9CDAC518698DE5C34;
+			remoteInfo = NUTComponents;
+		};
+		E0CC8D1C94C3D4BD78A50B84EFF72374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1CFB24251C6CA9CDAC518698DE5C34;
+			remoteInfo = NUTComponents;
+		};
+		E48AFD709745379C2E0F43C5B33441BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DE1A22582CF9DCB30B8ADF47DF3344E;
 			remoteInfo = "Pods-testRappi";
 		};
-		E60EBA38CBC156532306341BA07DD13D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AFF18469A632EF67970A880CEA22A456;
-			remoteInfo = ConnectionLayer;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ADC6024B673D00A4D5EF26C55F82E2 /* NUTComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.debug.xcconfig; sourceTree = "<group>"; };
-		021CA7094A7A2BD013475CC87B00727C /* ConnectionLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.release.xcconfig; sourceTree = "<group>"; };
-		05A5977E7E08695666AD5B834243C403 /* NutUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NutUtils.release.xcconfig; sourceTree = "<group>"; };
+		0158E0D486F6FDB4CAB9AE455008A31B /* NUTButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTButton.swift; path = Classes/NUTButton.swift; sourceTree = "<group>"; };
+		05F3C2CB1EB2C569682F7A9958FBF6AB /* Optionals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optionals.swift; path = NutUtils/Classes/Extensions/Optionals/Optionals.swift; sourceTree = "<group>"; };
 		0625E198F891BE2B7BF072C6F7559CB8 /* Pods-testRappiTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testRappiTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		063DAF3AB224206EEA62C55E3D6DD4F5 /* NUTComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.release.xcconfig; sourceTree = "<group>"; };
-		09D09A6C9DA424339015B2848920D42B /* NutUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NutUtils.modulemap; sourceTree = "<group>"; };
+		08A33ACE6A87063219AE8772E6DB2A1D /* NUTComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.release.xcconfig; sourceTree = "<group>"; };
 		0E05950A1ADE6F6308A2A7D5CB18E4EE /* Pods-testRappi-testRappiUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testRappi-testRappiUITests-umbrella.h"; sourceTree = "<group>"; };
-		1748675ECA3775137B52E0B73B7C1156 /* ConnectionLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ConnectionLayer.modulemap; sourceTree = "<group>"; };
+		0FCAA7FEA22F971E497F203EC0650DC9 /* NUTComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-prefix.pch"; sourceTree = "<group>"; };
+		11D3A57314EEDFCF6FD079F7D84A9EA5 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
+		17C7A9C5FBD1783A7B6FDCF5397F8F2F /* ConnectionLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-prefix.pch"; sourceTree = "<group>"; };
 		18E808F4C8C73BCDF925344B5C2CF1B7 /* Pods_testRappi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testRappi.framework; path = "Pods-testRappi.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CA43ED645057EEA4349DB46898A729A /* ConnectionLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ConnectionLayer-dummy.m"; sourceTree = "<group>"; };
-		2153F403E3EFEB53336441C215B3120F /* NutUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NutUtils.debug.xcconfig; sourceTree = "<group>"; };
 		24A35C6C37CB10D3E500476C0DD51C6B /* Pods-testRappiTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappiTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		24BDB17F74CFB7BE752BE2B51B686038 /* Pods-testRappi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappi.release.xcconfig"; sourceTree = "<group>"; };
-		2535641749691653F42EC59783131D5B /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		259990994F6AFE56C2C5AC5160B72591 /* Pods-testRappi-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testRappi-frameworks.sh"; sourceTree = "<group>"; };
 		2688D1AEE847D2BC335B5B1031B250E3 /* Pods-testRappi-testRappiUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testRappi-testRappiUITests.modulemap"; sourceTree = "<group>"; };
-		2D60ABB6116C7B609498FC0A7CCEB783 /* Optionals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optionals.swift; path = NutUtils/Classes/Extensions/Optionals/Optionals.swift; sourceTree = "<group>"; };
+		2CA537F366B6DE34AB0828DB947A1876 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
+		2E009F39BBBAC5B92FCC6FFACCC71A33 /* ConnectionLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-umbrella.h"; sourceTree = "<group>"; };
+		2F1A1E00EFB8AD1C5EA82CC21DE400F3 /* NutUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NutUtils-umbrella.h"; sourceTree = "<group>"; };
 		33C608083D506D89CAA9E93EE07BC334 /* Pods-testRappiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C81F21432BFEF882B6CBF4AA0E13877 /* NutUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NutUtils-dummy.m"; sourceTree = "<group>"; };
+		33DDABA6488F8371DF60298342F73873 /* NUTKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTKeyboard.swift; path = Classes/NUTKeyboard.swift; sourceTree = "<group>"; };
+		38954AA50BE38A4ED8F620D1E87695F3 /* NUTComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NUTComponents-dummy.m"; sourceTree = "<group>"; };
+		3B0AE1B88A3106033E9EF57C5C87F05C /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		3CA68BB81338F83D42D449DD9E68D539 /* NutUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NutUtils-prefix.pch"; sourceTree = "<group>"; };
 		3EEB68466C45C821E39CC579963A7919 /* Pods-testRappi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappi-acknowledgements.plist"; sourceTree = "<group>"; };
+		43B56BDD5332BF77507537949D241A9E /* NutUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NutUtils.release.xcconfig; sourceTree = "<group>"; };
 		44CAD79914E52D780D555EAC44F7ACA8 /* Pods-testRappi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappi.debug.xcconfig"; sourceTree = "<group>"; };
 		48E2D7B12DA5F0B6CC828764E34DF11B /* Pods-testRappi-testRappiUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappi-testRappiUITests-Info.plist"; sourceTree = "<group>"; };
+		4B9A640F8438A645DEA2090C2F0D9C46 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
 		4BC122A04FB3F93C9AAAC13CBDED905E /* Pods_testRappi_testRappiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testRappi_testRappiUITests.framework; path = "Pods-testRappi-testRappiUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9DBBA011E1200D0BCFEFCCB59865B4 /* NutUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NutUtils.debug.xcconfig; sourceTree = "<group>"; };
 		50BB9745F9E67F1C7578407FBA14AF2F /* Pods-testRappi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testRappi-umbrella.h"; sourceTree = "<group>"; };
-		53D5E1D49F37785C957B3D64C902FB1A /* NutUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NutUtils-prefix.pch"; sourceTree = "<group>"; };
+		545311AD8D64F3EB1862237EA68FFE27 /* NutUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NutUtils-dummy.m"; sourceTree = "<group>"; };
 		5599DFD6307BDEB4A72CE6D3F0300802 /* Pods-testRappi-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappi-Info.plist"; sourceTree = "<group>"; };
-		559E596D2C87A8F2BECFC73416F02212 /* ConnectionLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ConnectionLayer-Info.plist"; sourceTree = "<group>"; };
-		585AA551C68588D8044AA5D0CA70EB78 /* ConnectionLayerEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayerEntity.swift; path = ConnectionLayer/ConnectionLayerEntity.swift; sourceTree = "<group>"; };
-		5976B31EC4C7A33D795D79B116425AAB /* NUTComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NUTComponents.modulemap; sourceTree = "<group>"; };
 		5DA5009825DC4708BFC9AFF9F175F332 /* Pods-testRappi-testRappiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappi-testRappiUITests.release.xcconfig"; sourceTree = "<group>"; };
-		60F26DC5AECED1EA816FB8C55F6DC9BA /* NutUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NutUtils-Info.plist"; sourceTree = "<group>"; };
-		674EAAB7C9B061B5E37598E6981F1792 /* NUTComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-umbrella.h"; sourceTree = "<group>"; };
-		6A8E81CB5E900E286B285FF479CF01C9 /* NUTComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NUTComponents-dummy.m"; sourceTree = "<group>"; };
-		6CA4F53AC66A695E10146E51C28BF31C /* NUTButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTButton.swift; path = Classes/NUTButton.swift; sourceTree = "<group>"; };
-		6FA52D0E7E109119BD3DA4BC8685BD86 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		651DC0194DF4A25164B8A9E6A9EC5215 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = NutUtils/Classes/Extensions/UIView/UIView.swift; sourceTree = "<group>"; };
+		6A5832E9C44A6FE904125431B1539C2E /* NutUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NutUtils.modulemap; sourceTree = "<group>"; };
 		70B59509C02A2B75A3933C7CCFEBF712 /* Pods-testRappi.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testRappi.modulemap"; sourceTree = "<group>"; };
 		71AD18040F29EF96A79525CF400FC0D5 /* Pods-testRappi-testRappiUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappi-testRappiUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7214B5D79B4D7BC14ED552399D484CD1 /* NutUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NutUtils.framework; path = NutUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75E14CF495D2F3FA4D6B31F238864EE4 /* ConnectionLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-umbrella.h"; sourceTree = "<group>"; };
-		795FC53FC1CF510E69BC5816A4C39A8F /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = NutUtils/Classes/Extensions/UIView/UIView.swift; sourceTree = "<group>"; };
 		7E77A91A044F62AF144AB94FCB557CCA /* Pods_testRappiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_testRappiTests.framework; path = "Pods-testRappiTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AFDC8525A01F10FC01F170F64972AB9 /* NUTComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NUTComponents-Info.plist"; sourceTree = "<group>"; };
-		8E93B55F064BD001559D0E2E45F0EAE0 /* NUTKeyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NUTKeyboard.swift; path = Classes/NUTKeyboard.swift; sourceTree = "<group>"; };
+		81B104B37BEDC56A0BF3C29F92B7BEC5 /* NUTComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-umbrella.h"; sourceTree = "<group>"; };
+		8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = youtube_ios_player_helper.framework; path = "youtube-ios-player-helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85AA30E1E5BF6A4E2973FB98DC14AAA2 /* NUTComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NUTComponents.debug.xcconfig; sourceTree = "<group>"; };
+		89D2578136C99C5C77FB14F612DA4EA0 /* youtube-ios-player-helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "youtube-ios-player-helper-Info.plist"; sourceTree = "<group>"; };
+		8C1D044C0BFEE1BFE9AAB58E77BE637C /* ConnectionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayer.swift; path = ConnectionLayer/ConnectionLayer.swift; sourceTree = "<group>"; };
 		907E826EA7C3E7BA8BA3E183BDA95F3D /* Pods-testRappiTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-testRappiTests.modulemap"; sourceTree = "<group>"; };
+		9349C3F4DD4A018E8199C916F1DF70CF /* ConnectionLayerEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayerEntity.swift; path = ConnectionLayer/ConnectionLayerEntity.swift; sourceTree = "<group>"; };
 		94B48DE215E2EB626B2CEFE010FB1E79 /* ConnectionLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ConnectionLayer.framework; path = ConnectionLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		957A2A449A7B940219157FE77950A8FF /* ConnectionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectionLayer.swift; path = ConnectionLayer/ConnectionLayer.swift; sourceTree = "<group>"; };
 		98FE75684D24978F1E9549F78F16EE58 /* Pods-testRappi-testRappiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappi-testRappiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A22ED8669D8990CFEF5345A3A09F709 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		9BCE12DF6F05C22966CDF4C45C2E4705 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E5F7A21DDE193EEBBC4193A965BFAF1 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		9EED8B8F035C879694C6D2BBB0C59EF8 /* Pods-testRappiTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-testRappiTests-Info.plist"; sourceTree = "<group>"; };
-		B643CA1179CDECCAF7BEE724045A0541 /* NUTComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NUTComponents-prefix.pch"; sourceTree = "<group>"; };
+		ABCDD9B0E4F061E5F83E07BD92F4F149 /* ConnectionLayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ConnectionLayer-Info.plist"; sourceTree = "<group>"; };
+		AE04F29E761EDE8A6F2FF0470F431159 /* ConnectionLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.release.xcconfig; sourceTree = "<group>"; };
+		B0BB9C62CD7E130272533860B7AD75BA /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		B35DA84571E814F26C1576BCB24C6829 /* NUTComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NUTComponents-Info.plist"; sourceTree = "<group>"; };
+		B9FE2B7D03C89F1AFBE9735530E6B851 /* ConnectionLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.debug.xcconfig; sourceTree = "<group>"; };
+		BB603AF3911AD9E17977D84AF17F332C /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
+		BCB5D96CFCC57687D1D80126F9FB6577 /* ConnectionLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ConnectionLayer-dummy.m"; sourceTree = "<group>"; };
 		BD6546A153A0257CBB7CFAD7D450E8C3 /* Pods-testRappiTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testRappiTests-dummy.m"; sourceTree = "<group>"; };
-		C0A9BB155C1EBE8F1EB639223C3818B3 /* ConnectionLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ConnectionLayer.debug.xcconfig; sourceTree = "<group>"; };
+		BD7F15DB681677D68C10F7742D3BF70E /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 		C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NUTComponents.framework; path = NUTComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86A4257B36F1BE43377C782DD087D38 /* Pods-testRappi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testRappi-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBAD4E5BA359096F8858356E873A032B /* ConnectionLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ConnectionLayer-prefix.pch"; sourceTree = "<group>"; };
+		C9EFD5CA1ED5880079E4AB1468F9C019 /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
 		CBF7C04584590AC3BC754E3755B58163 /* Pods-testRappi-testRappiUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-testRappi-testRappiUITests-frameworks.sh"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D293ACEB6BCFA34C59302EDC34C03460 /* ConnectionLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ConnectionLayer.modulemap; sourceTree = "<group>"; };
+		D8AC7E95746B436206521900976B7499 /* NutUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NutUtils-Info.plist"; sourceTree = "<group>"; };
 		DAAF266AD30A9719E5E778F4CDFB3DA2 /* Pods-testRappiTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-testRappiTests-umbrella.h"; sourceTree = "<group>"; };
 		DB735DFF171F52DF5601A40E2179E8F1 /* Pods-testRappi-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testRappi-dummy.m"; sourceTree = "<group>"; };
-		DC9F3C71FA4925F73ADDAA8467703C0A /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = NutUtils/Classes/Extensions/UIImage/UIImageView.swift; sourceTree = "<group>"; };
+		DB9805428CC11CFB8DF2249EA9D20F81 /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = NutUtils/Classes/Extensions/UIImage/UIImageView.swift; sourceTree = "<group>"; };
 		DE858CC62EFF8EF2BE03928E1204067C /* Pods-testRappiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-testRappiTests.release.xcconfig"; sourceTree = "<group>"; };
+		E04CBDD977720D36234A0E284BA4AC69 /* NUTComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NUTComponents.modulemap; sourceTree = "<group>"; };
 		E9CAEEE9401FF07584C6C70BFB99C579 /* Pods-testRappi-testRappiUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-testRappi-testRappiUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		EB3800BCDECC5A686E6FC828FC6DDE40 /* Pods-testRappi-testRappiUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-testRappi-testRappiUITests-dummy.m"; sourceTree = "<group>"; };
-		F4072EF9E03BF9D5E605B6D315269FBD /* NutUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NutUtils-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		29FD0BFEAAA809BB77E65DE56EF788C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				09A1A8AA165F7C56B52F046CCE7DBCE0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		413545E7C7AE77033A13B0D81C22E9D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,11 +229,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D58928C28A056EB1D1BB3312BC0507FB /* Frameworks */ = {
+		5595812EFC47AA249A0B8193A0B1F932 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61CD6CBF3E49454ECA4E7870380261DA /* Foundation.framework in Frameworks */,
+				CF54FBC044CC3EFEC4309420EE774826 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08D5B74BCCCA52E40712F1C5475E9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67499A433AC5CE83FD3C7AA7D2B8C9D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73E9AD893C8CFB6125EFD445237F667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F680D807787AE6DF800E8EB85DEBC3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +273,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D87B0008D2218365C6DE6A3E25722C7 /* UIView */ = {
+		017BE3AD57F01D213AD0F65A9430DF77 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				795FC53FC1CF510E69BC5816A4C39A8F /* UIView.swift */,
+				DB9805428CC11CFB8DF2249EA9D20F81 /* UIImageView.swift */,
 			);
-			name = UIView;
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -250,16 +289,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1A225FAE012E0199150938AAF3F9793A /* NutUtils */ = {
+		1699DEBA6F05BAB4FA3CC64F241105A1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				86A9EF4E8B4214551DE061F173A27B40 /* Optionals */,
-				CD2803980914218DE2A5B443BA4FD3B6 /* Support Files */,
-				A322980685F5021258F54A2649C2BF8F /* UIImage */,
-				0D87B0008D2218365C6DE6A3E25722C7 /* UIView */,
+				E04CBDD977720D36234A0E284BA4AC69 /* NUTComponents.modulemap */,
+				38954AA50BE38A4ED8F620D1E87695F3 /* NUTComponents-dummy.m */,
+				B35DA84571E814F26C1576BCB24C6829 /* NUTComponents-Info.plist */,
+				0FCAA7FEA22F971E497F203EC0650DC9 /* NUTComponents-prefix.pch */,
+				81B104B37BEDC56A0BF3C29F92B7BEC5 /* NUTComponents-umbrella.h */,
+				85AA30E1E5BF6A4E2973FB98DC14AAA2 /* NUTComponents.debug.xcconfig */,
+				08A33ACE6A87063219AE8772E6DB2A1D /* NUTComponents.release.xcconfig */,
 			);
-			name = NutUtils;
-			path = NutUtils;
+			name = "Support Files";
+			path = "../Target Support Files/NUTComponents";
 			sourceTree = "<group>";
 		};
 		1DE81A453AC2F5E738574567C1EC88A0 /* Pods-testRappi-testRappiUITests */ = {
@@ -279,16 +321,6 @@
 			path = "Target Support Files/Pods-testRappi-testRappiUITests";
 			sourceTree = "<group>";
 		};
-		20958B2CC780205D313BAC631252AD03 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6FA52D0E7E109119BD3DA4BC8685BD86 /* SwiftLint.debug.xcconfig */,
-				2535641749691653F42EC59783131D5B /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
 		24D38FEC89621C0722C674AD697472B8 /* Pods-testRappi */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,19 +338,67 @@
 			path = "Target Support Files/Pods-testRappi";
 			sourceTree = "<group>";
 		};
-		509A031DE83BC8FF2A17D05D7BC29D13 /* Support Files */ = {
+		280319632BC6C693EDD5577BB9C93D14 /* NUTComponents */ = {
 			isa = PBXGroup;
 			children = (
-				5976B31EC4C7A33D795D79B116425AAB /* NUTComponents.modulemap */,
-				6A8E81CB5E900E286B285FF479CF01C9 /* NUTComponents-dummy.m */,
-				8AFDC8525A01F10FC01F170F64972AB9 /* NUTComponents-Info.plist */,
-				B643CA1179CDECCAF7BEE724045A0541 /* NUTComponents-prefix.pch */,
-				674EAAB7C9B061B5E37598E6981F1792 /* NUTComponents-umbrella.h */,
-				00ADC6024B673D00A4D5EF26C55F82E2 /* NUTComponents.debug.xcconfig */,
-				063DAF3AB224206EEA62C55E3D6DD4F5 /* NUTComponents.release.xcconfig */,
+				0158E0D486F6FDB4CAB9AE455008A31B /* NUTButton.swift */,
+				33DDABA6488F8371DF60298342F73873 /* NUTKeyboard.swift */,
+				1699DEBA6F05BAB4FA3CC64F241105A1 /* Support Files */,
+			);
+			name = NUTComponents;
+			path = NUTComponents;
+			sourceTree = "<group>";
+		};
+		31761A2FDDCE8C3A98508415F7358500 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0BB9C62CD7E130272533860B7AD75BA /* SwiftLint.debug.xcconfig */,
+				9A22ED8669D8990CFEF5345A3A09F709 /* SwiftLint.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/NUTComponents";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		35F0517795134935B07E68E9EFF50B46 /* NutUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E254179A2AB0B707814A74783CF86785 /* Optionals */,
+				4A83517358FCDB0D284DB46360BC3398 /* Support Files */,
+				017BE3AD57F01D213AD0F65A9430DF77 /* UIImage */,
+				95F165D6EEC7860DFA25C02D10A64500 /* UIView */,
+			);
+			name = NutUtils;
+			path = NutUtils;
+			sourceTree = "<group>";
+		};
+		49955569D5F537E958BC99ED33AF9AB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BCE12DF6F05C22966CDF4C45C2E4705 /* youtube-ios-player-helper.modulemap */,
+				3B0AE1B88A3106033E9EF57C5C87F05C /* youtube-ios-player-helper-dummy.m */,
+				89D2578136C99C5C77FB14F612DA4EA0 /* youtube-ios-player-helper-Info.plist */,
+				4B9A640F8438A645DEA2090C2F0D9C46 /* youtube-ios-player-helper-prefix.pch */,
+				C9EFD5CA1ED5880079E4AB1468F9C019 /* youtube-ios-player-helper-umbrella.h */,
+				9E5F7A21DDE193EEBBC4193A965BFAF1 /* youtube-ios-player-helper.debug.xcconfig */,
+				BD7F15DB681677D68C10F7742D3BF70E /* youtube-ios-player-helper.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/youtube-ios-player-helper";
+			sourceTree = "<group>";
+		};
+		4A83517358FCDB0D284DB46360BC3398 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A5832E9C44A6FE904125431B1539C2E /* NutUtils.modulemap */,
+				545311AD8D64F3EB1862237EA68FFE27 /* NutUtils-dummy.m */,
+				D8AC7E95746B436206521900976B7499 /* NutUtils-Info.plist */,
+				3CA68BB81338F83D42D449DD9E68D539 /* NutUtils-prefix.pch */,
+				2F1A1E00EFB8AD1C5EA82CC21DE400F3 /* NutUtils-umbrella.h */,
+				4E9DBBA011E1200D0BCFEFCCB59865B4 /* NutUtils.debug.xcconfig */,
+				43B56BDD5332BF77507537949D241A9E /* NutUtils.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NutUtils";
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -328,34 +408,6 @@
 				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5FF26A05DBE80DC5DCADFE7149A2D1B3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				94B48DE215E2EB626B2CEFE010FB1E79 /* ConnectionLayer.framework */,
-				C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */,
-				7214B5D79B4D7BC14ED552399D484CD1 /* NutUtils.framework */,
-				18E808F4C8C73BCDF925344B5C2CF1B7 /* Pods_testRappi.framework */,
-				4BC122A04FB3F93C9AAAC13CBDED905E /* Pods_testRappi_testRappiUITests.framework */,
-				7E77A91A044F62AF144AB94FCB557CCA /* Pods_testRappiTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		704042DFDF3EDAC658B1395814EF5B5E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1748675ECA3775137B52E0B73B7C1156 /* ConnectionLayer.modulemap */,
-				1CA43ED645057EEA4349DB46898A729A /* ConnectionLayer-dummy.m */,
-				559E596D2C87A8F2BECFC73416F02212 /* ConnectionLayer-Info.plist */,
-				CBAD4E5BA359096F8858356E873A032B /* ConnectionLayer-prefix.pch */,
-				75E14CF495D2F3FA4D6B31F238864EE4 /* ConnectionLayer-umbrella.h */,
-				C0A9BB155C1EBE8F1EB639223C3818B3 /* ConnectionLayer.debug.xcconfig */,
-				021CA7094A7A2BD013475CC87B00727C /* ConnectionLayer.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ConnectionLayer";
 			sourceTree = "<group>";
 		};
 		73FE846DB17974479DA6C6BDBC1556E5 /* Pods-testRappiTests */ = {
@@ -374,66 +426,50 @@
 			path = "Target Support Files/Pods-testRappiTests";
 			sourceTree = "<group>";
 		};
-		8363661E40C922D1B02EFA60E3C5A27A /* NUTComponents */ = {
+		82A42F91E1A232666D55437C79EABA56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6CA4F53AC66A695E10146E51C28BF31C /* NUTButton.swift */,
-				8E93B55F064BD001559D0E2E45F0EAE0 /* NUTKeyboard.swift */,
-				509A031DE83BC8FF2A17D05D7BC29D13 /* Support Files */,
+				DE91E3D987B3D9EFDD1985D572D528A3 /* ConnectionLayer */,
+				280319632BC6C693EDD5577BB9C93D14 /* NUTComponents */,
+				35F0517795134935B07E68E9EFF50B46 /* NutUtils */,
+				FCC3514084717F93A27CACD0ED77EDAA /* SwiftLint */,
+				C87534D1AD6B293314C151FCEB4D50B9 /* youtube-ios-player-helper */,
 			);
-			name = NUTComponents;
-			path = NUTComponents;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		86A9EF4E8B4214551DE061F173A27B40 /* Optionals */ = {
+		95F165D6EEC7860DFA25C02D10A64500 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				2D60ABB6116C7B609498FC0A7CCEB783 /* Optionals.swift */,
+				651DC0194DF4A25164B8A9E6A9EC5215 /* UIView.swift */,
 			);
-			name = Optionals;
+			name = UIView;
 			sourceTree = "<group>";
 		};
-		A322980685F5021258F54A2649C2BF8F /* UIImage */ = {
+		C87534D1AD6B293314C151FCEB4D50B9 /* youtube-ios-player-helper */ = {
 			isa = PBXGroup;
 			children = (
-				DC9F3C71FA4925F73ADDAA8467703C0A /* UIImageView.swift */,
+				2CA537F366B6DE34AB0828DB947A1876 /* YTPlayerView.h */,
+				11D3A57314EEDFCF6FD079F7D84A9EA5 /* YTPlayerView.m */,
+				D9FC8E782091123BB21A34FC3FDF95AD /* Resources */,
+				49955569D5F537E958BC99ED33AF9AB1 /* Support Files */,
 			);
-			name = UIImage;
+			name = "youtube-ios-player-helper";
+			path = "youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
-		A79D02C01CB80236BF9D53330A9A9BD5 /* ConnectionLayer */ = {
+		CBDF1FEBBF7CB355439FF1C6E04B29DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				957A2A449A7B940219157FE77950A8FF /* ConnectionLayer.swift */,
-				585AA551C68588D8044AA5D0CA70EB78 /* ConnectionLayerEntity.swift */,
-				704042DFDF3EDAC658B1395814EF5B5E /* Support Files */,
+				94B48DE215E2EB626B2CEFE010FB1E79 /* ConnectionLayer.framework */,
+				C2221A2CD3E8DE8EF3BB9968E1408216 /* NUTComponents.framework */,
+				7214B5D79B4D7BC14ED552399D484CD1 /* NutUtils.framework */,
+				18E808F4C8C73BCDF925344B5C2CF1B7 /* Pods_testRappi.framework */,
+				4BC122A04FB3F93C9AAAC13CBDED905E /* Pods_testRappi_testRappiUITests.framework */,
+				7E77A91A044F62AF144AB94FCB557CCA /* Pods_testRappiTests.framework */,
+				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
 			);
-			name = ConnectionLayer;
-			path = ConnectionLayer;
-			sourceTree = "<group>";
-		};
-		B71AAE02455915156F4FC61004E0CF7E /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-				20958B2CC780205D313BAC631252AD03 /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		CD2803980914218DE2A5B443BA4FD3B6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				09D09A6C9DA424339015B2848920D42B /* NutUtils.modulemap */,
-				3C81F21432BFEF882B6CBF4AA0E13877 /* NutUtils-dummy.m */,
-				60F26DC5AECED1EA816FB8C55F6DC9BA /* NutUtils-Info.plist */,
-				53D5E1D49F37785C957B3D64C902FB1A /* NutUtils-prefix.pch */,
-				F4072EF9E03BF9D5E605B6D315269FBD /* NutUtils-umbrella.h */,
-				2153F403E3EFEB53336441C215B3120F /* NutUtils.debug.xcconfig */,
-				05A5977E7E08695666AD5B834243C403 /* NutUtils.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NutUtils";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -441,10 +477,37 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				E78F38EED7185DDCBFDCE9E3ED516860 /* Pods */,
-				5FF26A05DBE80DC5DCADFE7149A2D1B3 /* Products */,
+				82A42F91E1A232666D55437C79EABA56 /* Pods */,
+				CBDF1FEBBF7CB355439FF1C6E04B29DF /* Products */,
 				E6440578DBAAD67C0BB818408FB727A7 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D9FC8E782091123BB21A34FC3FDF95AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB603AF3911AD9E17977D84AF17F332C /* Assets.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DE91E3D987B3D9EFDD1985D572D528A3 /* ConnectionLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8C1D044C0BFEE1BFE9AAB58E77BE637C /* ConnectionLayer.swift */,
+				9349C3F4DD4A018E8199C916F1DF70CF /* ConnectionLayerEntity.swift */,
+				E6D17736E2201EF1968EEAD52094710F /* Support Files */,
+			);
+			name = ConnectionLayer;
+			path = ConnectionLayer;
+			sourceTree = "<group>";
+		};
+		E254179A2AB0B707814A74783CF86785 /* Optionals */ = {
+			isa = PBXGroup;
+			children = (
+				05F3C2CB1EB2C569682F7A9958FBF6AB /* Optionals.swift */,
+			);
+			name = Optionals;
 			sourceTree = "<group>";
 		};
 		E6440578DBAAD67C0BB818408FB727A7 /* Targets Support Files */ = {
@@ -457,15 +520,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E78F38EED7185DDCBFDCE9E3ED516860 /* Pods */ = {
+		E6D17736E2201EF1968EEAD52094710F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A79D02C01CB80236BF9D53330A9A9BD5 /* ConnectionLayer */,
-				8363661E40C922D1B02EFA60E3C5A27A /* NUTComponents */,
-				1A225FAE012E0199150938AAF3F9793A /* NutUtils */,
-				B71AAE02455915156F4FC61004E0CF7E /* SwiftLint */,
+				D293ACEB6BCFA34C59302EDC34C03460 /* ConnectionLayer.modulemap */,
+				BCB5D96CFCC57687D1D80126F9FB6577 /* ConnectionLayer-dummy.m */,
+				ABCDD9B0E4F061E5F83E07BD92F4F149 /* ConnectionLayer-Info.plist */,
+				17C7A9C5FBD1783A7B6FDCF5397F8F2F /* ConnectionLayer-prefix.pch */,
+				2E009F39BBBAC5B92FCC6FFACCC71A33 /* ConnectionLayer-umbrella.h */,
+				B9FE2B7D03C89F1AFBE9735530E6B851 /* ConnectionLayer.debug.xcconfig */,
+				AE04F29E761EDE8A6F2FF0470F431159 /* ConnectionLayer.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/ConnectionLayer";
+			sourceTree = "<group>";
+		};
+		FCC3514084717F93A27CACD0ED77EDAA /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				31761A2FDDCE8C3A98508415F7358500 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,14 +552,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF096F28FF72F043C96191494601E26B /* ConnectionLayer-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		097631353F1F2C7718EF284B18AF6C17 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E653F30F25FF52CA777EEA3CBCA285D /* Pods-testRappi-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +571,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32631F6C4669688639CDFC12BDE7E852 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D1C4E366F26FEF929B9FC8A8E38AAEF /* Pods-testRappi-testRappiUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C8382538CA74E4FE5B6FAAD374B567A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,11 +587,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF0DFC95E144ED18520C614AEADC807E /* Headers */ = {
+		A3D9B7803829D42680BA215A141625F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B893B222DE28D50CB4D75178122D583 /* Pods-testRappi-testRappiUITests-umbrella.h in Headers */,
+				7D8C05366F87C046219EDCB835447400 /* youtube-ios-player-helper-umbrella.h in Headers */,
+				05DBC5A4A0411FC0868B1355180CD35D /* YTPlayerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF9A06367E3E4A768263159DF07D7524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB778531F376DD9AA7A8BC49295D3C53 /* Pods-testRappi-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +637,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A563DEAB57EE76ECE3DF9569C842D8EF /* PBXTargetDependency */,
+				03B0A578C90CF1357730655F8EBC425B /* PBXTargetDependency */,
 			);
 			name = "Pods-testRappiTests";
 			productName = "Pods-testRappiTests";
@@ -561,20 +646,21 @@
 		};
 		8DE1A22582CF9DCB30B8ADF47DF3344E /* Pods-testRappi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22355D6BE5262908578ACB3DA3096970 /* Build configuration list for PBXNativeTarget "Pods-testRappi" */;
+			buildConfigurationList = 3EF046512C088AEB987AFFFF1302B9BD /* Build configuration list for PBXNativeTarget "Pods-testRappi" */;
 			buildPhases = (
-				097631353F1F2C7718EF284B18AF6C17 /* Headers */,
-				4CA60BEF0009F52A9853779800CC41AE /* Sources */,
-				29FD0BFEAAA809BB77E65DE56EF788C7 /* Frameworks */,
-				847ED417333CC4E01B24A31C26EF85DF /* Resources */,
+				AF9A06367E3E4A768263159DF07D7524 /* Headers */,
+				01A20F89D12EC9BEBA9BE49EC9D7C2D1 /* Sources */,
+				C73E9AD893C8CFB6125EFD445237F667 /* Frameworks */,
+				D3DC05ED3087C772717B22189D929595 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8427E8FC86312C7969E319C12C73EB62 /* PBXTargetDependency */,
-				89006AA0B0991A51B479EB135E8030A8 /* PBXTargetDependency */,
-				725CC0BD491E660A71D69B5BCDF8D1EA /* PBXTargetDependency */,
-				A35C06CF13E74B9B1EA2BC01FC361018 /* PBXTargetDependency */,
+				F5D600EA71EBA9383D1EAF6CE98C910B /* PBXTargetDependency */,
+				E8A54168D1DB130FFD5D09C101CDFCD7 /* PBXTargetDependency */,
+				FA68B861A3E4DA0A774CBC9F6E62541A /* PBXTargetDependency */,
+				8911F65A7B0C42E16ED33047199028FA /* PBXTargetDependency */,
+				90D0618724EEE878EDEF9698A47E3CFF /* PBXTargetDependency */,
 			);
 			name = "Pods-testRappi";
 			productName = "Pods-testRappi";
@@ -619,24 +705,43 @@
 		};
 		BDBE501C4AF039CA278B00A009556EBF /* Pods-testRappi-testRappiUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D785FEDFA25CAE1953F276B0BE708BA0 /* Build configuration list for PBXNativeTarget "Pods-testRappi-testRappiUITests" */;
+			buildConfigurationList = 334253759C8AEA405FA490A9740730A1 /* Build configuration list for PBXNativeTarget "Pods-testRappi-testRappiUITests" */;
 			buildPhases = (
-				BF0DFC95E144ED18520C614AEADC807E /* Headers */,
-				355863159DCFC0DBE6544323D0591794 /* Sources */,
-				D58928C28A056EB1D1BB3312BC0507FB /* Frameworks */,
-				AD814B76FFF424210249AADD1687469F /* Resources */,
+				32631F6C4669688639CDFC12BDE7E852 /* Headers */,
+				576669366BC1ACA6D1BC887601045404 /* Sources */,
+				B08D5B74BCCCA52E40712F1C5475E9E4 /* Frameworks */,
+				9E65AD2555AF7D7F30A6A18D9495D4CF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				111E8653F028CDF342AB6DC8D2A0E495 /* PBXTargetDependency */,
-				4EA1BDA2FCE4BD366151884CF9D38D3C /* PBXTargetDependency */,
-				BF496A719A705439F1C1ED935359CB3C /* PBXTargetDependency */,
-				ED1C1D91B6E16911E878E62F9A980575 /* PBXTargetDependency */,
+				88F06AA5A7081A445F9087E0972DEF69 /* PBXTargetDependency */,
+				727B4FBCA9225304085825AC65090EAE /* PBXTargetDependency */,
+				513D813FBE4BB2F588C7A8024F5D3C3C /* PBXTargetDependency */,
+				79283010878CB6F598E4AB221D026BA7 /* PBXTargetDependency */,
+				76C01A3344004EB92A28FC7FFEB2172A /* PBXTargetDependency */,
 			);
 			name = "Pods-testRappi-testRappiUITests";
 			productName = "Pods-testRappi-testRappiUITests";
 			productReference = 4BC122A04FB3F93C9AAAC13CBDED905E /* Pods_testRappi_testRappiUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20122DD765B62B4CDEF3E8EF198B58FD /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */;
+			buildPhases = (
+				A3D9B7803829D42680BA215A141625F6 /* Headers */,
+				1D0FE5D1FA457436D50E3286E7C355B5 /* Sources */,
+				5595812EFC47AA249A0B8193A0B1F932 /* Frameworks */,
+				5D870BFFEC56FA6BCB0BD3F7C619A53D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "youtube-ios-player-helper";
+			productName = "youtube-ios-player-helper";
+			productReference = 8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -657,7 +762,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5FF26A05DBE80DC5DCADFE7149A2D1B3 /* Products */;
+			productRefGroup = CBDF1FEBBF7CB355439FF1C6E04B29DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -668,6 +773,7 @@
 				BDBE501C4AF039CA278B00A009556EBF /* Pods-testRappi-testRappiUITests */,
 				8B7C966E66D7E0FC5C84287B60B7D48D /* Pods-testRappiTests */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+				D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */,
 			);
 		};
 /* End PBXProject section */
@@ -687,7 +793,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		847ED417333CC4E01B24A31C26EF85DF /* Resources */ = {
+		5D870BFFEC56FA6BCB0BD3F7C619A53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C22822FA929E89335F959F79BD29D2 /* Assets.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E65AD2555AF7D7F30A6A18D9495D4CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -701,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD814B76FFF424210249AADD1687469F /* Resources */ = {
+		D3DC05ED3087C772717B22189D929595 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -718,6 +832,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01A20F89D12EC9BEBA9BE49EC9D7C2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B755118BD9EA17F967CF0F1AD3632F59 /* Pods-testRappi-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0FE5D1FA457436D50E3286E7C355B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95360566E941F235D6B8CE1C4C3035D1 /* youtube-ios-player-helper-dummy.m in Sources */,
+				D03B6BD25AEC918C55C1A092C4ED472B /* YTPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		228F0EFC7E9E5E62EB773A426022BD35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,19 +857,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		355863159DCFC0DBE6544323D0591794 /* Sources */ = {
+		576669366BC1ACA6D1BC887601045404 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92B0C025039750B8C3808B448929F899 /* Pods-testRappi-testRappiUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4CA60BEF0009F52A9853779800CC41AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50DA19CA0AE4F9D70A26D672E94544AC /* Pods-testRappi-dummy.m in Sources */,
+				4932F16F718604234918EF0C6F36BB62 /* Pods-testRappi-testRappiUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,100 +899,75 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		111E8653F028CDF342AB6DC8D2A0E495 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ConnectionLayer;
-			target = AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */;
-			targetProxy = 61B69B5A8377FA03D5EC2C6FB712020A /* PBXContainerItemProxy */;
-		};
-		4EA1BDA2FCE4BD366151884CF9D38D3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NUTComponents;
-			target = 9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */;
-			targetProxy = 144E23CD5908388589B8FA5013AB82E6 /* PBXContainerItemProxy */;
-		};
-		725CC0BD491E660A71D69B5BCDF8D1EA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NutUtils;
-			target = 2C8AD708CFC2A6672EA8905FC2FB020A /* NutUtils */;
-			targetProxy = 0C629AA88FCF91CA2911677DE92E75E7 /* PBXContainerItemProxy */;
-		};
-		8427E8FC86312C7969E319C12C73EB62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ConnectionLayer;
-			target = AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */;
-			targetProxy = E60EBA38CBC156532306341BA07DD13D /* PBXContainerItemProxy */;
-		};
-		89006AA0B0991A51B479EB135E8030A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = NUTComponents;
-			target = 9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */;
-			targetProxy = 318ED303A2615FD397029E20E2020307 /* PBXContainerItemProxy */;
-		};
-		A35C06CF13E74B9B1EA2BC01FC361018 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 4C1D948C813F895F58EE66F6F970471C /* PBXContainerItemProxy */;
-		};
-		A563DEAB57EE76ECE3DF9569C842D8EF /* PBXTargetDependency */ = {
+		03B0A578C90CF1357730655F8EBC425B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-testRappi";
 			target = 8DE1A22582CF9DCB30B8ADF47DF3344E /* Pods-testRappi */;
-			targetProxy = 7C929B62D9B85AABFC84107F198A4B42 /* PBXContainerItemProxy */;
+			targetProxy = E48AFD709745379C2E0F43C5B33441BF /* PBXContainerItemProxy */;
 		};
-		BF496A719A705439F1C1ED935359CB3C /* PBXTargetDependency */ = {
+		513D813FBE4BB2F588C7A8024F5D3C3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NutUtils;
 			target = 2C8AD708CFC2A6672EA8905FC2FB020A /* NutUtils */;
-			targetProxy = 31307F9D3DF280493FC033A4D63DD9B8 /* PBXContainerItemProxy */;
+			targetProxy = AA10F11EFA957DEC11996A676EE6FE1A /* PBXContainerItemProxy */;
 		};
-		ED1C1D91B6E16911E878E62F9A980575 /* PBXTargetDependency */ = {
+		727B4FBCA9225304085825AC65090EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NUTComponents;
+			target = 9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */;
+			targetProxy = E0CC8D1C94C3D4BD78A50B84EFF72374 /* PBXContainerItemProxy */;
+		};
+		76C01A3344004EB92A28FC7FFEB2172A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
+			targetProxy = 12C10CCBE441F47FA788B8FB68241207 /* PBXContainerItemProxy */;
+		};
+		79283010878CB6F598E4AB221D026BA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 507DB32CAA768CF0AE5E62F75703E000 /* PBXContainerItemProxy */;
+			targetProxy = 7D2EC3FC8EA7E64C0EA0ACD06AA49CBF /* PBXContainerItemProxy */;
+		};
+		88F06AA5A7081A445F9087E0972DEF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConnectionLayer;
+			target = AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */;
+			targetProxy = A3752967CA3278706C4133C2D98824F1 /* PBXContainerItemProxy */;
+		};
+		8911F65A7B0C42E16ED33047199028FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 9AB89774D7F20E2BA31D6720D6AFA47B /* PBXContainerItemProxy */;
+		};
+		90D0618724EEE878EDEF9698A47E3CFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "youtube-ios-player-helper";
+			target = D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */;
+			targetProxy = AC97D12647DFA10089701DBC9EACA95A /* PBXContainerItemProxy */;
+		};
+		E8A54168D1DB130FFD5D09C101CDFCD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NUTComponents;
+			target = 9F1CFB24251C6CA9CDAC518698DE5C34 /* NUTComponents */;
+			targetProxy = B391BC5663147ED0F662BA597BBB4412 /* PBXContainerItemProxy */;
+		};
+		F5D600EA71EBA9383D1EAF6CE98C910B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ConnectionLayer;
+			target = AFF18469A632EF67970A880CEA22A456 /* ConnectionLayer */;
+			targetProxy = 3BF1728A5208A0E421A90620EB5E528B /* PBXContainerItemProxy */;
+		};
+		FA68B861A3E4DA0A774CBC9F6E62541A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NutUtils;
+			target = 2C8AD708CFC2A6672EA8905FC2FB020A /* NutUtils */;
+			targetProxy = 2EB6160587875AA997638C745F93A4A2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19856E5D21C985EE12DEE4045E085DD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44CAD79914E52D780D555EAC44F7ACA8 /* Pods-testRappi.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1B20D2AB4FA24B20D9E35AFD1A435210 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33C608083D506D89CAA9E93EE07BC334 /* Pods-testRappiTests.debug.xcconfig */;
@@ -909,7 +1007,7 @@
 		};
 		341C60C133D6A8011C94009756AF4317 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A9BB155C1EBE8F1EB639223C3818B3 /* ConnectionLayer.debug.xcconfig */;
+			baseConfigurationReference = B9FE2B7D03C89F1AFBE9735530E6B851 /* ConnectionLayer.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -941,44 +1039,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3E5AF5A723D279BA3AB202F3CDA33C06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24BDB17F74CFB7BE752BE2B51B686038 /* Pods-testRappi.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4BC7450F9457737EE3E637BA155B56F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1046,9 +1106,44 @@
 			};
 			name = Debug;
 		};
-		4F3D4A5D70F2C940529F72C300B64240 /* Release */ = {
+		662C3C259C2E0C9A56499E6981E210B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA5009825DC4708BFC9AFF9F175F332 /* Pods-testRappi-testRappiUITests.release.xcconfig */;
+			baseConfigurationReference = 9E5F7A21DDE193EEBBC4193A965BFAF1 /* youtube-ios-player-helper.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		676FA2E93B0E6A9A71BB1FAA3FEBD073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CAD79914E52D780D555EAC44F7ACA8 /* Pods-testRappi.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1060,7 +1155,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1069,7 +1164,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1078,15 +1173,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		7B141C0EBF1E018831C75F4303FA77F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 063DAF3AB224206EEA62C55E3D6DD4F5 /* NUTComponents.release.xcconfig */;
+			baseConfigurationReference = 08A33ACE6A87063219AE8772E6DB2A1D /* NUTComponents.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1158,6 +1252,43 @@
 			};
 			name = Release;
 		};
+		840F7B851F18288AD9DD66860E580524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FE75684D24978F1E9549F78F16EE58 /* Pods-testRappi-testRappiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8B5A46FF8D3C1289CDEE3BAFACABCD2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1220,46 +1351,9 @@
 			};
 			name = Release;
 		};
-		98C84D9DA15DF378C8973095EB49219C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98FE75684D24978F1E9549F78F16EE58 /* Pods-testRappi-testRappiUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9D1F9B8A5C22D3D1AD993A2723AEFBE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2153F403E3EFEB53336441C215B3120F /* NutUtils.debug.xcconfig */;
+			baseConfigurationReference = 4E9DBBA011E1200D0BCFEFCCB59865B4 /* NutUtils.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1294,7 +1388,7 @@
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2535641749691653F42EC59783131D5B /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 9A22ED8669D8990CFEF5345A3A09F709 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1309,9 +1403,83 @@
 			};
 			name = Release;
 		};
+		B0FDA5BDBB073164691664CE43E5F925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA5009825DC4708BFC9AFF9F175F332 /* Pods-testRappi-testRappiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testRappi-testRappiUITests/Pods-testRappi-testRappiUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB64F5420FB9C8E240944385F9C679AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD7F15DB681677D68C10F7742D3BF70E /* youtube-ios-player-helper.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				PRODUCT_MODULE_NAME = youtube_ios_player_helper;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C096A7CF4D7F66CDCA6B1E61FCE4ADF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A5977E7E08695666AD5B834243C403 /* NutUtils.release.xcconfig */;
+			baseConfigurationReference = 43B56BDD5332BF77507537949D241A9E /* NutUtils.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1347,7 +1515,7 @@
 		};
 		C8AD4A4A1B14F6670057D74AE3A8A9F7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 021CA7094A7A2BD013475CC87B00727C /* ConnectionLayer.release.xcconfig */;
+			baseConfigurationReference = AE04F29E761EDE8A6F2FF0470F431159 /* ConnectionLayer.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1381,9 +1549,47 @@
 			};
 			name = Release;
 		};
+		D1FA74BD03197070C30FF9071F693D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BDB17F74CFB7BE752BE2B51B686038 /* Pods-testRappi.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-testRappi/Pods-testRappi.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FA52D0E7E109119BD3DA4BC8685BD86 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = B0BB9C62CD7E130272533860B7AD75BA /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1399,7 +1605,7 @@
 		};
 		F5D1844A3087D8668E3E9ADC8B35D163 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00ADC6024B673D00A4D5EF26C55F82E2 /* NUTComponents.debug.xcconfig */;
+			baseConfigurationReference = 85AA30E1E5BF6A4E2973FB98DC14AAA2 /* NUTComponents.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1435,11 +1641,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22355D6BE5262908578ACB3DA3096970 /* Build configuration list for PBXNativeTarget "Pods-testRappi" */ = {
+		20122DD765B62B4CDEF3E8EF198B58FD /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19856E5D21C985EE12DEE4045E085DD0 /* Debug */,
-				3E5AF5A723D279BA3AB202F3CDA33C06 /* Release */,
+				662C3C259C2E0C9A56499E6981E210B9 /* Debug */,
+				BB64F5420FB9C8E240944385F9C679AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		334253759C8AEA405FA490A9740730A1 /* Build configuration list for PBXNativeTarget "Pods-testRappi-testRappiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840F7B851F18288AD9DD66860E580524 /* Debug */,
+				B0FDA5BDBB073164691664CE43E5F925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EF046512C088AEB987AFFFF1302B9BD /* Build configuration list for PBXNativeTarget "Pods-testRappi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676FA2E93B0E6A9A71BB1FAA3FEBD073 /* Debug */,
+				D1FA74BD03197070C30FF9071F693D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1494,15 +1718,6 @@
 			buildConfigurations = (
 				1B20D2AB4FA24B20D9E35AFD1A435210 /* Debug */,
 				7D79A477251D07468B50FD0D98AEAC97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D785FEDFA25CAE1953F276B0BE708BA0 /* Build configuration list for PBXNativeTarget "Pods-testRappi-testRappiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98C84D9DA15DF378C8973095EB49219C /* Debug */,
-				4F3D4A5D70F2C940529F72C300B64240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

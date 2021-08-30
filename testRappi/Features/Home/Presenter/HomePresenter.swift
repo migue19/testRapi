@@ -14,6 +14,9 @@ class HomePresenter {
     var router: HomeRouterProtocol?
 }
 extension HomePresenter: HomePresenterProtocol {
+    func pressDetail(movie: MovieListDetail) {
+        router?.showDetail(movie: movie)
+    }
     func getInformation() {
         interactor?.getMovies()
     }

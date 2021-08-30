@@ -15,6 +15,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        getData()
     }
     private func getData() {
         presenter?.getInformation()
@@ -24,7 +25,6 @@ class HomeVC: UIViewController {
         collectionView.delegate = self
         collectionView.register(UINib(nibName: GroupCollectionCell.identifier, bundle: nil), forCellWithReuseIdentifier: GroupCollectionCell.identifier)
         collectionView.register(UINib(nibName: HeaderCollectionView.identifier, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: HeaderCollectionView.identifier)
-        getData()
     }
 }
 /// Protocolo para recibir datos de presenter.
@@ -37,8 +37,8 @@ extension HomeVC: HomeViewProtocol {
 }
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let totalespace: CGFloat = 16 * 3
-        let width = UIScreen.main.bounds.width - totalespace
+        let totalSpace: CGFloat = 16 * 3
+        let width = UIScreen.main.bounds.width - totalSpace
         return CGSize(width: width, height: 250)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -64,7 +64,7 @@ extension HomeVC: UICollectionViewDataSource, UICollectionViewDelegate {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GroupCollectionCell.identifier, for: indexPath) as? GroupCollectionCell else { return UICollectionViewCell() }
         let currentSection = sections[indexPath.section]
         let movies = getMoviesFor(section: currentSection)
-        cell.setupCell(data: movies)
+        cell.setupCell(data: movies, delegate: self)
         return cell
     }
 }
@@ -75,5 +75,10 @@ extension HomeVC {
         } else {
             return [MovieListDetail]()
         }
+    }
+}
+extension HomeVC: GroupMovieDelegate {
+    func selectedMovie(movie: MovieListDetail) {
+        presenter?.pressDetail(movie: movie)
     }
 }

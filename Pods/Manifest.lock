@@ -9,12 +9,14 @@ PODS:
   - NutUtils/UIImage (1.1.3)
   - NutUtils/UIView (1.1.3)
   - SwiftLint (0.43.1)
+  - youtube-ios-player-helper (1.0.3)
 
 DEPENDENCIES:
   - ConnectionLayer
   - NUTComponents
   - NutUtils
   - SwiftLint
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -22,13 +24,15 @@ SPEC REPOS:
     - NUTComponents
     - NutUtils
     - SwiftLint
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   ConnectionLayer: 6e211e10e5e921a2797256b3ad1ba37cf43d1e52
   NUTComponents: 89eec7a960308321f6d96688659e76f989eeca34
   NutUtils: d49175f79ff7c734a883929916d60d403450bb3f
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
 
-PODFILE CHECKSUM: 7ca28073ce015b1a751b95b940e0cea43fb33cd1
+PODFILE CHECKSUM: 6fdc68f23098d0b92d4d39be6617a5ad371337f5
 
 COCOAPODS: 1.10.2
