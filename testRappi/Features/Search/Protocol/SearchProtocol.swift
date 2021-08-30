@@ -16,11 +16,13 @@ protocol SearchViewProtocol {
 /// Protocolo que define los métodos y atributos para el routing de Search
 protocol SearchRouterProtocol {
     // PRESENTER -> ROUTING
+    func showDetail(movie: MovieListDetail)
 }
 /// Protocolo que define los métodos y atributos para el Presenter de Search
 protocol SearchPresenterProtocol {
     // VIEW -> PRESENTER
     func getMoviesBy(query: String)
+    func pressDetail(movie: MovieListDetail)
 }
 /// Protocolo que define los métodos y atributos para el Interactor de Search
 protocol SearchInteractorInputProtocol {
