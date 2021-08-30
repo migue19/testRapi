@@ -10,6 +10,9 @@ PODS:
   - NutUtils/UIImage (1.1.3)
   - NutUtils/UIView (1.1.3)
   - SwiftLint (0.43.1)
+  - SwiftMessages (9.0.3):
+    - SwiftMessages/App (= 9.0.3)
+  - SwiftMessages/App (9.0.3)
   - youtube-ios-player-helper (1.0.3)
 
 DEPENDENCIES:
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - NUTComponents
   - NutUtils
   - SwiftLint
+  - SwiftMessages
   - youtube-ios-player-helper
 
 SPEC REPOS:
@@ -27,6 +31,7 @@ SPEC REPOS:
     - NUTComponents
     - NutUtils
     - SwiftLint
+    - SwiftMessages
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
@@ -35,8 +40,9 @@ SPEC CHECKSUMS:
   NUTComponents: 89eec7a960308321f6d96688659e76f989eeca34
   NutUtils: d49175f79ff7c734a883929916d60d403450bb3f
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+  SwiftMessages: 077f19126c24033fe24042237ecc20261adb46e4
   youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
 
-PODFILE CHECKSUM: 50a0bae91ea8f7231363ca69ca1b4938fa437e97
+PODFILE CHECKSUM: d306b5162c363184ffeeebb29f6ad292db6530aa
 
 COCOAPODS: 1.10.2

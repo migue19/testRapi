@@ -14,6 +14,7 @@ target 'testRappi' do
   pod 'youtube-ios-player-helper'
   pod 'SwiftLint'
   pod 'lottie-ios'
+  pod 'SwiftMessages'
   target 'testRappiTests' do
     inherit! :search_paths
     # Pods for testing
