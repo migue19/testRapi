@@ -18,6 +18,8 @@ final class MoviesCollectionCell: UICollectionViewCell {
         if let posterPath = data.posterPath {
             let image = TMDb.imageUrlBase + posterPath
             imageView.downloadImageFrom(urlString: image, imageMode: .scaleAspectFill)
+        } else {
+            imageView.image = UIImage(named: "image_not_found")
         }
         titleLabel.text = data.title
     }
