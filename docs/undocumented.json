@@ -1,0 +1,2413 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/AppDelegate.swift",
+      "line": 11,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/AppDelegate.swift",
+      "line": 24,
+      "symbol": "AppDelegate.persistentContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/AppDelegate.swift",
+      "line": 50,
+      "symbol": "AppDelegate.saveContext()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseController.swift",
+      "line": 10,
+      "symbol": "BaseController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseController.swift",
+      "line": 11,
+      "symbol": "BaseController.progress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseController.swift",
+      "line": 12,
+      "symbol": "BaseController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseController.swift",
+      "line": 15,
+      "symbol": "BaseController.showHUD()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseController.swift",
+      "line": 18,
+      "symbol": "BaseController.hideHUD()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseProtocol.swift",
+      "line": 15,
+      "symbol": "GeneralView.showHUD()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseProtocol.swift",
+      "line": 16,
+      "symbol": "GeneralView.hideHUD()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/BaseProtocol.swift",
+      "line": 19,
+      "symbol": "GeneralView.showMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 10,
+      "symbol": "ProgressViewCustom",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 11,
+      "symbol": "ProgressViewCustom.loader",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 12,
+      "symbol": "ProgressViewCustom.viewWithBlurredBackground",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 13,
+      "symbol": "ProgressViewCustom.widthProgress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 14,
+      "symbol": "ProgressViewCustom.contentView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 15,
+      "symbol": "ProgressViewCustom.init(inView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 44,
+      "symbol": "ProgressViewCustom.startProgressView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Commons/ProgressViewCustom.swift",
+      "line": 49,
+      "symbol": "ProgressViewCustom.stopProgressView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 10,
+      "symbol": "TMDb",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 11,
+      "symbol": "TMDb.imageUrlBase",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 14,
+      "symbol": "TMDb.urlWeb",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 17,
+      "symbol": "TMDb.apiKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 20,
+      "symbol": "TMDb.readAccessToken",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 23,
+      "symbol": "TMDb.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 26,
+      "symbol": "TMDb.ApiV3",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 36,
+      "symbol": "TMDb.ApiV3.popular",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 39,
+      "symbol": "TMDb.ApiV3.topRated",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 42,
+      "symbol": "TMDb.ApiV3.upcoming",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 45,
+      "symbol": "TMDb.ApiV3.nowPlaying",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 48,
+      "symbol": "TMDb.ApiV3.search",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 51,
+      "symbol": "TMDb.ApiV3.videos",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 55,
+      "symbol": "TMDb.ApiV4",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 56,
+      "symbol": "TMDb.ApiV4.url",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 59,
+      "symbol": "TMDb.ApiV4.auth",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 62,
+      "symbol": "TMDb.ApiV4.requestToken",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 65,
+      "symbol": "TMDb.ApiV4.accessToken",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 68,
+      "symbol": "TMDb.ApiV4.account",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 71,
+      "symbol": "TMDb.ApiV4.accountList",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 74,
+      "symbol": "TMDb.ApiV4.movie",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 77,
+      "symbol": "TMDb.ApiV4.favoriteMovies",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 80,
+      "symbol": "TMDb.ApiV4.movieRecommendations",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 83,
+      "symbol": "TMDb.ApiV4.movieWatchlist",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Constants/Constants.swift",
+      "line": 86,
+      "symbol": "TMDb.ApiV4.movieRated",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/Protocols/AuthProtocol.swift",
+      "line": 9,
+      "symbol": "AuthApproveTokenDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/Protocols/AuthProtocol.swift",
+      "line": 10,
+      "symbol": "AuthApproveTokenDelegate.approveSuccess(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 11,
+      "symbol": "AuthVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 12,
+      "symbol": "AuthVC.webView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 13,
+      "symbol": "AuthVC.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 14,
+      "symbol": "AuthVC.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 15,
+      "symbol": "AuthVC.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 16,
+      "symbol": "AuthVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 22,
+      "symbol": "AuthVC.init(url:token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 27,
+      "symbol": "AuthVC.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 30,
+      "symbol": "AuthVC.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 34,
+      "symbol": "AuthVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Auth/View/AuthVC.swift",
+      "line": 35,
+      "symbol": "AuthVC.webView(_:decidePolicyFor:decisionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 9,
+      "symbol": "BaseResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 16,
+      "symbol": "BaseResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 17,
+      "symbol": "BaseResponse.CodingKeys.statusCode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 18,
+      "symbol": "BaseResponse.CodingKeys.statusMessage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 19,
+      "symbol": "BaseResponse.CodingKeys.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 28,
+      "symbol": "RequestTokenResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 29,
+      "symbol": "RequestTokenResponse.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 30,
+      "symbol": "RequestTokenResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 31,
+      "symbol": "RequestTokenResponse.CodingKeys.token",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 33,
+      "symbol": "RequestTokenResponse.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 39,
+      "symbol": "AccessTokenResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 40,
+      "symbol": "AccessTokenResponse.token",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 41,
+      "symbol": "AccessTokenResponse.accountId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 42,
+      "symbol": "AccessTokenResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 43,
+      "symbol": "AccessTokenResponse.CodingKeys.token",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 44,
+      "symbol": "AccessTokenResponse.CodingKeys.accountId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 46,
+      "symbol": "AccessTokenResponse.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 53,
+      "symbol": "BaseListResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 54,
+      "symbol": "BaseListResponse.page",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 55,
+      "symbol": "BaseListResponse.totalResults",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 56,
+      "symbol": "BaseListResponse.totalPages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 57,
+      "symbol": "BaseListResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 58,
+      "symbol": "BaseListResponse.CodingKeys.page",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 59,
+      "symbol": "BaseListResponse.CodingKeys.totalResults",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 60,
+      "symbol": "BaseListResponse.CodingKeys.totalPages",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 70,
+      "symbol": "AccountListResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 71,
+      "symbol": "AccountListResponse.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 75,
+      "symbol": "AccountListResponse.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 81,
+      "symbol": "ErrorResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 82,
+      "symbol": "ErrorResponse.message",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 84,
+      "symbol": "AccountListDetail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 85,
+      "symbol": "AccountListDetail.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 86,
+      "symbol": "AccountListDetail.revenue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 87,
+      "symbol": "AccountListDetail.featured",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 88,
+      "symbol": "AccountListDetail.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 89,
+      "symbol": "AccountListDetail.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 91,
+      "symbol": "AccountService",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 92,
+      "symbol": "AccountService.list",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 93,
+      "symbol": "AccountService.favoriteMovies",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 94,
+      "symbol": "AccountService.movieRecommendations",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 95,
+      "symbol": "AccountService.movieWatchlist",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 96,
+      "symbol": "AccountService.movieRated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/AuthorizationEntity.swift",
+      "line": 97,
+      "symbol": "AccountService.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 7,
+      "symbol": "TypeMovieV3",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 8,
+      "symbol": "TypeMovieV3.popular",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 9,
+      "symbol": "TypeMovieV3.topRated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 10,
+      "symbol": "TypeMovieV3.upcoming",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 11,
+      "symbol": "TypeMovieV3.nowPlaying",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 12,
+      "symbol": "TypeMovieV3.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 24,
+      "symbol": "TypeMovieV3.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 37,
+      "symbol": "SearchType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 38,
+      "symbol": "SearchType.search",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 39,
+      "symbol": "SearchType.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 48,
+      "symbol": "MoviesResponseEntity.section",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 49,
+      "symbol": "MoviesResponseEntity.movies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 50,
+      "symbol": "MoviesResponseEntity.error",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 52,
+      "symbol": "MovieListResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 53,
+      "symbol": "MovieListResponse.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 57,
+      "symbol": "MovieListResponse.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 63,
+      "symbol": "MovieListDetail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 64,
+      "symbol": "MovieListDetail.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 65,
+      "symbol": "MovieListDetail.overview",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 66,
+      "symbol": "MovieListDetail.posterPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 67,
+      "symbol": "MovieListDetail.adult",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 68,
+      "symbol": "MovieListDetail.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 69,
+      "symbol": "MovieListDetail.genreIds",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 70,
+      "symbol": "MovieListDetail.originalTitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 71,
+      "symbol": "MovieListDetail.originalLanguage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 72,
+      "symbol": "MovieListDetail.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 73,
+      "symbol": "MovieListDetail.backdropPath",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 74,
+      "symbol": "MovieListDetail.popularity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 75,
+      "symbol": "MovieListDetail.voteCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 76,
+      "symbol": "MovieListDetail.video",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Entity/MoviesEntity.swift",
+      "line": 77,
+      "symbol": "MovieListDetail.voteAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 11,
+      "symbol": "HomeInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 12,
+      "symbol": "HomeInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 13,
+      "symbol": "HomeInteractor.connectionLayer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 14,
+      "symbol": "HomeInteractor.dispatchGroup",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 15,
+      "symbol": "HomeInteractor.movies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 17,
+      "symbol": "HomeInteractor",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 18,
+      "symbol": "HomeInteractor.getMovies()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 21,
+      "symbol": "HomeInteractor.getAllMovies()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 37,
+      "symbol": "HomeInteractor.receiveMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 50,
+      "symbol": "HomeInteractor.getList(type:token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 54,
+      "symbol": "HomeInteractor.getMovieFor(type:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 85,
+      "symbol": "HomeInteractor.getMovie(url:token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 108,
+      "symbol": "HomeInteractor.getRequestToken()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 126,
+      "symbol": "HomeInteractor.receiveData(entity:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 131,
+      "symbol": "HomeInteractor.receiveError(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 136,
+      "symbol": "HomeInteractor.requestAccessToken(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Interactor/HomeInteractor.swift",
+      "line": 159,
+      "symbol": "HomeInteractor.saveAccessToken(accessTokenResponse:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 11,
+      "symbol": "HomePresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 12,
+      "symbol": "HomePresenter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 13,
+      "symbol": "HomePresenter.interactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 14,
+      "symbol": "HomePresenter.router",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 16,
+      "symbol": "HomePresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 17,
+      "symbol": "HomePresenter.pressDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 20,
+      "symbol": "HomePresenter.getInformation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 25,
+      "symbol": "HomePresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 26,
+      "symbol": "HomePresenter.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 30,
+      "symbol": "HomePresenter.sendMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Presenter/HomePresenter.swift",
+      "line": 34,
+      "symbol": "HomePresenter.sendRequestToken(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 14,
+      "symbol": "HomeViewProtocol.showMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 19,
+      "symbol": "HomeRouterProtocol.showApproveToken(url:token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 20,
+      "symbol": "HomeRouterProtocol.showDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 25,
+      "symbol": "HomePresenterProtocol.getInformation()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 26,
+      "symbol": "HomePresenterProtocol.pressDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 31,
+      "symbol": "HomeInteractorInputProtocol.getMovies()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 36,
+      "symbol": "HomeInteractorOutputProtocol.sendRequestToken(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 37,
+      "symbol": "HomeInteractorOutputProtocol.sendMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 38,
+      "symbol": "HomeInteractorOutputProtocol.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 40,
+      "symbol": "GroupMovieDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Protocol/HomeProtocol.swift",
+      "line": 41,
+      "symbol": "GroupMovieDelegate.selectedMovie(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 12,
+      "symbol": "HomeRouter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 13,
+      "symbol": "HomeRouter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 16,
+      "symbol": "HomeRouter.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 27,
+      "symbol": "HomeRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 28,
+      "symbol": "HomeRouter.showDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 34,
+      "symbol": "HomeRouter.showApproveToken(url:token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 40,
+      "symbol": "HomeRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/Router/HomeRouter.swift",
+      "line": 41,
+      "symbol": "HomeRouter.approveSuccess(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 9,
+      "symbol": "GroupCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 10,
+      "symbol": "GroupCollectionCell.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 11,
+      "symbol": "GroupCollectionCell.dataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 12,
+      "symbol": "GroupCollectionCell.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 13,
+      "symbol": "GroupCollectionCell.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 14,
+      "symbol": "GroupCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 20,
+      "symbol": "GroupCollectionCell.setupCell(data:delegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 26,
+      "symbol": "GroupCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 27,
+      "symbol": "GroupCollectionCell.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 32,
+      "symbol": "GroupCollectionCell.collectionView(_:layout:insetForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 36,
+      "symbol": "GroupCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 37,
+      "symbol": "GroupCollectionCell.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 40,
+      "symbol": "GroupCollectionCell.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/GroupCollectionCell.swift",
+      "line": 45,
+      "symbol": "GroupCollectionCell.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 10,
+      "symbol": "MoviesCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 11,
+      "symbol": "MoviesCollectionCell.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 12,
+      "symbol": "MoviesCollectionCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 13,
+      "symbol": "MoviesCollectionCell.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 14,
+      "symbol": "MoviesCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Cell/MoviesCollectionCell.swift",
+      "line": 17,
+      "symbol": "MoviesCollectionCell.setupCell(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Header/HeaderCollectionView.swift",
+      "line": 10,
+      "symbol": "HeaderCollectionView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Header/HeaderCollectionView.swift",
+      "line": 11,
+      "symbol": "HeaderCollectionView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Header/HeaderCollectionView.swift",
+      "line": 12,
+      "symbol": "HeaderCollectionView.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Header/HeaderCollectionView.swift",
+      "line": 13,
+      "symbol": "HeaderCollectionView.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/Header/HeaderCollectionView.swift",
+      "line": 17,
+      "symbol": "HeaderCollectionView.setupCell(title:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 10,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 11,
+      "symbol": "HomeVC.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 12,
+      "symbol": "HomeVC.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 13,
+      "symbol": "HomeVC.movies",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 14,
+      "symbol": "HomeVC.sections",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 15,
+      "symbol": "HomeVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 31,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 32,
+      "symbol": "HomeVC.showMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 38,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 39,
+      "symbol": "HomeVC.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 44,
+      "symbol": "HomeVC.collectionView(_:layout:insetForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 48,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 49,
+      "symbol": "HomeVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 52,
+      "symbol": "HomeVC.collectionView(_:viewForSupplementaryElementOfKind:at:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 60,
+      "symbol": "HomeVC.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 63,
+      "symbol": "HomeVC.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 71,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 72,
+      "symbol": "HomeVC.getMoviesFor(section:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 80,
+      "symbol": "HomeVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Home/View/HomeVC.swift",
+      "line": 81,
+      "symbol": "HomeVC.selectedMovie(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 10,
+      "symbol": "VideoList",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 11,
+      "symbol": "VideoList.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 12,
+      "symbol": "VideoList.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 23,
+      "symbol": "VideoListDetail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 24,
+      "symbol": "VideoListDetail.iso639",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 25,
+      "symbol": "VideoListDetail.iso3166",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 26,
+      "symbol": "VideoListDetail.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 27,
+      "symbol": "VideoListDetail.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 28,
+      "symbol": "VideoListDetail.site",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 29,
+      "symbol": "VideoListDetail.size",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 30,
+      "symbol": "VideoListDetail.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 31,
+      "symbol": "VideoListDetail.official",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 32,
+      "symbol": "VideoListDetail.published",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Entity/MovieDetailEntity.swift",
+      "line": 33,
+      "symbol": "VideoListDetail.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 11,
+      "symbol": "MovieDetailInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 12,
+      "symbol": "MovieDetailInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 13,
+      "symbol": "MovieDetailInteractor.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 14,
+      "symbol": "MovieDetailInteractor.connectionLayer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 16,
+      "symbol": "MovieDetailInteractor",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 17,
+      "symbol": "MovieDetailInteractor.fetchVideos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 45,
+      "symbol": "MovieDetailInteractor.receiveVideos(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Interactor/MovieDetailInteractor.swift",
+      "line": 50,
+      "symbol": "MovieDetailInteractor.receiveError(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 11,
+      "symbol": "MovieDetailPresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 12,
+      "symbol": "MovieDetailPresenter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 13,
+      "symbol": "MovieDetailPresenter.interactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 14,
+      "symbol": "MovieDetailPresenter.router",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 16,
+      "symbol": "MovieDetailPresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 17,
+      "symbol": "MovieDetailPresenter.getVideos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 22,
+      "symbol": "MovieDetailPresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 23,
+      "symbol": "MovieDetailPresenter.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Presenter/MovieDetailPresenter.swift",
+      "line": 27,
+      "symbol": "MovieDetailPresenter.sendVideos(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Protocol/MovieDetailProtocol.swift",
+      "line": 14,
+      "symbol": "MovieDetailViewProtocol.showVideos(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Protocol/MovieDetailProtocol.swift",
+      "line": 23,
+      "symbol": "MovieDetailPresenterProtocol.getVideos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Protocol/MovieDetailProtocol.swift",
+      "line": 28,
+      "symbol": "MovieDetailInteractorInputProtocol.fetchVideos()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Protocol/MovieDetailProtocol.swift",
+      "line": 33,
+      "symbol": "MovieDetailInteractorOutputProtocol.sendVideos(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Protocol/MovieDetailProtocol.swift",
+      "line": 34,
+      "symbol": "MovieDetailInteractorOutputProtocol.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Router/MovieDetailRouter.swift",
+      "line": 12,
+      "symbol": "MovieDetailRouter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Router/MovieDetailRouter.swift",
+      "line": 13,
+      "symbol": "MovieDetailRouter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Router/MovieDetailRouter.swift",
+      "line": 16,
+      "symbol": "MovieDetailRouter.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Router/MovieDetailRouter.swift",
+      "line": 26,
+      "symbol": "MovieDetailRouter.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/Router/MovieDetailRouter.swift",
+      "line": 32,
+      "symbol": "MovieDetailRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 10,
+      "symbol": "VideoCollectionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 11,
+      "symbol": "VideoCollectionCell.videoContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 12,
+      "symbol": "VideoCollectionCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 13,
+      "symbol": "VideoCollectionCell.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 14,
+      "symbol": "VideoCollectionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/Cell/VideoCollectionCell.swift",
+      "line": 19,
+      "symbol": "VideoCollectionCell.setupCell(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 10,
+      "symbol": "MovieDetailVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 11,
+      "symbol": "MovieDetailVC.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 12,
+      "symbol": "MovieDetailVC.imageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 13,
+      "symbol": "MovieDetailVC.textView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 14,
+      "symbol": "MovieDetailVC.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 15,
+      "symbol": "MovieDetailVC.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 16,
+      "symbol": "MovieDetailVC.videos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 17,
+      "symbol": "MovieDetailVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 50,
+      "symbol": "MovieDetailVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 51,
+      "symbol": "MovieDetailVC.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 56,
+      "symbol": "MovieDetailVC.collectionView(_:layout:insetForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 60,
+      "symbol": "MovieDetailVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 61,
+      "symbol": "MovieDetailVC.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 64,
+      "symbol": "MovieDetailVC.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 71,
+      "symbol": "MovieDetailVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/MovieDetail/View/MovieDetailVC.swift",
+      "line": 72,
+      "symbol": "MovieDetailVC.showVideos(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 11,
+      "symbol": "SearchInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 12,
+      "symbol": "SearchInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 13,
+      "symbol": "SearchInteractor.connectionLayer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 15,
+      "symbol": "SearchInteractor",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 16,
+      "symbol": "SearchInteractor.fetchMoviesBy(query:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 40,
+      "symbol": "SearchInteractor.receiveMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Interactor/SearchInteractor.swift",
+      "line": 45,
+      "symbol": "SearchInteractor.receiveError(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 11,
+      "symbol": "SearchPresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 12,
+      "symbol": "SearchPresenter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 13,
+      "symbol": "SearchPresenter.interactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 14,
+      "symbol": "SearchPresenter.router",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 16,
+      "symbol": "SearchPresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 17,
+      "symbol": "SearchPresenter.pressDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 20,
+      "symbol": "SearchPresenter.getMoviesBy(query:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 24,
+      "symbol": "SearchPresenter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 25,
+      "symbol": "SearchPresenter.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Presenter/SearchPresenter.swift",
+      "line": 28,
+      "symbol": "SearchPresenter.sendMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 14,
+      "symbol": "SearchViewProtocol.showMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 19,
+      "symbol": "SearchRouterProtocol.showDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 24,
+      "symbol": "SearchPresenterProtocol.getMoviesBy(query:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 25,
+      "symbol": "SearchPresenterProtocol.pressDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 30,
+      "symbol": "SearchInteractorInputProtocol.fetchMoviesBy(query:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 35,
+      "symbol": "SearchInteractorOutputProtocol.sendMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Protocol/SearchProtocol.swift",
+      "line": 36,
+      "symbol": "SearchInteractorOutputProtocol.sendErrorMessage(message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Router/SearchRouter.swift",
+      "line": 12,
+      "symbol": "SearchRouter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Router/SearchRouter.swift",
+      "line": 13,
+      "symbol": "SearchRouter.view",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Router/SearchRouter.swift",
+      "line": 16,
+      "symbol": "SearchRouter.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Router/SearchRouter.swift",
+      "line": 27,
+      "symbol": "SearchRouter",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/Router/SearchRouter.swift",
+      "line": 28,
+      "symbol": "SearchRouter.showDetail(movie:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 10,
+      "symbol": "SearchVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 11,
+      "symbol": "SearchVC.searchBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 12,
+      "symbol": "SearchVC.collectionView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 13,
+      "symbol": "SearchVC.dataSource",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 14,
+      "symbol": "SearchVC.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 15,
+      "symbol": "SearchVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 19,
+      "symbol": "SearchVC.setupCollectionView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 27,
+      "symbol": "SearchVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 28,
+      "symbol": "SearchVC.showMovies(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 33,
+      "symbol": "SearchVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 34,
+      "symbol": "SearchVC.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 41,
+      "symbol": "SearchVC.searchBar(_:textDidChange:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 50,
+      "symbol": "SearchVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 51,
+      "symbol": "SearchVC.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 56,
+      "symbol": "SearchVC.collectionView(_:layout:insetForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 60,
+      "symbol": "SearchVC",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 61,
+      "symbol": "SearchVC.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 64,
+      "symbol": "SearchVC.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/Search/View/SearchVC.swift",
+      "line": 69,
+      "symbol": "SearchVC.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/TabBar/View/TabBarVC.swift",
+      "line": 10,
+      "symbol": "TabBarVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Features/TabBar/View/TabBarVC.swift",
+      "line": 11,
+      "symbol": "TabBarVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Persistence/Persistence.swift",
+      "line": 9,
+      "symbol": "Persistence",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Persistence/Persistence.swift",
+      "line": 10,
+      "symbol": "Persistence.saveInfoUserDefaults(key:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Persistence/Persistence.swift",
+      "line": 14,
+      "symbol": "Persistence.getInfoUserDefaults(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Persistence/Persistence.swift",
+      "line": 18,
+      "symbol": "Persistence.deleteInfoUserDefaults(key:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Utils/Utils.swift",
+      "line": 9,
+      "symbol": "Utils",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/miguelmexicanoherrera/testRappi/testRappi/Utils/Utils.swift",
+      "line": 10,
+      "symbol": "Utils.decode(_:from:serviceName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/miguelmexicanoherrera/testRappi"
+}
