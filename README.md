@@ -44,7 +44,8 @@ Las capas de la aplicación (por ejemplo capa de persistencia, vistas, red, nego
 - Componentes Visuales: 
     - NUTComponents Pod creado por Miguel Mexicano Herrera https://cocoapods.org/pods/NUTComponents
     
-
+- Jazzy: 
+    - Se agrega jazzy para la documentacion puedes revisarla entrando a [Aqui](https://github.com/migue19/testRappi/blob/develop/docs/index.html)
 
 
 
