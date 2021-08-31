@@ -10,13 +10,15 @@ import Lottie
 class ProgressViewCustom {
     var loader: AnimationView
     var viewWithBlurredBackground: UIVisualEffectView
-    var widthProgress: CGFloat = 200.0
+    let widthProgress: CGFloat = 200.0
+    let animationSpeed: CGFloat = 1.0
     var contentView: UIView
     init(inView: UIView) {
         self.contentView = inView
-        loader = AnimationView(name: "loader")
+        loader = AnimationView(name: "loader2")
         loader.contentMode = .scaleAspectFit
         loader.loopMode = .loop
+        loader.animationSpeed = animationSpeed
         let effect = UIBlurEffect(style: .light)
         viewWithBlurredBackground = UIVisualEffectView(effect: effect)
         viewWithBlurredBackground.frame = inView.frame
