@@ -1,0 +1,19 @@
+# Ordered by output of `jazzy — help config`
+output: docs
+clean: true
+xcodebuild_arguments:
+- -workspace
+- testRappi.xcworkspace
+- -scheme
+- testRappi
+- -sdk
+- iphoneos
+- CODE_SIGNING_ALLOWED = NO
+author: Miguel Mexicano Herrera
+module: testRappi
+module_version: 1.0
+copyright: Copyright Nut Systems 2021
+min_acl: internal
+# Options : [apple | fullwidth | jony | DIRPATH]
+# Which theme to use. Specify either ‘apple’ (default), one of the other built-in theme names, or the path to your mustache templates and other assets for a custom theme.Default: apple
+theme: apple
