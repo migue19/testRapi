@@ -53,6 +53,7 @@
 		F2EAE17726DD431B0058E332 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F2EAE17626DD431B0058E332 /* loader.json */; };
 		F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */; };
 		F2EAE17B26DD7B000058E332 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17A26DD7B000058E332 /* BaseController.swift */; };
+		F2EAE17D26DDAECB0058E332 /* loader2.json in Resources */ = {isa = PBXBuildFile; fileRef = F2EAE17C26DDAECB0058E332 /* loader2.json */; };
 		F2F8358226A72F1B007E13C8 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */; };
 		F2F8358326A72F1B007E13C8 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */; };
 		F2F8358426A72F1B007E13C8 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */; };
@@ -138,6 +139,7 @@
 		F2EAE17626DD431B0058E332 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewCustom.swift; sourceTree = "<group>"; };
 		F2EAE17A26DD7B000058E332 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		F2EAE17C26DDAECB0058E332 /* loader2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader2.json; sourceTree = "<group>"; };
 		F2F8357C26A72F1B007E13C8 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		F2F8357D26A72F1B007E13C8 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		F2F8357E26A72F1B007E13C8 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 		F2EAE17526DD42950058E332 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F2EAE17C26DDAECB0058E332 /* loader2.json */,
 				F2EAE17626DD431B0058E332 /* loader.json */,
 			);
 			path = Animations;
@@ -703,6 +706,7 @@
 				F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */,
 				F2CA384B26DC0B24003A77D0 /* MovieDetailVC.xib in Resources */,
 				F2F8358A26A72F94007E13C8 /* HomeVC.xib in Resources */,
+				F2EAE17D26DDAECB0058E332 /* loader2.json in Resources */,
 				F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */,
 				F2EAE17726DD431B0058E332 /* loader.json in Resources */,
 				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
