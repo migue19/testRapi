@@ -16,7 +16,6 @@ protocol HomeViewProtocol: GeneralView {
 /// Protocolo que define los métodos y atributos para el routing de Home
 /// PRESENTER -> ROUTING
 protocol HomeRouterProtocol {
-    func showApproveToken(url: URL, token: String)
     func showDetail(movie: MovieListDetail)
 }
 /// Protocolo que define los métodos y atributos para el Presenter de Home
@@ -33,7 +32,6 @@ protocol HomeInteractorInputProtocol {
 /// Protocolo que define los métodos y atributos para el Interactor de Home
 /// INTERACTOR -> PRESENTER
 protocol HomeInteractorOutputProtocol {
-    func sendRequestToken(token: String)
     func sendMovies(data: [MoviesResponseEntity])
     func sendErrorMessage(message: String)
 }

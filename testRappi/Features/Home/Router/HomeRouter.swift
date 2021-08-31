@@ -31,14 +31,4 @@ extension HomeRouter: HomeRouterProtocol {
         navigationController.modalPresentationStyle = .fullScreen
         view.present(navigationController, animated: true, completion: nil)
     }
-    func showApproveToken(url: URL, token: String) {
-        let auth = AuthVC(url: url, token: token)
-        auth.delegate = self
-        view.present(auth, animated: true, completion: nil)
-    }
-}
-extension HomeRouter: AuthApproveTokenDelegate {
-    func approveSuccess(token: String) {
-        interactor.requestAccessToken(token: token)
-    }
 }

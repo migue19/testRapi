@@ -88,24 +88,3 @@ struct AccountListDetail: Codable {
     var name: String?
     var overview: String
 }
-enum AccountService {
-    case list
-    case favoriteMovies
-    case movieRecommendations
-    case movieWatchlist
-    case movieRated
-    var url: String {
-        switch self {
-        case .list:
-            return TMDb.ApiV4.accountList
-        case .favoriteMovies:
-            return TMDb.ApiV4.favoriteMovies
-        case .movieRecommendations:
-            return TMDb.ApiV4.movieRecommendations
-        case .movieWatchlist:
-            return TMDb.ApiV4.movieWatchlist
-        case .movieRated:
-            return TMDb.ApiV4.movieRated
-        }
-    }
-}

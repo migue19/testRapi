@@ -32,8 +32,6 @@
 		F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992526CC28440043B35C /* BaseProtocol.swift */; };
 		F28C992E26CC30990043B35C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992C26CC30990043B35C /* TabBarVC.swift */; };
 		F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28C992D26CC30990043B35C /* TabBarVC.xib */; };
-		F2A054A626A86882005DF626 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054A426A86882005DF626 /* AuthVC.swift */; };
-		F2A054A726A86882005DF626 /* AuthVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A054A526A86882005DF626 /* AuthVC.xib */; };
 		F2A054D626A8E9B1005DF626 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054D526A8E9B1005DF626 /* Persistence.swift */; };
 		F2CA384326DC0ADC003A77D0 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA383D26DC0ADC003A77D0 /* MovieDetailPresenter.swift */; };
 		F2CA384426DC0ADC003A77D0 /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CA383E26DC0ADC003A77D0 /* MovieDetailRouter.swift */; };
@@ -49,7 +47,6 @@
 		F2D0D5A326CF22F7003C7EB2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A226CF22F7003C7EB2 /* String.swift */; };
 		F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */; };
 		F2D0D5A726CF40D2003C7EB2 /* HeaderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */; };
-		F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */; };
 		F2EAE17726DD431B0058E332 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = F2EAE17626DD431B0058E332 /* loader.json */; };
 		F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */; };
 		F2EAE17B26DD7B000058E332 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAE17A26DD7B000058E332 /* BaseController.swift */; };
@@ -118,8 +115,6 @@
 		F28C992526CC28440043B35C /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		F28C992C26CC30990043B35C /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		F28C992D26CC30990043B35C /* TabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarVC.xib; sourceTree = "<group>"; };
-		F2A054A426A86882005DF626 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
-		F2A054A526A86882005DF626 /* AuthVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthVC.xib; sourceTree = "<group>"; };
 		F2A054D526A8E9B1005DF626 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F2CA383D26DC0ADC003A77D0 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		F2CA383E26DC0ADC003A77D0 /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
@@ -135,7 +130,6 @@
 		F2D0D5A226CF22F7003C7EB2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F2D0D5A426CF40D2003C7EB2 /* HeaderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionView.swift; sourceTree = "<group>"; };
 		F2D0D5A526CF40D2003C7EB2 /* HeaderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCollectionView.xib; sourceTree = "<group>"; };
-		F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
 		F2EAE17626DD431B0058E332 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		F2EAE17826DD44DA0058E332 /* ProgressViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewCustom.swift; sourceTree = "<group>"; };
 		F2EAE17A26DD7B000058E332 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
@@ -380,15 +374,6 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
-		F2A054A326A86760005DF626 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				F2CA383A26DC09BD003A77D0 /* View */,
-				F2E9EF6B26C979C700E9A9AB /* Protocols */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
 		F2A054D426A8E951005DF626 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,15 +412,6 @@
 				F24CA7EE26B4C6F200325B24 /* SearchProtocol.swift */,
 			);
 			path = Protocol;
-			sourceTree = "<group>";
-		};
-		F2CA383A26DC09BD003A77D0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F2A054A526A86882005DF626 /* AuthVC.xib */,
-				F2A054A426A86882005DF626 /* AuthVC.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F2CA383B26DC0A46003A77D0 /* MovieDetail */ = {
@@ -519,14 +495,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F2E9EF6B26C979C700E9A9AB /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				F2E9EF6C26C979E700E9A9AB /* AuthProtocol.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		F2E9EF6E26C98B7000E9A9AB /* Commons */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,7 +520,6 @@
 				F2CA383B26DC0A46003A77D0 /* MovieDetail */,
 				F28C992726CC2F4F0043B35C /* TabBar */,
 				F24CA7E926B4BC9B00325B24 /* Search */,
-				F2A054A326A86760005DF626 /* Auth */,
 				F2F8357A26A72EFD007E13C8 /* Home */,
 			);
 			path = Features;
@@ -709,7 +676,6 @@
 				F2EAE17D26DDAECB0058E332 /* loader2.json in Resources */,
 				F2D0D59F26CF2114003C7EB2 /* Localizable.strings in Resources */,
 				F2EAE17726DD431B0058E332 /* loader.json in Resources */,
-				F2A054A726A86882005DF626 /* AuthVC.xib in Resources */,
 				F216F28D26DAFE9500F74A2E /* SearchVC.xib in Resources */,
 				F252ED0226A72B390039413C /* Assets.xcassets in Resources */,
 			);
@@ -863,7 +829,6 @@
 				F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */,
 				F24CA7F326B4C6F200325B24 /* SearchInteractor.swift in Sources */,
 				F2D0D5A626CF40D2003C7EB2 /* HeaderCollectionView.swift in Sources */,
-				F2E9EF6D26C979E700E9A9AB /* AuthProtocol.swift in Sources */,
 				F20E419426DADD8400E29FF4 /* Utils.swift in Sources */,
 				F252ECF926A72B390039413C /* AppDelegate.swift in Sources */,
 				F22063BF26B47469004F2A80 /* MoviesCollectionCell.swift in Sources */,
@@ -873,7 +838,6 @@
 				F216F28C26DAFE9500F74A2E /* SearchVC.swift in Sources */,
 				F24CA7F426B4C6F200325B24 /* SearchProtocol.swift in Sources */,
 				F2CA385226DC1B03003A77D0 /* UIViewController.swift in Sources */,
-				F2A054A626A86882005DF626 /* AuthVC.swift in Sources */,
 				F20E418E26DA836C00E29FF4 /* MoviesEntity.swift in Sources */,
 				F2CA385726DC2F38003A77D0 /* MovieDetailEntity.swift in Sources */,
 				F24CA7F226B4C6F200325B24 /* SearchRouter.swift in Sources */,
