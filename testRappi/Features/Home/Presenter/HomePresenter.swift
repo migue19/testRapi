@@ -31,11 +31,4 @@ extension HomePresenter: HomeInteractorOutputProtocol {
         view?.hideHUD()
         view?.showMovies(data: data)
     }
-    func sendRequestToken(token: String) {
-        let urlString = TMDb.urlWeb.replacingOccurrences(of: "{request_token}", with: token)
-        guard let url: URL = URL(string: urlString) else {
-            return
-        }
-        router?.showApproveToken(url: url, token: token)
-    }
 }

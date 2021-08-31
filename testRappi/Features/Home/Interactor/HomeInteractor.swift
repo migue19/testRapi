@@ -47,10 +47,6 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         let movies = data.sorted(by: { $0.section.title < $1.section.title })
         return movies
     }
-    func getList(type: AccountService, token: String) {
-        let url = type.url
-        getMovie(url: url, token: token)
-    }
     func getMovieFor(type: TypeMovieV3) {
         let url = type.url
         dispatchGroup.enter()
@@ -105,61 +101,9 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             }
         }
     }
-    func getRequestToken() {
-        let headers = ["Authorization": "Bearer \(TMDb.readAccessToken)"]
-        let url = TMDb.ApiV4.requestToken
-        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: nil) { [weak self] (data, error) in
-            guard let self = self else {
-                return
-            }
-            if let error = error {
-                print(error)
-            }
-            guard let data = data else {
-                return
-            }
-            if let requestToken = Utils.decode(RequestTokenResponse.self, from: data, serviceName: "Request Token") {
-                self.receiveData(entity: requestToken)
-            }
-        }
-    }
-    func receiveData(entity: RequestTokenResponse) {
-        DispatchQueue.main.async { [weak self] in
-            self?.presenter?.sendRequestToken(token: entity.token)
-        }
-    }
     func receiveError(message: String) {
         DispatchQueue.main.async { [weak self] in
             self?.presenter?.sendErrorMessage(message: message)
         }
-    }
-    func requestAccessToken(token: String) {
-        let headers = [
-            "Authorization": "Bearer \(TMDb.readAccessToken)",
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        ]
-        let body = ["request_token": token]
-        let url = TMDb.ApiV4.accessToken
-        connectionLayer.conneccionRequest(url: url, method: .post, headers: headers, parameters: body) { [weak self] (data, error) in
-            guard let self = self else {
-                return
-            }
-            if let error = error {
-                print(error)
-            }
-            guard let data = data else {
-                return
-            }
-            if let accessTokenResponse = Utils.decode(AccessTokenResponse.self, from: data, serviceName: "AccessTokenService") {
-                self.saveAccessToken(accessTokenResponse: accessTokenResponse)
-            }
-        }
-    }
-    func saveAccessToken(accessTokenResponse: AccessTokenResponse) {
-        let token = accessTokenResponse.token
-        let accountId = accessTokenResponse.accountId
-        Persistence.saveInfoUserDefaults(key: "accountId", value: accountId)
-        Persistence.saveInfoUserDefaults(key: "accessToken", value: token)
     }
 }

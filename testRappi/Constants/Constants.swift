@@ -52,39 +52,4 @@ struct TMDb {
             return movie + "/{movie_id}/videos" + key
         }
     }
-    struct ApiV4 {
-        static var url: String {
-            return baseUrl + "/4"
-        }
-        static var auth: String {
-            return url + "/auth"
-        }
-        static var requestToken: String {
-            return auth + "/request_token"
-        }
-        static var accessToken: String {
-            return auth + "/access_token"
-        }
-        static var account: String {
-            return url + "/account/{account_id}"
-        }
-        static var accountList: String {
-            return account + "/lists"
-        }
-        static var movie: String {
-            return account + "/movie"
-        }
-        static var favoriteMovies: String {
-            return movie + "/favorites"
-        }
-        static var movieRecommendations: String {
-            return movie + "/recommendations"
-        }
-        static var movieWatchlist: String {
-            return movie + "/watchlist"
-        }
-        static var movieRated: String {
-            return movie + "/rated"
-        }
-    }
 }
