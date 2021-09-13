@@ -61,3 +61,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
+extension AppDelegate {
+    static var shared: AppDelegate {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return AppDelegate()
+        }
+        return appDelegate
+    }
+    static var context: NSManagedObjectContext {
+        return shared.persistentContainer.viewContext
+    }
+}
