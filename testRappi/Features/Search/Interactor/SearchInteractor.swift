@@ -10,12 +10,12 @@ import Foundation
 import ConnectionLayer
 class SearchInteractor {
     var presenter: SearchInteractorOutputProtocol?
-    var connectionLayer = ConnectionLayer()
+    var connectionLayer = ConnectionLayer(isDebug: false)
 }
 extension SearchInteractor: SearchInteractorInputProtocol {
     func fetchMoviesBy(query: String) {
         let url = SearchType.search.url + query
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+        connectionLayer.connectionRequest(url: url, method: .get) { [weak self] (data, error) in
             guard let self = self else {
                 debugPrint("self_not_found".localized)
                 return
