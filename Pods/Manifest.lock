@@ -1,5 +1,5 @@
 PODS:
-  - ConnectionLayer (0.0.2)
+  - ConnectionLayer (0.0.3)
   - lottie-ios (3.2.3)
   - NUTComponents (0.1.2)
   - NutUtils (1.1.3):
@@ -35,7 +35,7 @@ SPEC REPOS:
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
-  ConnectionLayer: 6e211e10e5e921a2797256b3ad1ba37cf43d1e52
+  ConnectionLayer: 1993c356ebc8d7c99ef59f9a89822d5d21dd360f
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   NUTComponents: 89eec7a960308321f6d96688659e76f989eeca34
   NutUtils: d49175f79ff7c734a883929916d60d403450bb3f
