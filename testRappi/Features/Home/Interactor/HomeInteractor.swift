@@ -43,6 +43,15 @@ extension HomeInteractor: HomeInteractorInputProtocol {
             self.presenter?.sendMovies(data: movies)
         }
     }
+    private func saveCoreData(data: [MoviesResponseEntity]) {
+        CoreDataLayer.resetAllRecords(entity: CoreDataEntities.Movies)
+        for resp in data {
+            let section = resp.section
+            if let movies = resp.movies?.results {
+                CoreDataLayer.saveMovies(movies: movies, section: section)
+            }
+        }
+    }
     private func sortedMovies(data: [MoviesResponseEntity]) -> [MoviesResponseEntity] {
         let movies = data.sorted(by: { $0.section.title < $1.section.title })
         return movies

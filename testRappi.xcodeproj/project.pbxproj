@@ -29,6 +29,8 @@
 		F252ED0526A72B390039413C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F252ED0326A72B390039413C /* LaunchScreen.storyboard */; };
 		F252ED1026A72B3A0039413C /* testRappiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED0F26A72B3A0039413C /* testRappiTests.swift */; };
 		F252ED1B26A72B3A0039413C /* testRappiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252ED1A26A72B3A0039413C /* testRappiUITests.swift */; };
+		F261A68926DDC9A40078E174 /* CoreDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F261A68826DDC9A40078E174 /* CoreDataLayer.swift */; };
+		F261A68B26DDCA260078E174 /* CoreDataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F261A68A26DDCA260078E174 /* CoreDataEntity.swift */; };
 		F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992526CC28440043B35C /* BaseProtocol.swift */; };
 		F28C992E26CC30990043B35C /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C992C26CC30990043B35C /* TabBarVC.swift */; };
 		F28C992F26CC30990043B35C /* TabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28C992D26CC30990043B35C /* TabBarVC.xib */; };
@@ -112,6 +114,8 @@
 		F252ED1626A72B3A0039413C /* testRappiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testRappiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F252ED1A26A72B3A0039413C /* testRappiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testRappiUITests.swift; sourceTree = "<group>"; };
 		F252ED1C26A72B3A0039413C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F261A68826DDC9A40078E174 /* CoreDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLayer.swift; sourceTree = "<group>"; };
+		F261A68A26DDCA260078E174 /* CoreDataEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataEntity.swift; sourceTree = "<group>"; };
 		F28C992526CC28440043B35C /* BaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		F28C992C26CC30990043B35C /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		F28C992D26CC30990043B35C /* TabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarVC.xib; sourceTree = "<group>"; };
@@ -305,6 +309,31 @@
 			path = testRappiUITests;
 			sourceTree = "<group>";
 		};
+		F261A68626DDC9790078E174 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		F261A68726DDC98C0078E174 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F261A68C26DDCA2A0078E174 /* Entity */,
+				F261A68826DDC9A40078E174 /* CoreDataLayer.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F261A68C26DDCA2A0078E174 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				F261A68A26DDCA260078E174 /* CoreDataEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		F28C992726CC2F4F0043B35C /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,7 +406,8 @@
 		F2A054D426A8E951005DF626 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				F2A054D526A8E9B1005DF626 /* Persistence.swift */,
+				F261A68726DDC98C0078E174 /* CoreData */,
+				F261A68626DDC9790078E174 /* UserDefaults */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -824,6 +854,7 @@
 			files = (
 				F2F8358526A72F1B007E13C8 /* HomeProtocol.swift in Sources */,
 				F2F8358926A72F94007E13C8 /* HomeVC.swift in Sources */,
+				F261A68926DDC9A40078E174 /* CoreDataLayer.swift in Sources */,
 				F2EAE17B26DD7B000058E332 /* BaseController.swift in Sources */,
 				F2CA384526DC0ADC003A77D0 /* MovieDetailInteractor.swift in Sources */,
 				F2EAE17926DD44DA0058E332 /* ProgressViewCustom.swift in Sources */,
@@ -854,6 +885,7 @@
 				F28C992626CC28440043B35C /* BaseProtocol.swift in Sources */,
 				F2F8358D26A731C5007E13C8 /* Constants.swift in Sources */,
 				F2CA384626DC0ADC003A77D0 /* MovieDetailProtocol.swift in Sources */,
+				F261A68B26DDCA260078E174 /* CoreDataEntity.swift in Sources */,
 				F2CA384A26DC0B24003A77D0 /* MovieDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
