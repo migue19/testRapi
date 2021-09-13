@@ -10,7 +10,7 @@ import Foundation
 import ConnectionLayer
 class HomeInteractor {
     var presenter: HomeInteractorOutputProtocol?
-    var connectionLayer = ConnectionLayer()
+    var connectionLayer = ConnectionLayer(isDebug: false)
     let dispatchGroup = DispatchGroup()
     var movies: [MoviesResponseEntity] = []
 }
@@ -50,7 +50,7 @@ extension HomeInteractor: HomeInteractorInputProtocol {
     func getMovieFor(type: TypeMovieV3) {
         let url = type.url
         dispatchGroup.enter()
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+        connectionLayer.connectionRequest(url: url, method: .get) { [weak self] (data, error) in
             guard let self = self else {
                 debugPrint("self_not_found".localized)
                 return
@@ -79,14 +79,14 @@ extension HomeInteractor: HomeInteractorInputProtocol {
         }
     }
     func getMovie(url: String, token: String) {
-        let headers = [
-            "Authorization": "Bearer \(token)",
-            "Content-Type": "application/json",
-            "Accept": "application/json"
-        ]
+        let headers: HTTPHeaders = HTTPHeaders([
+            HTTPHeaders.authorization(bearerToken: token),
+            HTTPHeaders.contentTypeJson,
+            HTTPHeaders.acceptJson
+        ])
         let accountId = Persistence.getInfoUserDefaults(key: "accountId")
         let url = url.replacingOccurrences(of: "{account_id}", with: accountId.valueOrEmpty)
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: headers, parameters: nil) { [weak self] (data, error) in
+        connectionLayer.connectionRequest(url: url, method: .get, headers: headers) { [weak self] (data, error) in
             guard let self = self else {
                 return
             }

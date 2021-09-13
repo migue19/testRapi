@@ -11,7 +11,7 @@ import ConnectionLayer
 class MovieDetailInteractor {
     var presenter: MovieDetailInteractorOutputProtocol?
     var data: MovieListDetail?
-    var connectionLayer = ConnectionLayer()
+    var connectionLayer = ConnectionLayer(isDebug: false)
 }
 extension MovieDetailInteractor: MovieDetailInteractorInputProtocol {
     func fetchVideos() {
@@ -20,7 +20,7 @@ extension MovieDetailInteractor: MovieDetailInteractorInputProtocol {
         }
         let identifier = data.identifier
         let url = TMDb.ApiV3.videos.replacingOccurrences(of: "{movie_id}", with: "\(identifier)")
-        connectionLayer.conneccionRequest(url: url, method: .get, headers: [:], parameters: nil) { [weak self] (data, error) in
+        connectionLayer.connectionRequest(url: url, method: .get) { [weak self] (data, error) in
             guard let self = self else {
                 debugPrint("self_not_found".localized)
                 return
