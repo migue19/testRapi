@@ -32,19 +32,15 @@ extension SearchVC: SearchViewProtocol {
 }
 extension SearchVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let text = searchBar.text, !text.isEmpty else {
-            searchBar.endEditing(true)
-            return
-        }
         searchBar.endEditing(true)
     }
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text, !text.isEmpty else {
             dataSource = []
             collectionView.reloadData()
-        } else {
-            presenter?.getMoviesBy(query: searchText)
+            return
         }
+        presenter?.getMoviesBy(query: text)
     }
 }
 extension SearchVC: UICollectionViewDelegateFlowLayout {
